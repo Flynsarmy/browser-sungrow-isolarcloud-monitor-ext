@@ -1,0 +1,155 @@
+<div data-v-b595fd65="" data-v-e0def71f="" class="markdown-render" style=""><div data-v-b595fd65="" class="markdown-body"><h1 id="h1_0">Common plant measuring points</h1>
+<table>
+<thead>
+<tr>
+<th rowspan="1}" class="rowspan-td"><strong>Measuring Point ID</strong></th><th rowspan="1}" class="rowspan-td"><strong>Measuring Point Name</strong></th><th rowspan="1}" class="rowspan-td"><strong>Unit</strong></th></tr>
+</thead>
+<tbody><tr>
+<td rowspan="1}" class="rowspan-td">83022</td><td rowspan="1}" class="rowspan-td">Daily Yield of Plant</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83024</td><td rowspan="1}" class="rowspan-td">Plant Total Yield</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83033</td><td rowspan="1}" class="rowspan-td">Plant Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83019</td><td rowspan="1}" class="rowspan-td">Plant Power/Installed Power of Plant</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83006</td><td rowspan="1}" class="rowspan-td">Meter Daily Yield</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83020</td><td rowspan="1}" class="rowspan-td">Meter Total Yield</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83011</td><td rowspan="1}" class="rowspan-td">Meter E-daily Consumption</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83021</td><td rowspan="1}" class="rowspan-td">Accumulative Power Consumption by Meter</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83032</td><td rowspan="1}" class="rowspan-td">Meter AC Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83002</td><td rowspan="1}" class="rowspan-td">Inverter AC Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83004</td><td rowspan="1}" class="rowspan-td">Inverter Total Yield</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83009</td><td rowspan="1}" class="rowspan-td">Inverter Daily Yield</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83012</td><td rowspan="1}" class="rowspan-td">P-radiation-H</td><td rowspan="1}" class="rowspan-td">W/m^2^</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83013</td><td rowspan="1}" class="rowspan-td">Daily Irradiation</td><td rowspan="1}" class="rowspan-td">Wh/m^2^</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83023</td><td rowspan="1}" class="rowspan-td">Plant PR</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83025</td><td rowspan="1}" class="rowspan-td">Plant Equivalent Hours</td><td rowspan="1}" class="rowspan-td">h</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83005</td><td rowspan="1}" class="rowspan-td">Daily Equivalent Hours</td><td rowspan="1}" class="rowspan-td">h</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83007</td><td rowspan="1}" class="rowspan-td">Meter PR</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83018</td><td rowspan="1}" class="rowspan-td">Daily Yield (Theoretical)</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83001</td><td rowspan="1}" class="rowspan-td">Inverter AC Power Normalization</td><td rowspan="1}" class="rowspan-td">W/Wp</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83008</td><td rowspan="1}" class="rowspan-td">Daily Equivalent Hours of Inverter</td><td rowspan="1}" class="rowspan-td">h</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83010</td><td rowspan="1}" class="rowspan-td">Inverter PR</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83016</td><td rowspan="1}" class="rowspan-td">Plant Ambient Temperature</td><td rowspan="1}" class="rowspan-td">°C</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83017</td><td rowspan="1}" class="rowspan-td">Plant Module Temperature</td><td rowspan="1}" class="rowspan-td">°C</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83046</td><td rowspan="1}" class="rowspan-td">PCS Total Active Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83052</td><td rowspan="1}" class="rowspan-td">Load Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83067</td><td rowspan="1}" class="rowspan-td">Total Active Power of PV</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83097</td><td rowspan="1}" class="rowspan-td">Daily Direct Energy Consumption</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83100</td><td rowspan="1}" class="rowspan-td">Total Direct Energy Consumption</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83102</td><td rowspan="1}" class="rowspan-td">Energy Purchased Today</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83105</td><td rowspan="1}" class="rowspan-td">Total Purchased Energy</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83106</td><td rowspan="1}" class="rowspan-td">Load Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83118</td><td rowspan="1}" class="rowspan-td">Daily Load Consumption</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83124</td><td rowspan="1}" class="rowspan-td">Total Load Consumption</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83119</td><td rowspan="1}" class="rowspan-td">Daily Feed-in Energy (PV)</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83072</td><td rowspan="1}" class="rowspan-td">Feed-in Energy Today</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83075</td><td rowspan="1}" class="rowspan-td">Feed-in Energy Total</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83252</td><td rowspan="1}" class="rowspan-td">Battery Level (SOC)</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83129</td><td rowspan="1}" class="rowspan-td">Battery SOC</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83232</td><td rowspan="1}" class="rowspan-td">Total field SOC</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83233</td><td rowspan="1}" class="rowspan-td">Total field maximum rechargeable power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83234</td><td rowspan="1}" class="rowspan-td">Total field maximum dischargeable power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83235</td><td rowspan="1}" class="rowspan-td">Total field chargeable energy</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83236</td><td rowspan="1}" class="rowspan-td">Total field dischargeable energy</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83237</td><td rowspan="1}" class="rowspan-td">Total field energy storage maximum reactive power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83238</td><td rowspan="1}" class="rowspan-td">Total field energy storage active power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83239</td><td rowspan="1}" class="rowspan-td">Total field reactive power</td><td rowspan="1}" class="rowspan-td">var</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83240</td><td rowspan="1}" class="rowspan-td">Total field power factor</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83241</td><td rowspan="1}" class="rowspan-td">Total field charge capacity</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83242</td><td rowspan="1}" class="rowspan-td">Total field discharge capacity</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83243</td><td rowspan="1}" class="rowspan-td">Daily field charge capacity</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83244</td><td rowspan="1}" class="rowspan-td">Daily field discharge capacity</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83548</td><td rowspan="1}" class="rowspan-td">Total Number of Charge/Discharge</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83549</td><td rowspan="1}" class="rowspan-td">Grid Active Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83419</td><td rowspan="1}" class="rowspan-td">Daily Highest Inverter Power/Inverter Installed Capacity</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83317</td><td rowspan="1}" class="rowspan-td">Power Forecast</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83318</td><td rowspan="1}" class="rowspan-td">Planned ES Charging/Discharging Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83319</td><td rowspan="1}" class="rowspan-td">Planned ES SOC</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83320</td><td rowspan="1}" class="rowspan-td">Planned Charging Power</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83321</td><td rowspan="1}" class="rowspan-td">Planned Discharging Power</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83322</td><td rowspan="1}" class="rowspan-td">ESS Daily Charge (EMS)</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83323</td><td rowspan="1}" class="rowspan-td">ESS Daily Discharge (EMS)</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83324</td><td rowspan="1}" class="rowspan-td">Energy Storage Cumulative Charge</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83325</td><td rowspan="1}" class="rowspan-td">Cumulative Discharge</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83326</td><td rowspan="1}" class="rowspan-td">Energy Storage Active Power (EMS)</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83327</td><td rowspan="1}" class="rowspan-td">Energy Storage Remaining Charge</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83328</td><td rowspan="1}" class="rowspan-td">Grid Active Power (EMS)</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83329</td><td rowspan="1}" class="rowspan-td">PV Active Power (EMS)</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83330</td><td rowspan="1}" class="rowspan-td">Load Active Power (EMS)</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83331</td><td rowspan="1}" class="rowspan-td">Daily PV Yield (EMS)</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83332</td><td rowspan="1}" class="rowspan-td">Total PV Yield</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83334</td><td rowspan="1}" class="rowspan-td">Energy Storage SOC (EMS)</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83743</td><td rowspan="1}" class="rowspan-td">Daily yield loss due to load shedding</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+</tbody></table>
+<p>You can get more open measuring point definitions from the getOpenPointInfo endpoint.</p>
+</div><div data-v-b595fd65=""><div data-v-fdad8a6e="" data-v-b595fd65=""><div data-v-fdad8a6e="" class="right-nav-container"><!----><div data-v-fdad8a6e="" class="sg-scrollbar sg-scrollbar-type-embed"><div class="sg-scrollbar-container" style="height: calc(-558px + 100vh); min-height: 240px; overflow-y: auto;"><div data-v-fdad8a6e="" class="content-view"><div data-v-fdad8a6e="" id="h1_0_0" class="right-nav-container-list top-level anchor-active">Common plant measuring points</div></div></div><!--v-if--><!--v-if--></div></div><!----></div></div></div>

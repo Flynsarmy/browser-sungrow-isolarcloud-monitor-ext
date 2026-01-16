@@ -1,0 +1,78 @@
+<div data-v-b595fd65="" data-v-e0def71f="" class="markdown-render" style=""><div data-v-b595fd65="" class="markdown-body"><h1 id="h1_0">Common battery measuring points</h1>
+<table>
+<thead>
+<tr>
+<th rowspan="1}" class="rowspan-td"><strong>Measuring Point ID</strong></th><th rowspan="1}" class="rowspan-td"><strong>Measuring Point Name</strong></th><th rowspan="1}" class="rowspan-td"><strong>Unit</strong></th></tr>
+</thead>
+<tbody><tr>
+<td rowspan="1}" class="rowspan-td">58601</td><td rowspan="1}" class="rowspan-td">Battery Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">58602</td><td rowspan="1}" class="rowspan-td">Battery Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">58603</td><td rowspan="1}" class="rowspan-td">Battery Temperature</td><td rowspan="1}" class="rowspan-td">°C</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">58604</td><td rowspan="1}" class="rowspan-td">Battery Level</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">58605</td><td rowspan="1}" class="rowspan-td">Battery Health (SOH)</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">58606</td><td rowspan="1}" class="rowspan-td">Total Battery Charging Energy</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">58607</td><td rowspan="1}" class="rowspan-td">Total Battery Discharging Energy</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">58608</td><td rowspan="1}" class="rowspan-td">Battery Opreration Status</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">58609</td><td rowspan="1}" class="rowspan-td">Standard Health Status</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">58610</td><td rowspan="1}" class="rowspan-td">Max.Voltage of Cell</td><td rowspan="1}" class="rowspan-td">mV</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">58611</td><td rowspan="1}" class="rowspan-td">Position of Max-Voltage Cell</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">58612</td><td rowspan="1}" class="rowspan-td">Min.Voltage of Cell</td><td rowspan="1}" class="rowspan-td">mV</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">58613</td><td rowspan="1}" class="rowspan-td">Position of Min-Voltage Cell</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">58614</td><td rowspan="1}" class="rowspan-td">Max.Temperature of Module</td><td rowspan="1}" class="rowspan-td">°C</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">58615</td><td rowspan="1}" class="rowspan-td">Max.Temperature Position of Module</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">58616</td><td rowspan="1}" class="rowspan-td">Min.Temperature of Module</td><td rowspan="1}" class="rowspan-td">°C</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">58617</td><td rowspan="1}" class="rowspan-td">Min.Temperature Position of Module</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">58618</td><td rowspan="1}" class="rowspan-td">Max. Cell Voltage of Module 1</td><td rowspan="1}" class="rowspan-td">mV</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">58619</td><td rowspan="1}" class="rowspan-td">Max. Cell Voltage of Module 2</td><td rowspan="1}" class="rowspan-td">mV</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">58620</td><td rowspan="1}" class="rowspan-td">Max. Cell Voltage of Module 3</td><td rowspan="1}" class="rowspan-td">mV</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">58621</td><td rowspan="1}" class="rowspan-td">Max. Cell Voltage of Module 4</td><td rowspan="1}" class="rowspan-td">mV</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">58622</td><td rowspan="1}" class="rowspan-td">Max. Cell Voltage of Module 5</td><td rowspan="1}" class="rowspan-td">mV</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">58623</td><td rowspan="1}" class="rowspan-td">Max. Cell Voltage of Module 6</td><td rowspan="1}" class="rowspan-td">mV</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">58624</td><td rowspan="1}" class="rowspan-td">Max. Cell Voltage of Module 7</td><td rowspan="1}" class="rowspan-td">mV</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">58625</td><td rowspan="1}" class="rowspan-td">Max. Cell Voltage of Module 8</td><td rowspan="1}" class="rowspan-td">mV</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">58626</td><td rowspan="1}" class="rowspan-td">Min. Cell Voltage of Module 1</td><td rowspan="1}" class="rowspan-td">mV</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">58627</td><td rowspan="1}" class="rowspan-td">Min. Cell Voltage of Module 2</td><td rowspan="1}" class="rowspan-td">mV</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">58628</td><td rowspan="1}" class="rowspan-td">Min. Cell Voltage of Module 3</td><td rowspan="1}" class="rowspan-td">mV</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">58629</td><td rowspan="1}" class="rowspan-td">Min. Cell Voltage of Module 4</td><td rowspan="1}" class="rowspan-td">mV</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">58630</td><td rowspan="1}" class="rowspan-td">Min. Cell Voltage of Module 5</td><td rowspan="1}" class="rowspan-td">mV</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">58631</td><td rowspan="1}" class="rowspan-td">Min. Cell Voltage of Module 6</td><td rowspan="1}" class="rowspan-td">mV</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">58632</td><td rowspan="1}" class="rowspan-td">Min. Cell Voltage of Module 7</td><td rowspan="1}" class="rowspan-td">mV</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">58633</td><td rowspan="1}" class="rowspan-td">Min. Cell Voltage of Module 8</td><td rowspan="1}" class="rowspan-td">mV</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">58635</td><td rowspan="1}" class="rowspan-td">DC Contactor Status</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">58636</td><td rowspan="1}" class="rowspan-td">Fault Module ID</td></tr>
+</tbody></table>
+</div><div data-v-b595fd65=""><div data-v-fdad8a6e="" data-v-b595fd65=""><div data-v-fdad8a6e="" class="right-nav-container"><!----><div data-v-fdad8a6e="" class="sg-scrollbar sg-scrollbar-type-embed"><div class="sg-scrollbar-container" style="height: calc(-558px + 100vh); min-height: 240px; overflow-y: auto;"><div data-v-fdad8a6e="" class="content-view"><div data-v-fdad8a6e="" id="h1_0_0" class="right-nav-container-list top-level anchor-active">Common battery measuring points</div></div></div><!--v-if--><!--v-if--></div></div><!----></div></div></div>

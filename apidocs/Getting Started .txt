@@ -1,0 +1,71 @@
+<div data-v-b595fd65="" data-v-e0def71f="" class="markdown-render" style=""><div data-v-b595fd65="" class="markdown-body"><h1 id="h1_0">Getting Started</h1>
+<p>The Developer Portal provides developers with an efficient and convenient way to build and integrate a wide range of functions and services. All you need to do is choose the API endpoints that match your actual needs. This documentation will provide you with information about the API and how to integrate it.</p>
+<h1 id="h1_1">1. API Usage Guide</h1>
+<p>The APIs outlined in this article support both plaintext and ciphertext calls. The method and instructions for ciphertext calls are explained in the appendix. For details on encryption and decryption methods, refer to <a href="https://developer-api.isolarcloud.com/#/document/md?link_index=219" class="md-herf">Appendix 7: Ciphertext API Call Code Example</a></p>
+<h2 id="h2_2">1.1 Call Steps</h2>
+<p>The caller can obtain the required plant and device information from Developer Portal. The caller first needs to obtain the authorization of the owner of the iSolarCloud plant, and then get the token through the authorization code, and you can obtain the authorized plant and device information through the token.</p>
+<h2 id="h2_3">1.2 Error Code Definitions</h2>
+<p>Refer to <a href="https://developer-api.isolarcloud.com/#/document/md?link_index=224" class="md-herf">Appendix 2: API Error Code Definitions</a></p>
+<h2 id="h2_4">1.3 Constraint Description</h2>
+<p>(1) All user accounts, appkeys, and other relevant information used in all endpoints in this article will be called and have relevant data obtained in strict accordance with the provisions of the Sungrow iSolarCloud Platform Endpoint Open API Authorization Instructions; </p>
+<p>(2) All http requests are made in POST mode; </p>
+<p>(3) To call all platform services, pass in an appkey authorized by the platform. The request body parameter name is: appkey; </p>
+<p>(4) Each API call requires a access-token for identity verification. The request body parameter name is: <font style="color:rgb(43, 43, 43);">Authorization</font>, <font style="color:rgb(43, 43, 43);">The format is:"Bearer " + access_token；</font></p>
+<p>(5) Relevant parameters in the request header are as follows:</p>
+<table>
+<thead>
+<tr>
+<th rowspan="1}" class="rowspan-td"><strong>Parameter name</strong></th><th rowspan="1}" class="rowspan-td"><strong>Type</strong></th><th rowspan="1}" class="rowspan-td"><strong>Length</strong></th><th rowspan="1}" class="rowspan-td"><strong>Description</strong></th><th rowspan="1}" class="rowspan-td"><strong>Required</strong></th></tr>
+</thead>
+<tbody><tr>
+<td rowspan="1}" class="rowspan-td">Content-Type</td><td rowspan="1}" class="rowspan-td">String</td><td rowspan="1}" class="rowspan-td">32</td><td rowspan="1}" class="rowspan-td">Pass: application/json;charset=UTF-8</td><td rowspan="1}" class="rowspan-td">Y</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">x-access-key</td><td rowspan="1}" class="rowspan-td">String</td><td rowspan="1}" class="rowspan-td">32</td><td rowspan="1}" class="rowspan-td">access_key assigned by iSolarCloud</td><td rowspan="1}" class="rowspan-td">Y</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">x-random-secret-key</td><td rowspan="1}" class="rowspan-td">String</td><td rowspan="1}" class="rowspan-td">16</td><td rowspan="1}" class="rowspan-td">The key for this request has a plaintext length of 16 bits and can only be passed after RSA encryption. The output parameter uses a plaintext key for AES decryption. <a href="https://developer-api.isolarcloud.com/#/document/md?link_index=219" class="md-herf">How to get an</a> x-random-secret-key <strong>when passing an encrypted request</strong></td><td rowspan="1}" class="rowspan-td">N</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">Authorization</td><td rowspan="1}" class="rowspan-td">String</td><td rowspan="1}" class="rowspan-td">50</td><td rowspan="1}" class="rowspan-td">Token，example：Bearer {access_token}</td><td rowspan="1}" class="rowspan-td">是</td></tr>
+</tbody></table>
+<p>(6) Pass the following public parameters in the request body (these parameters will not be outlined individually in each endpoint definition).</p>
+<table>
+<thead>
+<tr>
+<th rowspan="1}" class="rowspan-td"><strong>Parameter name</strong></th><th rowspan="1}" class="rowspan-td"><strong>Type</strong></th><th rowspan="1}" class="rowspan-td"><strong>Length</strong></th><th rowspan="1}" class="rowspan-td"><strong>Description</strong></th><th rowspan="1}" class="rowspan-td"><strong>Required</strong></th></tr>
+</thead>
+<tbody><tr>
+<td rowspan="1}" class="rowspan-td">appkey</td><td rowspan="1}" class="rowspan-td">String</td><td rowspan="1}" class="rowspan-td">32</td><td rowspan="1}" class="rowspan-td">Auth code, required (the appkey assigned by the endpoint to the client system)</td><td rowspan="1}" class="rowspan-td">Y</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">lang</td><td rowspan="1}" class="rowspan-td">String</td><td rowspan="1}" class="rowspan-td">6</td><td rowspan="1}" class="rowspan-td">Language (default is Simplified Chinese): <br>Simplified Chinese: _zh_CN <br>English: _en_US <br>Japanese: _ja_JP <br>Spanish: _es_ES <br>German: _de_DE <br>Brazilian Portuguese:_pt_BR <br>Portuguese:_pt_BR <br>French: _fr_FR <br>Italian: _it_IT <br>Korean: _ko_KR <br>Dutch: _nl_NL <br>Polish: _pl_PL <br>Vietnamese:_vi_VN <br>Traditional Chinese: _zh_TW</td><td rowspan="1}" class="rowspan-td">N</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:rgb(43, 43, 43);">api_key_param</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(43, 43, 43);">Map</font></td><td></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(43, 43, 43);">Other public parameter</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(43, 43, 43);">No</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:rgb(43, 43, 43);">timestamp</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(43, 43, 43);">String</font></td><td></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(43, 43, 43);">Greenwich UNIX timestamp（millisecond）</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(43, 43, 43);">No</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:rgb(43, 43, 43);">nonce</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(43, 43, 43);">String</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(43, 43, 43);">32</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(43, 43, 43);">32 bit random string of numbers and letters</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(43, 43, 43);">No</font></td></tr>
+</tbody></table>
+<p>(7) The following public output parameters will not be outlined individually in each API definition.</p>
+<table>
+<thead>
+<tr>
+<th rowspan="1}" class="rowspan-td"><strong>Parameter name</strong></th><th rowspan="1}" class="rowspan-td"><strong>Type</strong></th><th rowspan="1}" class="rowspan-td"><strong>Length</strong></th><th rowspan="1}" class="rowspan-td"><strong>Description</strong></th></tr>
+</thead>
+<tbody><tr>
+<td rowspan="1}" class="rowspan-td">req_serial_num</td><td rowspan="1}" class="rowspan-td">String</td><td rowspan="1}" class="rowspan-td">32</td><td rowspan="1}" class="rowspan-td">Request sequence number</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">result_code</td><td rowspan="1}" class="rowspan-td">String</td><td rowspan="1}" class="rowspan-td">11</td><td rowspan="1}" class="rowspan-td">Error code</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">result_msg</td><td rowspan="1}" class="rowspan-td">String</td><td rowspan="1}" class="rowspan-td">100</td><td rowspan="1}" class="rowspan-td">Prompt message</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">result_data</td><td rowspan="1}" class="rowspan-td">Object</td><td></td><td rowspan="1}" class="rowspan-td">Returned data: Supported types: string, map and list. For specific data types, refer to the corresponding API output parameter definition in this article. The output data outlined in this article can be found under result_data.</td></tr>
+</tbody></table>
+<p>(8)  API domain name: Please select the corresponding API domain name for each site of iSolarCloud when calling API interfaces:</p>
+<p>China: <span class="plain-text-href">https://gateway.isolarcloud.com/</span></p>
+<p>International: <span class="plain-text-href">https://gateway.isolarcloud.com.hk/</span></p>
+<p>Europe: <span class="plain-text-href">https://gateway.isolarcloud.eu/</span></p>
+<p>Australia: <span class="plain-text-href">https://augateway.isolarcloud.com/</span></p>
+<h1 id="h1_5">2. Appendix</h1>
+<p><a href="https://developer-api.isolarcloud.com/#/document/md?link_index=225" class="md-herf">Appendix 1: Device Type Dictionary Definitions</a><br><a href="https://developer-api.isolarcloud.com/#/document/md?link_index=224" class="md-herf">Appendix 2: API Error Code Definitions</a><br><a href="https://developer-api.isolarcloud.com/#/document/md?link_index=223" class="md-herf">Appendix 3: Plaintext API Call Code Example</a><br><a href="https://developer-api.isolarcloud.com/#/document/md?link_index=222" class="md-herf">Appendix 4: RSA Encryption Code Example</a><br><a href="https://developer-api.isolarcloud.com/#/document/md?link_index=221" class="md-herf">Appendix 5: AES Encryption Code Example</a><br><a href="https://developer-api.isolarcloud.com/#/document/md?link_index=220" class="md-herf">Appendix 6: AES Decryption Code Example</a><br><a href="https://developer-api.isolarcloud.com/#/document/md?link_index=219" class="md-herf">Appendix 7: Ciphertext API Call Code Example</a><br><a href="https://developer-api.isolarcloud.com/#/document/md?link_index=229" class="md-herf">Appendix 8: API Call Help Instructions</a><br><a href="https://developer-api.isolarcloud.com/#/document/md?link_index=230" class="md-herf">Appendix 9: Error Code Enumeration</a></p>
+<p><a href="https://developer-api.isolarcloud.com/#/document/md?link_index=257" class="md-herf">Appendix 10: Control Parameter Definitions</a></p>
+<h1 id="h1_6">3.  Common Measuring Point Enumeration</h1>
+<p><a href="https://developer-api.isolarcloud.com/#/document/md?link_index=245" class="md-herf">Common inverter measuring points</a><br><a href="https://developer-api.isolarcloud.com/#/document/md?link_index=242" class="md-herf">Common plant measuring points</a><br><a href="https://developer-api.isolarcloud.com/#/document/md?link_index=241" class="md-herf">Common combiner box measuring points</a><br><a href="https://developer-api.isolarcloud.com/#/document/md?link_index=243" class="md-herf">Common environment monitoring device measuring points</a><br><a href="https://developer-api.isolarcloud.com/#/document/md?link_index=240" class="md-herf">Common meter measuring points</a><br><a href="https://developer-api.isolarcloud.com/#/document/md?link_index=234" class="md-herf">Common communications device measuring points</a><br><a href="https://developer-api.isolarcloud.com/#/document/md?link_index=236" class="md-herf">Common energy storage inverter measuring points</a><br><a href="https://developer-api.isolarcloud.com/#/document/md?link_index=235" class="md-herf">Common communications module measuring points</a><br><a href="https://developer-api.isolarcloud.com/#/document/md?link_index=232" class="md-herf">Common battery measuring points</a><br><a href="https://developer-api.isolarcloud.com/#/document/md?link_index=233" class="md-herf">Common EMS device measuring points</a><br><a href="https://developer-api.isolarcloud.com/#/document/md?link_index=246" class="md-herf">Common LC device measuring points</a><br><a href="https://developer-api.isolarcloud.com/#/document/md?link_index=244" class="md-herf">Common PCS device measuring points</a><br><a href="https://developer-api.isolarcloud.com/#/document/md?link_index=237" class="md-herf">Common CMU device measuring points</a><br><a href="https://developer-api.isolarcloud.com/#/document/md?link_index=239" class="md-herf">Common BSC device measuring points</a><br><a href="https://developer-api.isolarcloud.com/#/document/md?link_index=239" class="md-herf">Common charging station measuring points</a><br><a href="https://developer-api.isolarcloud.com/#/document/md?link_index=238" class="md-herf">Common Measuring Points of Micro-inverters</a></p>
+</div><div data-v-b595fd65=""><div data-v-fdad8a6e="" data-v-b595fd65=""><div data-v-fdad8a6e="" class="right-nav-container"><!----><div data-v-fdad8a6e="" class="sg-scrollbar sg-scrollbar-type-embed"><div class="sg-scrollbar-container" style="height: calc(-558px + 100vh); min-height: 240px; overflow-y: auto;"><div data-v-fdad8a6e="" class="content-view"><div data-v-fdad8a6e="" id="h1_0_0" class="right-nav-container-list top-level">Getting Started</div><div data-v-fdad8a6e="" id="h1_1_1" class="right-nav-container-list top-level">1. API Usage Guide</div><div data-v-fdad8a6e="" id="h2_2_2" class="right-nav-container-list second-level">1.1 Call Steps</div><div data-v-fdad8a6e="" id="h2_3_3" class="right-nav-container-list second-level">1.2 Error Code Definitions</div><div data-v-fdad8a6e="" id="h2_4_4" class="right-nav-container-list second-level anchor-active">1.3 Constraint Description</div><div data-v-fdad8a6e="" id="h1_5_5" class="right-nav-container-list top-level">2. Appendix</div><div data-v-fdad8a6e="" id="h1_6_6" class="right-nav-container-list top-level">3.  Common Measuring Point Enumeration</div></div></div><!--v-if--><!--v-if--></div></div><div data-v-fdad8a6e="" class="to-top-container"><img data-v-fdad8a6e="" class="img" src="data:image/svg+xml,%3csvg%20width='42'%20height='42'%20viewBox='0%200%2042%2042'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3ccircle%20cx='21'%20cy='21'%20r='20'%20fill='white'%20stroke='%23E8E8E8'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M21.207%2018.3284L13.9141%2025.6213L12.4999%2024.2071L20.4999%2016.2071C20.8905%2015.8166%2021.5236%2015.8166%2021.9142%2016.2071L29.9141%2024.2071L28.4999%2025.6213L21.207%2018.3284Z'%20fill='%23222222'/%3e%3c/svg%3e" alt=""></div></div></div></div>

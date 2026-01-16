@@ -1,0 +1,345 @@
+<div data-v-b595fd65="" data-v-e0def71f="" class="markdown-render" style=""><div data-v-b595fd65="" class="markdown-body"><h1 id="h1_0">Common inverter measuring points</h1>
+<table>
+<thead>
+<tr>
+<th rowspan="1}" class="rowspan-td"><strong>Measuring Point ID</strong></th><th rowspan="1}" class="rowspan-td"><strong>Measuring Point Name</strong></th><th rowspan="1}" class="rowspan-td"><strong>Unit</strong></th></tr>
+</thead>
+<tbody><tr>
+<td rowspan="1}" class="rowspan-td">1</td><td rowspan="1}" class="rowspan-td">Yield Today</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">87</td><td rowspan="1}" class="rowspan-td">Yield This Month</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">88</td><td rowspan="1}" class="rowspan-td">Yield This Year</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2</td><td rowspan="1}" class="rowspan-td">Total Yield</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">24</td><td rowspan="1}" class="rowspan-td">Total Active Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">14</td><td rowspan="1}" class="rowspan-td">Total DC Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">18</td><td rowspan="1}" class="rowspan-td">Phase A Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">19</td><td rowspan="1}" class="rowspan-td">Phase B Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">20</td><td rowspan="1}" class="rowspan-td">Phase C Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">21</td><td rowspan="1}" class="rowspan-td">Phase A Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">22</td><td rowspan="1}" class="rowspan-td">Phase B Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">23</td><td rowspan="1}" class="rowspan-td">Phase C Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">25</td><td rowspan="1}" class="rowspan-td">Total Reactive Power</td><td rowspan="1}" class="rowspan-td">var</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">94</td><td rowspan="1}" class="rowspan-td">Array Insulation Resistahce</td><td rowspan="1}" class="rowspan-td">kΩ</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">27</td><td rowspan="1}" class="rowspan-td">Grid Frequency</td><td rowspan="1}" class="rowspan-td">Hz</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7356</td><td rowspan="1}" class="rowspan-td">Total Operation Time</td><td rowspan="1}" class="rowspan-td">h</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">15</td><td rowspan="1}" class="rowspan-td">A-B Line Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">16</td><td rowspan="1}" class="rowspan-td">B-C Line Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">17</td><td rowspan="1}" class="rowspan-td">C-A Line Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">4</td><td rowspan="1}" class="rowspan-td">Internal Air Temperature</td><td rowspan="1}" class="rowspan-td">°C</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">95</td><td rowspan="1}" class="rowspan-td">Bus Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">26</td><td rowspan="1}" class="rowspan-td">Total Power Factor</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">120</td><td rowspan="1}" class="rowspan-td">Number of AFCI Faults</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">90</td><td rowspan="1}" class="rowspan-td">Negative Voltage to Ground</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">43</td><td rowspan="1}" class="rowspan-td">Total Apparent Power</td><td rowspan="1}" class="rowspan-td">VA</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">33</td><td rowspan="1}" class="rowspan-td">Module 1 Temperature</td><td rowspan="1}" class="rowspan-td">°C</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">34</td><td rowspan="1}" class="rowspan-td">Module 2 Temperature</td><td rowspan="1}" class="rowspan-td">°C</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">35</td><td rowspan="1}" class="rowspan-td">Module 3 Temperature</td><td rowspan="1}" class="rowspan-td">°C</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">36</td><td rowspan="1}" class="rowspan-td">Module 4 Temperature</td><td rowspan="1}" class="rowspan-td">°C</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">37</td><td rowspan="1}" class="rowspan-td">Module 5 Temperature</td><td rowspan="1}" class="rowspan-td">°C</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">38</td><td rowspan="1}" class="rowspan-td">Module 6 Temperature</td><td rowspan="1}" class="rowspan-td">°C</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">39</td><td rowspan="1}" class="rowspan-td">Positive Impedance to Ground</td><td rowspan="1}" class="rowspan-td">Ω</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">40</td><td rowspan="1}" class="rowspan-td">Negative Impedance to Ground</td><td rowspan="1}" class="rowspan-td">Ω</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">41</td><td rowspan="1}" class="rowspan-td">Active Power Regulation Actual Value</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">42</td><td rowspan="1}" class="rowspan-td">Reactive Power Regulation Actual Value</td><td rowspan="1}" class="rowspan-td">va</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">67</td><td rowspan="1}" class="rowspan-td">Daily Yield (Theoretical)</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">5</td><td rowspan="1}" class="rowspan-td">MPPT1 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">6</td><td rowspan="1}" class="rowspan-td">MPPT1 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7</td><td rowspan="1}" class="rowspan-td">MPPT2 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">8</td><td rowspan="1}" class="rowspan-td">MPPT2 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">9</td><td rowspan="1}" class="rowspan-td">MPPT3 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10</td><td rowspan="1}" class="rowspan-td">MPPT3 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">45</td><td rowspan="1}" class="rowspan-td">MPPT4 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">46</td><td rowspan="1}" class="rowspan-td">MPPT4 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">47</td><td rowspan="1}" class="rowspan-td">MPPT5 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">48</td><td rowspan="1}" class="rowspan-td">MPPT5 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">49</td><td rowspan="1}" class="rowspan-td">MPPT6 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">50</td><td rowspan="1}" class="rowspan-td">MPPT6 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">51</td><td rowspan="1}" class="rowspan-td">MPPT7 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">52</td><td rowspan="1}" class="rowspan-td">MPPT7 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">53</td><td rowspan="1}" class="rowspan-td">MPPT8 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">54</td><td rowspan="1}" class="rowspan-td">MPPT8 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">55</td><td rowspan="1}" class="rowspan-td">MPPT9 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">56</td><td rowspan="1}" class="rowspan-td">MPPT9 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">57</td><td rowspan="1}" class="rowspan-td">MPPT10 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">58</td><td rowspan="1}" class="rowspan-td">MPPT10 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7401</td><td rowspan="1}" class="rowspan-td">MPPT11 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7451</td><td rowspan="1}" class="rowspan-td">MPPT11 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7402</td><td rowspan="1}" class="rowspan-td">MPPT12 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7452</td><td rowspan="1}" class="rowspan-td">MPPT12 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7723</td><td rowspan="1}" class="rowspan-td">MPPT13 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7724</td><td rowspan="1}" class="rowspan-td">MPPT13 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7725</td><td rowspan="1}" class="rowspan-td">MPPT14 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7726</td><td rowspan="1}" class="rowspan-td">MPPT14 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7727</td><td rowspan="1}" class="rowspan-td">MPPT15 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7728</td><td rowspan="1}" class="rowspan-td">MPPT15 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7729</td><td rowspan="1}" class="rowspan-td">MPPT16 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7730</td><td rowspan="1}" class="rowspan-td">MPPT16 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7731</td><td rowspan="1}" class="rowspan-td">MPPT17 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7732</td><td rowspan="1}" class="rowspan-td">MPPT17 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7733</td><td rowspan="1}" class="rowspan-td">MPPT18 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7734</td><td rowspan="1}" class="rowspan-td">MPPT18 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7735</td><td rowspan="1}" class="rowspan-td">MPPT19 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7736</td><td rowspan="1}" class="rowspan-td">MPPT19 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7737</td><td rowspan="1}" class="rowspan-td">MPPT20 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7738</td><td rowspan="1}" class="rowspan-td">MPPT20 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">96</td><td rowspan="1}" class="rowspan-td">String 1 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">70</td><td rowspan="1}" class="rowspan-td">String 1 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">97</td><td rowspan="1}" class="rowspan-td">String 2 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">71</td><td rowspan="1}" class="rowspan-td">String 2 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">98</td><td rowspan="1}" class="rowspan-td">String 3 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">72</td><td rowspan="1}" class="rowspan-td">String 3 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">99</td><td rowspan="1}" class="rowspan-td">String 4 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">73</td><td rowspan="1}" class="rowspan-td">String 4 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">100</td><td rowspan="1}" class="rowspan-td">String 5 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">74</td><td rowspan="1}" class="rowspan-td">String 5 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">101</td><td rowspan="1}" class="rowspan-td">String 6 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">75</td><td rowspan="1}" class="rowspan-td">String 6 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">102</td><td rowspan="1}" class="rowspan-td">String 7 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">76</td><td rowspan="1}" class="rowspan-td">String 7 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">103</td><td rowspan="1}" class="rowspan-td">String 8 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">77</td><td rowspan="1}" class="rowspan-td">String 8 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">104</td><td rowspan="1}" class="rowspan-td">String 9 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">78</td><td rowspan="1}" class="rowspan-td">String 9 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">105</td><td rowspan="1}" class="rowspan-td">String 10 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">79</td><td rowspan="1}" class="rowspan-td">String 10 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">106</td><td rowspan="1}" class="rowspan-td">String 11 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">80</td><td rowspan="1}" class="rowspan-td">String 11 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">107</td><td rowspan="1}" class="rowspan-td">String 12 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">81</td><td rowspan="1}" class="rowspan-td">String 12 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">108</td><td rowspan="1}" class="rowspan-td">String 13 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">82</td><td rowspan="1}" class="rowspan-td">String 13 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">109</td><td rowspan="1}" class="rowspan-td">String 14 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">83</td><td rowspan="1}" class="rowspan-td">String 14 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">110</td><td rowspan="1}" class="rowspan-td">String 15 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">84</td><td rowspan="1}" class="rowspan-td">String 15 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">111</td><td rowspan="1}" class="rowspan-td">String 16 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">85</td><td rowspan="1}" class="rowspan-td">String 16 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">112</td><td rowspan="1}" class="rowspan-td">String 17 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">92</td><td rowspan="1}" class="rowspan-td">String 17 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">113</td><td rowspan="1}" class="rowspan-td">String 18 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">93</td><td rowspan="1}" class="rowspan-td">String 18 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7166</td><td rowspan="1}" class="rowspan-td">String 19 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">313</td><td rowspan="1}" class="rowspan-td">String 19 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7167</td><td rowspan="1}" class="rowspan-td">String 20 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">314</td><td rowspan="1}" class="rowspan-td">String 20 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7168</td><td rowspan="1}" class="rowspan-td">String 21 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">315</td><td rowspan="1}" class="rowspan-td">String 21 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7169</td><td rowspan="1}" class="rowspan-td">String 22 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">316</td><td rowspan="1}" class="rowspan-td">String 22 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7170</td><td rowspan="1}" class="rowspan-td">String 23 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">317</td><td rowspan="1}" class="rowspan-td">String 23 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7171</td><td rowspan="1}" class="rowspan-td">String 24 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">318</td><td rowspan="1}" class="rowspan-td">String 24 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7172</td><td rowspan="1}" class="rowspan-td">String 25 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">319</td><td rowspan="1}" class="rowspan-td">String 25 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7173</td><td rowspan="1}" class="rowspan-td">String 26 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">320</td><td rowspan="1}" class="rowspan-td">String 26 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7174</td><td rowspan="1}" class="rowspan-td">String 27 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">321</td><td rowspan="1}" class="rowspan-td">String 27 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7175</td><td rowspan="1}" class="rowspan-td">String 28 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">322</td><td rowspan="1}" class="rowspan-td">String 28 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7176</td><td rowspan="1}" class="rowspan-td">String 29 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">323</td><td rowspan="1}" class="rowspan-td">String 29 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7177</td><td rowspan="1}" class="rowspan-td">String 30 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">324</td><td rowspan="1}" class="rowspan-td">String 30 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7178</td><td rowspan="1}" class="rowspan-td">String 31 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">325</td><td rowspan="1}" class="rowspan-td">String 31 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7179</td><td rowspan="1}" class="rowspan-td">String 32 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">326</td><td rowspan="1}" class="rowspan-td">String 32 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7707</td><td rowspan="1}" class="rowspan-td">String 33 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7708</td><td rowspan="1}" class="rowspan-td">String 33 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7709</td><td rowspan="1}" class="rowspan-td">String 34 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7710</td><td rowspan="1}" class="rowspan-td">String 34 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7711</td><td rowspan="1}" class="rowspan-td">String 35 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7712</td><td rowspan="1}" class="rowspan-td">String 35 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7713</td><td rowspan="1}" class="rowspan-td">String 36 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7714</td><td rowspan="1}" class="rowspan-td">String 36 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7715</td><td rowspan="1}" class="rowspan-td">String 37 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7716</td><td rowspan="1}" class="rowspan-td">String 37 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7717</td><td rowspan="1}" class="rowspan-td">String 38 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7718</td><td rowspan="1}" class="rowspan-td">String 38 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7719</td><td rowspan="1}" class="rowspan-td">String 39 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7720</td><td rowspan="1}" class="rowspan-td">String 39 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7721</td><td rowspan="1}" class="rowspan-td">String 40 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7722</td><td rowspan="1}" class="rowspan-td">String 40 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">11</td><td rowspan="1}" class="rowspan-td">PV1 Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">12</td><td rowspan="1}" class="rowspan-td">PV2 Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13</td><td rowspan="1}" class="rowspan-td">PV3 Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">59</td><td rowspan="1}" class="rowspan-td">PV4 Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">60</td><td rowspan="1}" class="rowspan-td">PV5 Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">61</td><td rowspan="1}" class="rowspan-td">PV6 Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">62</td><td rowspan="1}" class="rowspan-td">PV7 Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">63</td><td rowspan="1}" class="rowspan-td">PV8 Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">64</td><td rowspan="1}" class="rowspan-td">PV9 Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">65</td><td rowspan="1}" class="rowspan-td">PV10 Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">3</td><td rowspan="1}" class="rowspan-td">Total On-grid Running Time</td><td rowspan="1}" class="rowspan-td">h</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">29</td><td rowspan="1}" class="rowspan-td">Operating status,0-Grid-connected operation,1024-Operation in maintenance mode,2048-Forced mode operation,4096-Off-grid operation,8192-Open loop,16384-Operation in energy dispatch mode,16385-Operation in energy dispatch mode,4369-Uninitialized,32768-Shut down,4864-Awaiting startup,5376-Emergency stop,5120-Standby,4608-Initial standby,5632-Starting up,37120-Running with alarm,33024-Derated running,33280-Dispatched running,21760-Shut down due to faults,5888-AFCI self-test,1-Shut down,2-Awaiting startup,4-Emergency stop,8-Standby,16-Initial standby,32-Starting up,64-The inverter is successfully connected to the grid and operating normally.,128-Derated running,256-Operation fault,512-Update failed,9472-LCD and DSP communication fault,9473-Restarting,16435-Low insulation resistance,16439-Insulation board anomaly,20992-Shutting down,33792-Running under anti-PID condition,6400-Security mode,65-Off-grid charging,6144-Smart plant building status,20-Microgrid operation</td><td></td></tr>
+</tbody></table>
+<p>You can get more open measuring point definitions from the getOpenPointInfo endpoint.</p>
+</div><div data-v-b595fd65=""><div data-v-fdad8a6e="" data-v-b595fd65=""><div data-v-fdad8a6e="" class="right-nav-container"><!----><div data-v-fdad8a6e="" class="sg-scrollbar sg-scrollbar-type-embed"><div class="sg-scrollbar-container" style="height: calc(-558px + 100vh); min-height: 240px; overflow-y: auto;"><div data-v-fdad8a6e="" class="content-view"><div data-v-fdad8a6e="" id="h1_0_0" class="right-nav-container-list top-level anchor-active">Common inverter measuring points</div></div></div><!--v-if--><!--v-if--></div></div><!----></div></div></div>

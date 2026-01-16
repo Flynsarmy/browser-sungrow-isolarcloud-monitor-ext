@@ -1,0 +1,13 @@
+<div data-v-b595fd65="" data-v-e0def71f="" class="markdown-render" style=""><div data-v-b595fd65="" class="markdown-body"><h1 id="h1_0">Appendix 8: API Call Help Instructions</h1>
+<p>The API call addresses outlined in this document do not represent the final call addresses. Refer to the API call addresses on the final API call authorization instructions.</p>
+<h3 id="h3_1">1. API Call Requirements:</h3>
+<p> It has been approved in Sungrow developer portal and authorized by iSolarCloud plant owners.  </p>
+<h3 id="h3_2">2. API Call Address:</h3>
+<p>API domain name: Please select the corresponding API domain name for each site of iSolarCloud when calling API interfaces:</p>
+<p>China: <span class="plain-text-href">https://gateway.isolarcloud.com/</span> </p>
+<p>International: <span class="plain-text-href">https://gateway.isolarcloud.com.hk/</span> </p>
+<p>Europe: <span class="plain-text-href">https://gateway.isolarcloud.eu/</span> </p>
+<p>Australia: <span class="plain-text-href">https://augateway.isolarcloud.com/</span></p>
+<h3 id="h3_3">3. API Call Steps:</h3>
+<p><img src="https://isc-file.oss-cn-hangzhou.aliyuncs.com/openapi/appendix/auth_flow_en_us.png" alt=""></p>
+</div><div data-v-b595fd65=""><div data-v-fdad8a6e="" data-v-b595fd65=""><div data-v-fdad8a6e="" class="right-nav-container"><!----><div data-v-fdad8a6e="" class="sg-scrollbar sg-scrollbar-type-embed"><div class="sg-scrollbar-container" style="height: calc(-558px + 100vh); min-height: 240px; overflow-y: auto;"><div data-v-fdad8a6e="" class="content-view"><div data-v-fdad8a6e="" id="h1_0_0" class="right-nav-container-list top-level anchor-active">Appendix 8: API Call Help Instructions</div><div data-v-fdad8a6e="" id="h3_1_1" class="right-nav-container-list third-level">1. API Call Requirements:</div><div data-v-fdad8a6e="" id="h3_2_2" class="right-nav-container-list third-level">2. API Call Address:</div><div data-v-fdad8a6e="" id="h3_3_3" class="right-nav-container-list third-level">3. API Call Steps:</div></div></div><!--v-if--><!--v-if--></div></div><!----></div></div></div>

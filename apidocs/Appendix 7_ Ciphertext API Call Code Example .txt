@@ -1,0 +1,61 @@
+<div data-v-b595fd65="" data-v-e0def71f="" class="markdown-render" style=""><div data-v-b595fd65="" class="markdown-body"><h1 id="h1_0">Appendix 7: API Encrypted Call Sample Code</h1>
+
+      <div class="md-copy">
+      <pre><code><span class="hljs-number">1.</span> Header encapsulation
+<span class="hljs-type">String</span> <span class="hljs-variable">publicKey</span> <span class="hljs-operator">=</span> <span class="hljs-string">"xxxxx"</span> ;<span class="hljs-comment">// publicKey assigned by iSolarCloud</span>
+<span class="hljs-comment">// publicEncrypt methods in Appendix 3</span>
+String x-random-secret-key = publicEncrypt(<span class="hljs-string">"A123456zA123456z"</span>, publicKey) ;<span class="hljs-comment">//x-random-secret-key could be different in different requests</span>
+String x-access-key = <span class="hljs-string">"i71w7tskmns5********i3b8zqncvay3"</span> ;<span class="hljs-comment">//accessKey assigned by iSolarCloud</span>
+
+<span class="hljs-number">2.</span> Body encapsulation
+<span class="hljs-comment">// Use login API as an example，Besides request body parameter  in 2.1, api_key_param is also in need：</span>
+<span class="hljs-comment">//nonce is a 32 bit random string of letters and numbers, it should be different in every call;</span>
+<span class="hljs-comment">//timestamp is UNIX time stamp in milliseconds，if error code E913 is returned,</span>
+<span class="hljs-comment">// Use GET method to call  https://API domain name which is provided by iSolarCloud/timestamp</span>
+<span class="hljs-type">String</span> <span class="hljs-variable">requestBody</span> <span class="hljs-operator">=</span>
+{
+    <span class="hljs-string">"api_key_param"</span>: {
+        <span class="hljs-string">"nonce"</span>: <span class="hljs-string">"cb360459bd624c6ab15308c4b6847856"</span>,
+        <span class="hljs-string">"timestamp"</span>: <span class="hljs-string">"1616725497384"</span>
+    },
+    <span class="hljs-string">"appkey"</span>: <span class="hljs-string">"***********"</span>,
+    <span class="hljs-string">"login_type"</span>: <span class="hljs-string">"1"</span>,
+    <span class="hljs-string">"user_account"</span>: <span class="hljs-string">"******"</span>,
+    <span class="hljs-string">"user_password"</span>: <span class="hljs-string">"******"</span>
+};	
+                                                                                                                              
+<span class="hljs-number">3.</span> Request call
+<span class="hljs-type">CloseableHttpClient</span> <span class="hljs-variable">httpclient</span> <span class="hljs-operator">=</span> HttpClients.createDefault();
+<span class="hljs-type">String</span> <span class="hljs-variable">url</span> <span class="hljs-operator">=</span> <span class="hljs-string">"https://API domain name which is provided by iSolarCloud/v1/userService/login"</span>;
+<span class="hljs-type">HttpPost</span> <span class="hljs-variable">httppost</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">HttpPost</span>(url);
+<span class="hljs-comment">// Request header</span>
+httppost.addHeader(<span class="hljs-string">"x-random-secret-key"</span>, x-random-secret-key);
+httppost.addHeader(<span class="hljs-string">"x-access-key"</span>, x-access-key);
+...... <span class="hljs-comment">//Set other request header</span>
+<span class="hljs-comment">// Encryption methods in Appendix 4</span>
+<span class="hljs-type">String</span> <span class="hljs-variable">encryptedRequestBody</span> <span class="hljs-operator">=</span> encrypt(requestBody, <span class="hljs-string">"A123456zA123456z"</span>) ; 
+<span class="hljs-type">StringEntity</span> <span class="hljs-variable">strEntity</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">StringEntity</span>(encryptedRequestBody);
+strEntity.setContentType(<span class="hljs-string">"application/json"</span>);
+httppost.setEntity(strEntity);
+<span class="hljs-type">CloseableHttpResponse</span> <span class="hljs-variable">response</span> <span class="hljs-operator">=</span> httpclient.execute(httppost);
+<span class="hljs-type">HttpEntity</span> <span class="hljs-variable">entity</span> <span class="hljs-operator">=</span> response.getEntity();
+<span class="hljs-type">InputStream</span> <span class="hljs-variable">inputStream</span> <span class="hljs-operator">=</span> entity.getContent();
+<span class="hljs-type">InputStreamReader</span> <span class="hljs-variable">inputStreamReader</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">InputStreamReader</span>(inputStream, <span class="hljs-string">"UTF-8"</span>);
+<span class="hljs-type">BufferedReader</span> <span class="hljs-variable">reader</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">BufferedReader</span>(inputStreamReader);
+<span class="hljs-type">StringBuilder</span> <span class="hljs-variable">responseBody</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">StringBuilder</span>();
+<span class="hljs-type">String</span> <span class="hljs-variable">s</span> <span class="hljs-operator">=</span> <span class="hljs-literal">null</span>;
+<span class="hljs-keyword">while</span> (((s = reader.readLine()) != <span class="hljs-literal">null</span>))
+{
+    responseBody.append(s);
+}
+reader.close();
+<span class="hljs-comment">// Decryption methods in Appendix 5</span>
+<span class="hljs-type">String</span> <span class="hljs-variable">decryptedResponseBody</span> <span class="hljs-operator">=</span> decrypt(responseBody, <span class="hljs-string">"A123456zA123456z"</span>) ;</code></pre>
+      <div class="md-copy-button">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="2.91846" y="2.91858" width="10.8333" height="10.8333" rx="2.08333" stroke="#999999" stroke-width="1.66667"></rect>
+          <path d="M13.75 6.25H15C16.1506 6.25 17.0833 7.18274 17.0833 8.33333V15C17.0833 16.1506 16.1506 17.0833 15 17.0833H8.33333C7.18274 17.0833 6.25 16.1506 6.25 15V13.75" stroke="#999999" stroke-width="1.66667"></path>
+        </svg>
+      </div>
+      </div>
+      </div><div data-v-b595fd65=""><div data-v-fdad8a6e="" data-v-b595fd65=""><div data-v-fdad8a6e="" class="right-nav-container"><!----><div data-v-fdad8a6e="" class="sg-scrollbar sg-scrollbar-type-embed"><div class="sg-scrollbar-container" style="height: calc(-558px + 100vh); min-height: 240px; overflow-y: auto;"><div data-v-fdad8a6e="" class="content-view"><div data-v-fdad8a6e="" id="h1_0_0" class="right-nav-container-list top-level anchor-active">Appendix 7: API Encrypted Call Sample Code</div></div></div><!--v-if--><!--v-if--></div></div><!----></div></div></div>

@@ -1,0 +1,62 @@
+<div data-v-b595fd65="" data-v-e0def71f="" class="markdown-render" style=""><div data-v-b595fd65="" class="markdown-body"><h1 id="h1_0">Appendix 4: RSA Encryption Code Example</h1>
+
+      <div class="md-copy">
+      <pre><code><span class="hljs-keyword">import</span> org.apache.commons.codec.binary.Base64;
+<span class="hljs-keyword">import</span> org.apache.commons.io.IOUtils;
+<span class="hljs-comment">/**
+* RSA Encryption rule：
+*Secret key format：PKCS#8
+*Output format：Base64
+*Character set：utf8 encode；
+**/</span>
+<span class="hljs-keyword">public</span> String <span class="hljs-title function_">publicEncrypt</span><span class="hljs-params">(String data, String publicKey)</span> {
+    <span class="hljs-keyword">try</span> {
+        <span class="hljs-type">KeyFactory</span> <span class="hljs-variable">keyFactory</span> <span class="hljs-operator">=</span> KeyFactory.getInstance(<span class="hljs-string">"RSA"</span>);
+        <span class="hljs-type">X509EncodedKeySpec</span> <span class="hljs-variable">x509KeySpec</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">X509EncodedKeySpec</span>(Base64.decodeBase64(publicKey));
+        <span class="hljs-type">RSAPublicKey</span> <span class="hljs-variable">key</span> <span class="hljs-operator">=</span> (RSAPublicKey)keyFactory.generatePublic(x509KeySpec);
+        <span class="hljs-type">Cipher</span> <span class="hljs-variable">cipher</span> <span class="hljs-operator">=</span> Cipher.getInstance(<span class="hljs-string">"RSA"</span>);
+        cipher.init(Cipher.ENCRYPT_MODE, key);
+        <span class="hljs-keyword">return</span> Base64.encodeBase64URLSafeString(rsaSplitCodec(cipher, Cipher.ENCRYPT_MODE, 
+        data.getBytes(<span class="hljs-string">"UTF-8"</span>), key.getModulus().bitLength()));
+    } <span class="hljs-keyword">catch</span> (Exception var3) {
+        <span class="hljs-comment">//Deal Exception</span>
+    }
+}
+                                                                                                                                        
+<span class="hljs-keyword">private</span> <span class="hljs-type">byte</span>[] rsaSplitCodec(Cipher cipher, <span class="hljs-type">int</span> opmode, <span class="hljs-type">byte</span>[] datas, <span class="hljs-type">int</span> keySize){
+    <span class="hljs-type">int</span> <span class="hljs-variable">maxBlock</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">if</span>(opmode == Cipher.DECRYPT_MODE){
+        maxBlock = keySize / <span class="hljs-number">8</span>;
+    }<span class="hljs-keyword">else</span>{
+        maxBlock = keySize / <span class="hljs-number">8</span> - <span class="hljs-number">11</span>;
+    }
+    <span class="hljs-type">ByteArrayOutputStream</span> <span class="hljs-variable">out</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">ByteArrayOutputStream</span>();
+    <span class="hljs-type">int</span> <span class="hljs-variable">offSet</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>;
+    <span class="hljs-type">byte</span>[] buff;
+    <span class="hljs-type">int</span> <span class="hljs-variable">i</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">try</span>{
+        <span class="hljs-keyword">while</span>(datas.length &gt; offSet){
+            <span class="hljs-keyword">if</span>(datas.length-offSet &gt; maxBlock){
+                buff = cipher.doFinal(datas, offSet, maxBlock);
+            }<span class="hljs-keyword">else</span>{
+                buff = cipher.doFinal(datas, offSet, datas.length-offSet);
+            }
+            out.write(buff, <span class="hljs-number">0</span>, buff.length);
+            i++;
+            offSet = i * maxBlock;
+        }
+    }<span class="hljs-keyword">catch</span>(Exception e){
+        <span class="hljs-comment">//Deal Exception</span>
+    }
+    <span class="hljs-type">byte</span>[] resultDatas = out.toByteArray();
+    IOUtils.closeQuietly(out);
+    <span class="hljs-keyword">return</span> resultDatas;
+}</code></pre>
+      <div class="md-copy-button">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="2.91846" y="2.91858" width="10.8333" height="10.8333" rx="2.08333" stroke="#999999" stroke-width="1.66667"></rect>
+          <path d="M13.75 6.25H15C16.1506 6.25 17.0833 7.18274 17.0833 8.33333V15C17.0833 16.1506 16.1506 17.0833 15 17.0833H8.33333C7.18274 17.0833 6.25 16.1506 6.25 15V13.75" stroke="#999999" stroke-width="1.66667"></path>
+        </svg>
+      </div>
+      </div>
+      </div><div data-v-b595fd65=""><div data-v-fdad8a6e="" data-v-b595fd65=""><div data-v-fdad8a6e="" class="right-nav-container"><!----><div data-v-fdad8a6e="" class="sg-scrollbar sg-scrollbar-type-embed"><div class="sg-scrollbar-container" style="height: calc(-558px + 100vh); min-height: 240px; overflow-y: auto;"><div data-v-fdad8a6e="" class="content-view"><div data-v-fdad8a6e="" id="h1_0_0" class="right-nav-container-list top-level anchor-active">Appendix 4: RSA Encryption Code Example</div></div></div><!--v-if--><!--v-if--></div></div><!----></div></div></div>

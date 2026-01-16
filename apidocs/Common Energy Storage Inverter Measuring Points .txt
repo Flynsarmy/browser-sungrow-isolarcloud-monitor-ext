@@ -1,0 +1,226 @@
+<div data-v-b595fd65="" data-v-e0def71f="" class="markdown-render" style=""><div data-v-b595fd65="" class="markdown-body"><h1 id="h1_0">Common energy storage inverter measuring points</h1>
+<table>
+<thead>
+<tr>
+<th rowspan="1}" class="rowspan-td"><strong>Measuring Point ID</strong></th><th rowspan="1}" class="rowspan-td"><strong>Measuring Point Name</strong></th><th rowspan="1}" class="rowspan-td"><strong>Unit</strong></th></tr>
+</thead>
+<tbody><tr>
+<td rowspan="1}" class="rowspan-td">13011</td><td rowspan="1}" class="rowspan-td">Active Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13003</td><td rowspan="1}" class="rowspan-td">Total DC Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13157</td><td rowspan="1}" class="rowspan-td">Phase A Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13158</td><td rowspan="1}" class="rowspan-td">Phase B Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13159</td><td rowspan="1}" class="rowspan-td">Phase C Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13008</td><td rowspan="1}" class="rowspan-td">Phase A Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13009</td><td rowspan="1}" class="rowspan-td">Phase B Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13010</td><td rowspan="1}" class="rowspan-td">Phase C Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13012</td><td rowspan="1}" class="rowspan-td">Total Reactive Power</td><td rowspan="1}" class="rowspan-td">var</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13160</td><td rowspan="1}" class="rowspan-td">Array Insulation Resistance</td><td rowspan="1}" class="rowspan-td">kΩ</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13007</td><td rowspan="1}" class="rowspan-td">Grid Frequency</td><td rowspan="1}" class="rowspan-td">Hz</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">18065</td><td rowspan="1}" class="rowspan-td">Phase A Backup Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">18066</td><td rowspan="1}" class="rowspan-td">Phase B Backup Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">18067</td><td rowspan="1}" class="rowspan-td">Phase C Backup Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">18068</td><td rowspan="1}" class="rowspan-td">Total Backup Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">18062</td><td rowspan="1}" class="rowspan-td">Phase A Backup Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">18063</td><td rowspan="1}" class="rowspan-td">Phase B Backup Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">18064</td><td rowspan="1}" class="rowspan-td">Phase C Backup Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13020</td><td rowspan="1}" class="rowspan-td">Total Operation Time</td><td rowspan="1}" class="rowspan-td">H</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13134</td><td rowspan="1}" class="rowspan-td">Total PV Yield</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13112</td><td rowspan="1}" class="rowspan-td">Daily PV Yield</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13187</td><td rowspan="1}" class="rowspan-td">AC Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13188</td><td rowspan="1}" class="rowspan-td">AC Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13004</td><td rowspan="1}" class="rowspan-td">A-B Line Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13005</td><td rowspan="1}" class="rowspan-td">B-C Line Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13006</td><td rowspan="1}" class="rowspan-td">C-A Line Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13019</td><td rowspan="1}" class="rowspan-td">Internal Air Temperature</td><td rowspan="1}" class="rowspan-td">°C</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13161</td><td rowspan="1}" class="rowspan-td">Bus Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13013</td><td rowspan="1}" class="rowspan-td">Total Power Factor</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13001</td><td rowspan="1}" class="rowspan-td">MPPT1 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13002</td><td rowspan="1}" class="rowspan-td">MPPT1 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13105</td><td rowspan="1}" class="rowspan-td">MPPT2 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13106</td><td rowspan="1}" class="rowspan-td">MPPT2 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13107</td><td rowspan="1}" class="rowspan-td">MPPT3 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13108</td><td rowspan="1}" class="rowspan-td">MPPT3 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13109</td><td rowspan="1}" class="rowspan-td">MPPT4 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13110</td><td rowspan="1}" class="rowspan-td">MPPT4 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13122</td><td rowspan="1}" class="rowspan-td">Feed-in Energy Today</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13125</td><td rowspan="1}" class="rowspan-td">Total Feed-in Energy</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13147</td><td rowspan="1}" class="rowspan-td">Energy Purchased Today</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13148</td><td rowspan="1}" class="rowspan-td">Total Purchased Energy</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13149</td><td rowspan="1}" class="rowspan-td">Purchased Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13121</td><td rowspan="1}" class="rowspan-td">Feed-in Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13173</td><td rowspan="1}" class="rowspan-td">Feed-in Energy Today (PV)</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13175</td><td rowspan="1}" class="rowspan-td">Total Feed-in Energy (PV)</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13141</td><td rowspan="1}" class="rowspan-td">Battery Level (SOC)</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13029</td><td rowspan="1}" class="rowspan-td">Battery Discharging Energy Today</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13028</td><td rowspan="1}" class="rowspan-td">Battery Charging Energy Today</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13138</td><td rowspan="1}" class="rowspan-td">Battery Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13139</td><td rowspan="1}" class="rowspan-td">Battery Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13035</td><td rowspan="1}" class="rowspan-td">Total Battery Discharging Energy</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13034</td><td rowspan="1}" class="rowspan-td">Total Battery Charging Energy</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13142</td><td rowspan="1}" class="rowspan-td">Battery Health (SOH)</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13143</td><td rowspan="1}" class="rowspan-td">Battery Temperature</td><td rowspan="1}" class="rowspan-td">°C</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13162</td><td rowspan="1}" class="rowspan-td">Max. Charging Current (BMS)</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13163</td><td rowspan="1}" class="rowspan-td">Max. Discharging Current (BMS)</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13174</td><td rowspan="1}" class="rowspan-td">Daily Battery Charging Energy from PV</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13176</td><td rowspan="1}" class="rowspan-td">Total Battery Charging Energy from PV</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13126</td><td rowspan="1}" class="rowspan-td">Battery Charging Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13150</td><td rowspan="1}" class="rowspan-td">Battery Discharging Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13199</td><td rowspan="1}" class="rowspan-td">Daily Load Consumption</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13137</td><td rowspan="1}" class="rowspan-td">Total Load Energy Consumption from PV</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13119</td><td rowspan="1}" class="rowspan-td">Load Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13130</td><td rowspan="1}" class="rowspan-td">Total Load Consumption</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13116</td><td rowspan="1}" class="rowspan-td">Daily Direct Energy Consumption</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13144</td><td rowspan="1}" class="rowspan-td">Daily Self-consumption Rate</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13016</td><td rowspan="1}" class="rowspan-td">Total Charging Time</td><td rowspan="1}" class="rowspan-td">H</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13017</td><td rowspan="1}" class="rowspan-td">Total Discharging Time</td><td rowspan="1}" class="rowspan-td">H</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13018</td><td rowspan="1}" class="rowspan-td">Total Apparent Power</td><td rowspan="1}" class="rowspan-td">VA</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13023</td><td rowspan="1}" class="rowspan-td">Daily Charging Time</td><td rowspan="1}" class="rowspan-td">H</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13024</td><td rowspan="1}" class="rowspan-td">Daily Discharging Time</td><td rowspan="1}" class="rowspan-td">H</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13118</td><td rowspan="1}" class="rowspan-td">Annual Direct Energy Consumption</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13165</td><td rowspan="1}" class="rowspan-td">MDSP Off-Grid Start Up Status</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13166</td><td rowspan="1}" class="rowspan-td">SDSP Working Mode</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13167</td><td rowspan="1}" class="rowspan-td">SDSP Off-grid Start Status</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13168</td><td rowspan="1}" class="rowspan-td">DI Status</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13169</td><td rowspan="1}" class="rowspan-td">Battery Voltage (BMS)</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13170</td><td rowspan="1}" class="rowspan-td">Battery SOC (BMS)</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13171</td><td rowspan="1}" class="rowspan-td">EMS Status</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13172</td><td rowspan="1}" class="rowspan-td">Daily Self-Sufficiency Rate</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13140</td><td rowspan="1}" class="rowspan-td">Battery Capacity (kWh)</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">18075</td><td rowspan="1}" class="rowspan-td">Channel 2 Total Apparent Power</td><td rowspan="1}" class="rowspan-td">VA</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">18076</td><td rowspan="1}" class="rowspan-td">Channel 2 Phase A Apparent Power</td><td rowspan="1}" class="rowspan-td">VA</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">18077</td><td rowspan="1}" class="rowspan-td">Channel 2 Phase B Apparent Power</td><td rowspan="1}" class="rowspan-td">VA</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">18078</td><td rowspan="1}" class="rowspan-td">Channel 2 Phase C Apparent Power</td><td rowspan="1}" class="rowspan-td">VA</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">18079</td><td rowspan="1}" class="rowspan-td">Channel 2 Total Active Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">18080</td><td rowspan="1}" class="rowspan-td">Channel 2 Phase A Active Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">18081</td><td rowspan="1}" class="rowspan-td">Channel 2 Phase B Active Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">18082</td><td rowspan="1}" class="rowspan-td">Channel 2 Phase C Active Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">18083</td><td rowspan="1}" class="rowspan-td">Channel 2 Total Reactive Power</td><td rowspan="1}" class="rowspan-td">var</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">18084</td><td rowspan="1}" class="rowspan-td">Channel 2 Phase A Reactive Power</td><td rowspan="1}" class="rowspan-td">var</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">18085</td><td rowspan="1}" class="rowspan-td">Channel 2 Phase B Reactive Power</td><td rowspan="1}" class="rowspan-td">var</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">18086</td><td rowspan="1}" class="rowspan-td">Channel 2 Phase C Reactive Power</td><td rowspan="1}" class="rowspan-td">var</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">18087</td><td rowspan="1}" class="rowspan-td">Channel 2 Power Factor</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">18088</td><td rowspan="1}" class="rowspan-td">Channel 2 Total Purchased Energy</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">18089</td><td rowspan="1}" class="rowspan-td">Channel 2 Phase A Purchased Energy</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">18090</td><td rowspan="1}" class="rowspan-td">Channel 2 Phase B Purchased Energy</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">18091</td><td rowspan="1}" class="rowspan-td">Channel 2 Phase C Purchased Energy</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">18092</td><td rowspan="1}" class="rowspan-td">Channel 2 Total Feed-in Energy</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">18093</td><td rowspan="1}" class="rowspan-td">Channel 2 Phase A Feed-in Energy</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">18094</td><td rowspan="1}" class="rowspan-td">Channel 2 Phase B Feed-in Energy</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">18095</td><td rowspan="1}" class="rowspan-td">Channel 2 Phase C Feed-in Energy</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">18103</td><td rowspan="1}" class="rowspan-td">Phase A Backup Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">18104</td><td rowspan="1}" class="rowspan-td">Phase B Backup Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">18105</td><td rowspan="1}" class="rowspan-td">Phase C Backup Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">18108</td><td rowspan="1}" class="rowspan-td">Meter Phase-A Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">18109</td><td rowspan="1}" class="rowspan-td">Meter Phase-B Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">18110</td><td rowspan="1}" class="rowspan-td">Meter Phase-C Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13146</td><td rowspan="1}" class="rowspan-td">Operating status,0-Grid-connected operation,1024-Operation in maintenance mode,2048-Forced mode operation,4096-Off-grid,8192-Open loop,16384-Operation in energy dispatch mode,16385-Operation in emergency charging mode,4369-Uninitialized,32768-Shut down,4864-Awaiting startup,5376-Emergency stop,5120-Standby,4608-Initial standby,5632-Starting up,37120-Running with alarm,33024-Derated running,33280-Dispatched running,21760-Shut down due to faults,5888-AFCI self-test,1-Shut down,2-Awaiting startup,4-Emergency stop,8-Standby,16-Initial standby,32-Starting up,64-The inverter is successfully connected to the grid and operating normally,128-Derated running,256-Operation fault,512-Update failed,9472-LCD and DSP communication fault,9473-Restarting,16435-Low insulation resistance,16439-Insulation board anomaly,20992-Shutting down,33792-Running under anti-PID condition,6400-Security mode,65-Off-grid DC charging,20-Microgrid operation</td><td></td></tr>
+</tbody></table>
+</div><div data-v-b595fd65=""><div data-v-fdad8a6e="" data-v-b595fd65=""><div data-v-fdad8a6e="" class="right-nav-container"><!----><div data-v-fdad8a6e="" class="sg-scrollbar sg-scrollbar-type-embed"><div class="sg-scrollbar-container" style="height: calc(-558px + 100vh); min-height: 240px; overflow-y: auto;"><div data-v-fdad8a6e="" class="content-view"><div data-v-fdad8a6e="" id="h1_0_0" class="right-nav-container-list top-level anchor-active">Common energy storage inverter measuring points</div></div></div><!--v-if--><!--v-if--></div></div><!----></div></div></div>

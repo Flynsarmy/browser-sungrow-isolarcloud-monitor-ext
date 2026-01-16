@@ -1,0 +1,24 @@
+<div data-v-b595fd65="" data-v-e0def71f="" class="markdown-render" style=""><div data-v-b595fd65="" class="markdown-body"><h1 id="h1_0">Common BSC device measuring points</h1>
+<table>
+<thead>
+<tr>
+<th rowspan="1}" class="rowspan-td"><strong>Measuring Point ID</strong></th><th rowspan="1}" class="rowspan-td"><strong>Measuring Point Name</strong></th><th rowspan="1}" class="rowspan-td"><strong>Unit</strong></th></tr>
+</thead>
+<tbody><tr>
+<td rowspan="1}" class="rowspan-td">59008</td><td rowspan="1}" class="rowspan-td">Highest cell voltage</td><td rowspan="1}" class="rowspan-td">mV</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">59010</td><td rowspan="1}" class="rowspan-td">Lowest Cell Voltage</td><td rowspan="1}" class="rowspan-td">mV</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">59012</td><td rowspan="1}" class="rowspan-td">Highest cell temperature</td><td rowspan="1}" class="rowspan-td">°C</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">59014</td><td rowspan="1}" class="rowspan-td">Min Cell Temperature</td><td rowspan="1}" class="rowspan-td">°C</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">59064</td><td rowspan="1}" class="rowspan-td">Max Cell Voltage Position (#BMU~#Cell)</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">59065</td><td rowspan="1}" class="rowspan-td">Min Cell Voltage Position (#BMU~#Cell)</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">59066</td><td rowspan="1}" class="rowspan-td">Max Cell Temperature Position (BMU~#Cell)</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">59067</td><td rowspan="1}" class="rowspan-td">Min Cell Temperature Position (BMU~#Cell)</td></tr>
+</tbody></table>
+</div><div data-v-b595fd65=""><div data-v-fdad8a6e="" data-v-b595fd65=""><div data-v-fdad8a6e="" class="right-nav-container"><!----><div data-v-fdad8a6e="" class="sg-scrollbar sg-scrollbar-type-embed"><div class="sg-scrollbar-container" style="height: calc(-558px + 100vh); min-height: 240px; overflow-y: auto;"><div data-v-fdad8a6e="" class="content-view"><div data-v-fdad8a6e="" id="h1_0_0" class="right-nav-container-list top-level anchor-active">Common BSC device measuring points</div></div></div><!--v-if--><!--v-if--></div></div><!----></div></div></div>

@@ -1,0 +1,65 @@
+<div data-v-b595fd65="" data-v-e0def71f="" class="markdown-render" style=""><div data-v-b595fd65="" class="markdown-body"><h1 id="h1_0">Common combiner box measuring points</h1>
+<table>
+<thead>
+<tr>
+<th rowspan="1}" class="rowspan-td"><strong>Measuring Point ID</strong></th><th rowspan="1}" class="rowspan-td"><strong>Measuring Point Name</strong></th><th rowspan="1}" class="rowspan-td"><strong>Unit</strong></th></tr>
+</thead>
+<tbody><tr>
+<td rowspan="1}" class="rowspan-td">1005</td><td rowspan="1}" class="rowspan-td">Total DC Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">1001</td><td rowspan="1}" class="rowspan-td">DC Bus Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">1006</td><td rowspan="1}" class="rowspan-td">Total DC Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">1002</td><td rowspan="1}" class="rowspan-td">Interior Temperature</td><td rowspan="1}" class="rowspan-td">°C</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">1009</td><td rowspan="1}" class="rowspan-td">Ipv-1</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">1010</td><td rowspan="1}" class="rowspan-td">Ipv-2</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">1011</td><td rowspan="1}" class="rowspan-td">Ipv-3</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">1012</td><td rowspan="1}" class="rowspan-td">Ipv-4</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">1013</td><td rowspan="1}" class="rowspan-td">Ipv-5</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">1014</td><td rowspan="1}" class="rowspan-td">Ipv-6</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">1015</td><td rowspan="1}" class="rowspan-td">Ipv-7</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">1016</td><td rowspan="1}" class="rowspan-td">Ipv-8</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">1017</td><td rowspan="1}" class="rowspan-td">Ipv-9</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">1018</td><td rowspan="1}" class="rowspan-td">Ipv-10</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">1019</td><td rowspan="1}" class="rowspan-td">Ipv-11</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">1020</td><td rowspan="1}" class="rowspan-td">Ipv-12</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">1021</td><td rowspan="1}" class="rowspan-td">Ipv-13</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">1022</td><td rowspan="1}" class="rowspan-td">Ipv-14</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">1023</td><td rowspan="1}" class="rowspan-td">Ipv-15</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">1024</td><td rowspan="1}" class="rowspan-td">Ipv-16</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">1025</td><td rowspan="1}" class="rowspan-td">Ipv-17</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">1026</td><td rowspan="1}" class="rowspan-td">Ipv-18</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">1027</td><td rowspan="1}" class="rowspan-td">Ipv-19</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">1028</td><td rowspan="1}" class="rowspan-td">Ipv-20</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">1029</td><td rowspan="1}" class="rowspan-td">Ipv-21</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">1030</td><td rowspan="1}" class="rowspan-td">Ipv-22</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">1031</td><td rowspan="1}" class="rowspan-td">Ipv-23</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">1032</td><td rowspan="1}" class="rowspan-td">Ipv-24</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+</tbody></table>
+<p>You can get more open measuring point definitions from the getOpenPointInfo endpoint.</p>
+</div><div data-v-b595fd65=""><div data-v-fdad8a6e="" data-v-b595fd65=""><div data-v-fdad8a6e="" class="right-nav-container"><!----><div data-v-fdad8a6e="" class="sg-scrollbar sg-scrollbar-type-embed"><div class="sg-scrollbar-container" style="height: calc(-558px + 100vh); min-height: 240px; overflow-y: auto;"><div data-v-fdad8a6e="" class="content-view"><div data-v-fdad8a6e="" id="h1_0_0" class="right-nav-container-list top-level anchor-active">Common combiner box measuring points</div></div></div><!--v-if--><!--v-if--></div></div><!----></div></div></div>

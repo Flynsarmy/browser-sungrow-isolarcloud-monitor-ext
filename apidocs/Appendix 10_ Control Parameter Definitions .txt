@@ -1,0 +1,187 @@
+<div data-v-b595fd65="" data-v-e0def71f="" class="markdown-render" style=""><div data-v-b595fd65="" class="markdown-body"><h1 id="h1_0">Appendix 10: Control Parameter Definitions</h1>
+<table>
+<thead>
+<tr>
+<th rowspan="1}" class="rowspan-td">param_code</th><th rowspan="1}" class="rowspan-td">Device Type</th><th rowspan="1}" class="rowspan-td">Parameter</th><th rowspan="1}" class="rowspan-td">Set Value or Range Description</th></tr>
+</thead>
+<tbody><tr>
+<td rowspan="1}" class="rowspan-td">10001</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">SOC Upper Limit</td><td rowspan="1}" class="rowspan-td">The value range is 700 to 1000, which indicates 70% to 100%</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10002</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">SOC Lower Limit</td><td rowspan="1}" class="rowspan-td">The value range is 0 to 500, which indicates 0% to 50%</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10003</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">Energy Management Mode</td><td rowspan="1}" class="rowspan-td">0: Self-consumption Mode, 2: Compulsory Mode, 3: External Energy Dispatch, 4: VPP Dispatch. Default to 0.</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10004</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">Charging/Discharging Command</td><td rowspan="1}" class="rowspan-td">170: Charging, 187: Discharging, 204: Stopped. Default to 204.</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10005</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">Charging/Discharging Power</td><td rowspan="1}" class="rowspan-td">The value range is 0W to 5000W and defaults as 1000.</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10006</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Existing Inverter</td><td rowspan="1}" class="rowspan-td">170:  Enable, 85: Disable</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10007</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Limited power switch</td><td rowspan="1}" class="rowspan-td">170:  Enable, 85: Disable</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10008</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Active Power Limit Ratio</td><td rowspan="1}" class="rowspan-td">The value range is 0 to 1000, which indicates 0% to 100%</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10009</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Reactive Power Regulation Mode</td><td rowspan="1}" class="rowspan-td">85: OFF, 161: PF enabled, 162: Reactive Power Ratio enable-Q (t), 164: Q (U) curve-Q (U), 163: Q(P) curve- Q(P)</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10010</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Q(T)</td><td rowspan="1}" class="rowspan-td">The value range is -600 to 600, which indicates -60% to 60%</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10011</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Boot/Shutdown</td><td rowspan="1}" class="rowspan-td">207:Boot 206:Shutdown 174:Reboot</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10012</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Feed-in Limitation</td><td rowspan="1}" class="rowspan-td">170:  Enable, 85: Disable</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10012</td><td rowspan="1}" class="rowspan-td">Logger1000&amp;EyeM4</td><td rowspan="1}" class="rowspan-td">Feed-in Limitation</td><td rowspan="1}" class="rowspan-td">1:  Enable, 0: Disable</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10013</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Feed-in Limitation Value</td><td rowspan="1}" class="rowspan-td">The value range is 0 to rated power of inverter (Feed-in Limitation must be enabled when setting this value)</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10014</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Feed-in Limitation Ratio</td><td rowspan="1}" class="rowspan-td">The value range is 0 to 1000, which indicates 0% to 100% (Feed-in Limitation must be enabled when setting this value)</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10014</td><td rowspan="1}" class="rowspan-td">Logger1000&amp;EyeM4</td><td rowspan="1}" class="rowspan-td">Feed-in Limitation Ratio</td><td rowspan="1}" class="rowspan-td">The value range is -1000 to 1000, which indicates -100% to 100% (Feed-in Limitation must be enabled when setting this value)<br>Note:points used in the data collector mode of Logger1000</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10015</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">Forced Charging Target SOC1</td><td rowspan="1}" class="rowspan-td">The value range is 0 to 100, which indicates 0% to 100%</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10016</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">Forced Charging Target SOC2</td><td rowspan="1}" class="rowspan-td">The value range is 0 to 100, which indicates 0% to 100%</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10017</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">External EMS Heartbeat</td><td rowspan="1}" class="rowspan-td">The value range is 1 to 1000, which indicates 1s to 1000s</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10024</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">Battery First</td><td rowspan="1}" class="rowspan-td">170:  Enable, 85: Disable</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10025</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Active Power Soft Start after Fault</td><td rowspan="1}" class="rowspan-td">170:  Enable, 85: Disable</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10026</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Active Power Soft Start Time after Fault</td><td rowspan="1}" class="rowspan-td">The value range is 1 to 1200, which indicates 1s to 1200s (Active Power Soft Start after Fault must be enabled when setting this value)</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10027</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Active Power Soft Start</td><td rowspan="1}" class="rowspan-td">170:  Enable, 85: Disable</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10028</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Active Power Soft Start Gradient</td><td rowspan="1}" class="rowspan-td">The value range is 5 to 10000, which indicates 0.05% ~ 100% (Active Power Soft Start must be enabled when setting this value))</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10029</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Active Power Gradient Control</td><td rowspan="1}" class="rowspan-td">170:  Enable, 85: Disable</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10030</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Active Power Decline Gradient</td><td rowspan="1}" class="rowspan-td">The value range is 1 to 6000, which indicates 1%/min to 6000%/min (Active Power Gradient Control must be enabled when setting this value)</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10031</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Active Power Rising Gradient</td><td rowspan="1}" class="rowspan-td">The value range is 1 to 6000, which indicates 1%/min to 6000%/min (Active Power Gradient Control must be enabled when setting this value)</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10032</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Active Power Setting Persistence</td><td rowspan="1}" class="rowspan-td">170:  Enable, 85: Disable</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10033</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Shutdown When Active Power Limit to 0%</td><td rowspan="1}" class="rowspan-td">170:  Enable, 85: Disable</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10034</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Reactive Response</td><td rowspan="1}" class="rowspan-td">170: Enable, 85: Disable (Only can be set only when Reactive Power Regulation Mode is set to PF, Qt, Q(P), or Q(U))</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10035</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Reactive power regulation time</td><td rowspan="1}" class="rowspan-td">The value range is 1 to 6000, which indicates 0.1s to 600s (Only can be set only when Reactive Power Regulation Mode is set to PF, Qt, Q(P), or Q(U))</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10036</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">PF</td><td rowspan="1}" class="rowspan-td">The value range is -1000 to 1000, which indicates -1 to 1 (Only can be set only when Reactive Power Regulation Mode is set to PF)</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10065</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Forced Charging</td><td rowspan="1}" class="rowspan-td">170:  Enable, 85: Close</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10066</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Forced Charging Valid Time</td><td rowspan="1}" class="rowspan-td">0: Weekdays 1: Everyday</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10067</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Forced Charging Start Time 1: Hour</td><td rowspan="1}" class="rowspan-td">Value range: 0 to 24 (no minutes), 24 by default</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10068</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Forced Charging Start Time 1: Minute</td><td rowspan="1}" class="rowspan-td">Value range: 0 to 59, 0 by default</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10069</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Forced Charging End Time 1: Hour</td><td rowspan="1}" class="rowspan-td">Value range: 0 to 24 (no minutes), 24 by default</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10070</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Forced Charging End Time 1: Minute</td><td rowspan="1}" class="rowspan-td">Value range: 0 to 59, 0 by default</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10071</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Forced Charging Target SOC1</td><td rowspan="1}" class="rowspan-td">Value range: 0 to 100, which indicates 0% to 100%</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10072</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Forced Charging Start Time 2: Hour</td><td rowspan="1}" class="rowspan-td">Value range: 0 to 24 (no minutes), 24 by default</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10073</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Forced Charging Start Time 2: Minute</td><td rowspan="1}" class="rowspan-td">Value range: 0 to 59, 0 by default</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10074</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Forced Charging End Time 2: Hour</td><td rowspan="1}" class="rowspan-td">Value range: 0 to 24 (no minutes), 24 by default</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10075</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Forced Charging End Time 2: Minute</td><td rowspan="1}" class="rowspan-td">Value range: 0 to 59, 0 by default</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10076</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Forced Charging Target SOC2</td><td rowspan="1}" class="rowspan-td">Value range: 0 to 100, which indicates 0% to 100%</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10082</td><td rowspan="1}" class="rowspan-td">Logger1000 &amp; EMS</td><td rowspan="1}" class="rowspan-td">Charge/Discharge Command in External Dispatch Mode</td><td rowspan="1}" class="rowspan-td">170: Charge; 187: Discharge; 204: Forbidden</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10083</td><td rowspan="1}" class="rowspan-td">Logger1000 &amp; EMS</td><td rowspan="1}" class="rowspan-td">Charging/Discharging Power in External Dispatch Mode</td><td rowspan="1}" class="rowspan-td">Data Range: 0~Plant Charging/Discharging Upper Limit Range Description. Call interface: getDevPropertyPointValue to get the specific limit range with point id:29046.</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10085</td><td rowspan="1}" class="rowspan-td">Logger1000 &amp; EMS</td><td rowspan="1}" class="rowspan-td">EMS Heartbeat Settings in External Dispatch Mode</td><td rowspan="1}" class="rowspan-td">Data Range: 10~1000</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10086</td><td rowspan="1}" class="rowspan-td">Logger1000 &amp; EMS</td><td rowspan="1}" class="rowspan-td">Energy Management Mode</td><td rowspan="1}" class="rowspan-td">1: Self-Consumption;<br>2: Time Plan;<br>4: VPP;<br>5: Compulsory Mode</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10087</td><td rowspan="1}" class="rowspan-td">Logger1000 &amp; EMS</td><td rowspan="1}" class="rowspan-td">Feed-in Limitation Ratio in External Dispatch Mode</td><td rowspan="1}" class="rowspan-td">Data Range：-1000~1000, default 1000<br>Note:points used in the energy management mode of Logger1000</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10088</td><td rowspan="1}" class="rowspan-td">Logger1000 &amp; EMS</td><td rowspan="1}" class="rowspan-td">Feed-in Limitation ON/OFF in External Dispatch Mode</td><td rowspan="1}" class="rowspan-td">170：Enable，85：Close default Close</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10089</td><td rowspan="1}" class="rowspan-td">Logger1000 &amp; EMS</td><td rowspan="1}" class="rowspan-td">Feed-in Limitation Value in External Dispatch Mode</td><td rowspan="1}" class="rowspan-td">Data Range: -99999999~99999999,default 0</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10090</td><td rowspan="1}" class="rowspan-td">Logger1000 &amp; EMS</td><td rowspan="1}" class="rowspan-td">PV power limitation</td><td rowspan="1}" class="rowspan-td">1: Enable，0：Close</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10091</td><td rowspan="1}" class="rowspan-td">Energy Storage System</td><td rowspan="1}" class="rowspan-td">Max. Charging Power</td><td rowspan="1}" class="rowspan-td">Data Range：10~(Max. Charging Power Upper Limit Range Description*100), Max. Charging Power Upper Limit Range Description can be accessed by calling interface: getDevPropertyPointValue with point id:18290，Default Range is: 10~1060</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10092</td><td rowspan="1}" class="rowspan-td">Energy Storage System</td><td rowspan="1}" class="rowspan-td">Max. Discharging Power</td><td rowspan="1}" class="rowspan-td">Data Range：10~(Max. Discharging Power Upper Limit Range Description*100), Max. Discharging Power Upper Limit Range Description can be accessed by calling interface: getDevPropertyPointValue with point id:18291，Default Range is: 10~1060</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10095</td><td rowspan="1}" class="rowspan-td">EMS</td><td rowspan="1}" class="rowspan-td">Function enable/disable</td><td rowspan="1}" class="rowspan-td">1：Enable，0：Disable</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10096</td><td rowspan="1}" class="rowspan-td">EMS</td><td rowspan="1}" class="rowspan-td">Grid-connection point frequency FN</td><td rowspan="1}" class="rowspan-td">Data Range: [0.000-100.000] Hz</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10097</td><td rowspan="1}" class="rowspan-td">EMS</td><td rowspan="1}" class="rowspan-td">Contingency FCAS action deadband fd</td><td rowspan="1}" class="rowspan-td">Data Range: (0.000-0.200] Hz, Attention: Contingency FCAS action deadband fd(Hz) &lt; Contingency FCAS frequency deviation threshold for full-scale response(Hz)</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10098</td><td rowspan="1}" class="rowspan-td">EMS</td><td rowspan="1}" class="rowspan-td">Contingency FCAS maximum output active power PA</td><td rowspan="1}" class="rowspan-td">Data Range: (0.00-9999.99] MW</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10099</td><td rowspan="1}" class="rowspan-td">EMS</td><td rowspan="1}" class="rowspan-td">Contingency FCAS maximum absorption active power PB</td><td rowspan="1}" class="rowspan-td">Data Range: (0.00-9999.99] MW</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10100</td><td rowspan="1}" class="rowspan-td">EMS</td><td rowspan="1}" class="rowspan-td">Contingency FCAS frequency deviation threshold for full-scale response</td><td rowspan="1}" class="rowspan-td">Data Range: (0.000-0.500] Hz</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10038</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Under-voltage first-level protection value</td><td rowspan="1}" class="rowspan-td">PV Inverter range: minimum rated voltage 0.05 times, maximum rated voltage 1.0 times -0.1V; <br>Hybrid Inverter range: minimum 460, maximum 2300</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10039</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Overvoltage first-level protection value</td><td rowspan="1}" class="rowspan-td">PV Inverter range: minimum rated voltage (1.0 times + 0.2V), maximum rated voltage 1.4 times; <br>Hybrid Inverter range: minimum 2300, maximum 2990</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10040</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Under-frequency first-level protection value</td><td rowspan="1}" class="rowspan-td">PV Inverter range: Minimum value [50Hz grid: 4500,60Hz grid: non-North American countries: 5500,60Hz grid: North American countries: 5000], maximum value [50Hz grid: 4996,60Hz grid: non-North American countries: 5996,60Hz grid: North American countries: 5996]<br>Hybrid Inverter range: minimum 4500, maximum 5000</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10041</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Over-frequency first-level protection value</td><td rowspan="1}" class="rowspan-td">PV Inverter range: Minimum value [50Hz grid: 5004, 60Hz grid: 6004], maximum value [50Hz grid: 5500, 60Hz grid: 6600]; <br>Hybrid Inverter range: minimum 5000, maximum 5550</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10042</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Overvoltage protection recovery value</td><td rowspan="1}" class="rowspan-td">PV Inverter range: Minimum 1.0 times the rated voltage +0.1V, maximum 1.4 times the rated voltage -0.1V;<br>Hybrid Inverter range: minimum 2300, maximum 2990</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10043</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Under-voltage protection recovery value</td><td rowspan="1}" class="rowspan-td">PV Inverter range: minimum rated voltage (0.05 times +0.1V), maximum rated voltage 1.0 times; <br>Hybrid Inverter range: minimum 1300, maximum 2300</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10044</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Overfrequency protection recovery value</td><td rowspan="1}" class="rowspan-td">PV Inverter range: Minimum value [50Hz grid: 5002, 60Hz grid: 6002], maximum value [50Hz grid: 5498, 60Hz grid: 6498];<br>Hybrid Inverter range: minimum 5000, maximum 5550</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10045</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Under-frequency protection recovery value</td><td rowspan="1}" class="rowspan-td">PV Inverter range: Minimum value [50Hz grid: 4502, 60Hz grid: 5502], maximum value [50Hz grid: 4998, 60Hz grid: 5998] ;<br>Hybrid Inverter range: minimum 4450, maximum 5000</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10101</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Under-voltage first-level protection time</td><td rowspan="1}" class="rowspan-td">Range: [1-1440,000]s; Range dependence: The lower limit of the time range for abnormal protection of the power grid, the minimum value of the first-level protection time for under-voltage = the lower limit of the time range for abnormal protection of the power grid. The power grid company provides standard default Settings, which generally do not need to be changed.</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10102</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Under-voltage secondary protection value</td><td rowspan="1}" class="rowspan-td">Range dependence: Rated grid voltage, maximum undervoltage secondary protection value = rated grid voltage -1, minimum undervoltage secondary protection value = rated grid voltage *0.05; The grid company provides standard default Settings for setting the abnormal protection threshold and protection time of the power grid, which generally do not need to be changed.</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10103</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Under-voltage secondary protection time</td><td rowspan="1}" class="rowspan-td">Range: [1-1440,000]s; Range dependence: The lower limit of the time range for abnormal protection of the power grid, the minimum value of the secondary protection time for under-voltage = the lower limit of the time range for abnormal protection of the power grid. The power grid company provides standard default Settings, which generally do not need to be changed.</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10104</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Overvoltage level 1 protection time</td><td rowspan="1}" class="rowspan-td">Range: [1-1440,000]s; Range dependence: The lower limit of the time range for abnormal protection of the power grid, the minimum value of the first-level protection time for overvoltage = the lower limit of the time range for abnormal protection of the power grid. The power grid company provides standard default Settings, which generally do not need to be changed.</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10105</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Overvoltage secondary protection value</td><td rowspan="1}" class="rowspan-td">Range dependence: Rated grid voltage, maximum overvoltage secondary protection value = rated grid voltage *1.4, minimum overvoltage secondary protection value = rated grid voltage +2. The power grid company provides standard default Settings, which generally do not need to be changed.</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10106</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Overvoltage secondary protection time</td><td rowspan="1}" class="rowspan-td">Range: [1-1440,000]s; Range dependence: The lower limit of the time range for abnormal protection of the power grid, the minimum value of the secondary protection time for overvoltage = the lower limit of the time range for abnormal protection of the power grid. The power grid company provides standard default Settings, which generally do not need to be changed.</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10107</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Under-frequency first-level protection time</td><td rowspan="1}" class="rowspan-td">Range: [1-1440,000]s; Range dependence: The lower limit of the time range for abnormal protection of the power grid, the minimum value of the first-level protection time for under-frequency = the lower limit of the time range for abnormal protection of the power grid. The power grid company provides standard default Settings, which generally do not need to be changed.</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10108</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Underfrequency secondary protection value</td><td rowspan="1}" class="rowspan-td">50Hz grid range: [4500-4996]Hz, 60Hz Non-North American national grid range: [5500-5996]Hz, 60Hz North American national grid range: [5000-5996]Hz</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10109</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Under-frequency secondary protection time</td><td rowspan="1}" class="rowspan-td">Range: [1-1440,000]s; Range dependence: The lower limit of the time range for abnormal protection of the power grid, the minimum value of the secondary protection time for underfrequency = the lower limit of the time range for abnormal protection of the power grid. The power grid company provides standard default Settings, which generally do not need to be changed.</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10110</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Over-frequency first-level protection time</td><td rowspan="1}" class="rowspan-td">Range: [1-1440,000]s; Range dependence: The lower limit of the time range for abnormal protection of the power grid, the minimum value of the first-level protection time for overfrequency = the lower limit of the time range for abnormal protection of the power grid. The power grid company provides standard default Settings, which generally do not need to be changed.</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10111</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Over-frequency secondary protection value</td><td rowspan="1}" class="rowspan-td">50Hz power grid range: [5004-5500]Hz; 60Hz power grid range: [6004-6600]Hz;</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10112</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Over-frequency secondary protection time</td><td rowspan="1}" class="rowspan-td">Range: [1-1440,000]s; Range dependence: The lower limit of the time range for abnormal protection of the power grid, the minimum value of the secondary protection time for overfrequency = the lower limit of the time range for abnormal protection of the power grid. The power grid company provides standard default Settings, which generally do not need to be changed.</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10113</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Under-voltage level three protection time</td><td rowspan="1}" class="rowspan-td">Range: [1-1440,000]s; Range dependence: The lower limit of the time range for abnormal protection of the power grid, the minimum value of the three-level under-voltage protection time = the lower limit of the time range for abnormal protection of the power grid. The power grid company provides standard default Settings, which generally do not need to be changed.</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10114</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Overvoltage level three protection time</td><td rowspan="1}" class="rowspan-td">Range: [1-1440,000]s; Range dependence: The lower limit of the time range for abnormal protection of the power grid, the minimum value of the three-level overvoltage protection time = the lower limit of the time range for abnormal protection of the power grid. The power grid company provides standard default Settings, which generally do not need to be changed.</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10115</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Under-frequency third-level protection time</td><td rowspan="1}" class="rowspan-td">Range: [1-1440,000]s; Range dependence: The lower limit of the time range for abnormal protection of the power grid, the minimum value of the third-level protection time for under-frequency = the lower limit of the time range for abnormal protection of the power grid. The power grid company provides standard default Settings, which generally do not need to be changed.</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10116</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Over-frequency three-level protection time</td><td rowspan="1}" class="rowspan-td">Range: [1-1440,000]s; Range dependence: The lower limit of the time range for abnormal protection of the power grid, the minimum value of the three-level protection time for overfrequency = the lower limit of the time range for abnormal protection of the power grid. The power grid company provides standard default Settings, which generally do not need to be changed.</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10117</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Under-voltage level three protection value</td><td rowspan="1}" class="rowspan-td">Range dependence: Rated grid voltage, maximum value of undervoltage three-level protection = rated grid voltage -1, minimum value of undervoltage three-level protection = rated grid voltage *0.05; The power grid company provides standard default Settings, which generally do not need to be changed.</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10118</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Overvoltage level three protection value</td><td rowspan="1}" class="rowspan-td">Range dependence: Rated grid voltage, maximum overvoltage three-level protection value = rated grid voltage *1.4, minimum overvoltage three-level protection value = rated grid voltage +2. The power grid company provides standard default Settings, which generally do not need to be changed.</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10119</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Under-frequency three-level protection value</td><td rowspan="1}" class="rowspan-td">50Hz grid range: [4500-4996]Hz, 60Hz. Non-north American country range: [5500-5996]Hz, 60Hz. North American country grid range: [5000-5996]Hz. The power grid company provides standard default Settings, which generally do not need to be changed.</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10120</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter &amp; PV Inverter</td><td rowspan="1}" class="rowspan-td">Overfrequency level three protection value</td><td rowspan="1}" class="rowspan-td">50Hz power grid range: [4500-4996]Hz, 60Hz national range: [5500-5996]Hz; The power grid company provides standard default Settings, which generally do not need to be changed.</td></tr>
+</tbody></table>
+<p><strong>Note:</strong></p>
+<p>Please refer to the external communication protocols for inverters to determine the coefficients. </p>
+<p>When switching EMS modes through the API, make sure to send the heartbeat signal simultaneously.  </p>
+</div><div data-v-b595fd65=""><div data-v-fdad8a6e="" data-v-b595fd65=""><div data-v-fdad8a6e="" class="right-nav-container"><!----><div data-v-fdad8a6e="" class="sg-scrollbar sg-scrollbar-type-embed"><div class="sg-scrollbar-container" style="height: calc(-558px + 100vh); min-height: 240px; overflow-y: auto;"><div data-v-fdad8a6e="" class="content-view"><div data-v-fdad8a6e="" id="h1_0_0" class="right-nav-container-list top-level anchor-active">Appendix 10: Control Parameter Definitions</div></div></div><!--v-if--><!--v-if--></div></div><!----></div></div></div>

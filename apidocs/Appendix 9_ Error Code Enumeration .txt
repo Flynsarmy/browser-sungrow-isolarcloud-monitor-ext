@@ -1,0 +1,152 @@
+<div data-v-b595fd65="" data-v-e0def71f="" class="markdown-render" style=""><div data-v-b595fd65="" class="markdown-body"><h1 id="h1_0">Appendix 9: Error Code Enumeration</h1>
+<table>
+<thead>
+<tr>
+<th rowspan="1}" class="rowspan-td"><strong>Error Code</strong></th><th rowspan="1}" class="rowspan-td"><strong>Error ID</strong></th><th rowspan="1}" class="rowspan-td"><strong>Device Type</strong></th><th rowspan="1}" class="rowspan-td"><strong>Error Name</strong></th></tr>
+</thead>
+<tbody><tr>
+<td rowspan="1}" class="rowspan-td">60001</td><td rowspan="1}" class="rowspan-td">1</td><td rowspan="1}" class="rowspan-td">Inverter</td><td rowspan="1}" class="rowspan-td">Grid Overvoltage</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">60002</td><td rowspan="1}" class="rowspan-td">2</td><td rowspan="1}" class="rowspan-td">Inverter</td><td rowspan="1}" class="rowspan-td">Grid Undervoltage</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">60003</td><td rowspan="1}" class="rowspan-td">3</td><td rowspan="1}" class="rowspan-td">Inverter</td><td rowspan="1}" class="rowspan-td">Grid Overfrequency</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">60004</td><td rowspan="1}" class="rowspan-td">4</td><td rowspan="1}" class="rowspan-td">Inverter</td><td rowspan="1}" class="rowspan-td">Grid Underfrequency</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">60005</td><td rowspan="1}" class="rowspan-td">5</td><td rowspan="1}" class="rowspan-td">Inverter</td><td rowspan="1}" class="rowspan-td">Grid Power Outage</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">60006</td><td rowspan="1}" class="rowspan-td">6</td><td rowspan="1}" class="rowspan-td">Inverter</td><td rowspan="1}" class="rowspan-td">Excessive Leakage Current</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">60007</td><td rowspan="1}" class="rowspan-td">7</td><td rowspan="1}" class="rowspan-td">Inverter</td><td rowspan="1}" class="rowspan-td">Grid Abnormal</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">60008</td><td rowspan="1}" class="rowspan-td">8</td><td rowspan="1}" class="rowspan-td">Inverter</td><td rowspan="1}" class="rowspan-td">Grid Voltage Imbalance</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">60009</td><td rowspan="1}" class="rowspan-td">9</td><td rowspan="1}" class="rowspan-td">Inverter</td><td rowspan="1}" class="rowspan-td">PV Reverse Connection Fault</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">60010</td><td rowspan="1}" class="rowspan-td">10</td><td rowspan="1}" class="rowspan-td">Inverter</td><td rowspan="1}" class="rowspan-td">PV Reverse Connection Alarm</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">60011</td><td rowspan="1}" class="rowspan-td">11</td><td rowspan="1}" class="rowspan-td">Inverter</td><td rowspan="1}" class="rowspan-td">PV Abnormal Alarm</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">60012</td><td rowspan="1}" class="rowspan-td">12</td><td rowspan="1}" class="rowspan-td">Inverter</td><td rowspan="1}" class="rowspan-td">Excessively High Ambient Temperature</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">60013</td><td rowspan="1}" class="rowspan-td">13</td><td rowspan="1}" class="rowspan-td">Inverter</td><td rowspan="1}" class="rowspan-td">Excessively Low Ambient Temperature</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">60014</td><td rowspan="1}" class="rowspan-td">14</td><td rowspan="1}" class="rowspan-td">Inverter</td><td rowspan="1}" class="rowspan-td">Low System Insulation Resistance</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">60015</td><td rowspan="1}" class="rowspan-td">15</td><td rowspan="1}" class="rowspan-td">Inverter</td><td rowspan="1}" class="rowspan-td">Grounding Cable Fault</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">60016</td><td rowspan="1}" class="rowspan-td">16</td><td rowspan="1}" class="rowspan-td">Inverter</td><td rowspan="1}" class="rowspan-td">AFCI Fault</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">60017</td><td rowspan="1}" class="rowspan-td">17</td><td rowspan="1}" class="rowspan-td">Inverter</td><td rowspan="1}" class="rowspan-td">Backup Load Overpower Fault</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">60018</td><td rowspan="1}" class="rowspan-td">18</td><td rowspan="1}" class="rowspan-td">Inverter</td><td rowspan="1}" class="rowspan-td">Meter Reserve Connection</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">60019</td><td rowspan="1}" class="rowspan-td">19</td><td rowspan="1}" class="rowspan-td">Inverter</td><td rowspan="1}" class="rowspan-td">Meter Communication Abnormal Alarm</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">60020</td><td rowspan="1}" class="rowspan-td">20</td><td rowspan="1}" class="rowspan-td">Inverter</td><td rowspan="1}" class="rowspan-td">Grid Conflict</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">60021</td><td rowspan="1}" class="rowspan-td">21</td><td rowspan="1}" class="rowspan-td">Inverter</td><td rowspan="1}" class="rowspan-td">Parallel Communication Alarm</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">60022</td><td rowspan="1}" class="rowspan-td">22</td><td rowspan="1}" class="rowspan-td">Inverter</td><td rowspan="1}" class="rowspan-td">BMS Communication Fault</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">60023</td><td rowspan="1}" class="rowspan-td">23</td><td rowspan="1}" class="rowspan-td">Inverter</td><td rowspan="1}" class="rowspan-td">Abnormal Battery Connection</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">60024</td><td rowspan="1}" class="rowspan-td">24</td><td rowspan="1}" class="rowspan-td">Inverter</td><td rowspan="1}" class="rowspan-td">Battery Alarm</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">60025</td><td rowspan="1}" class="rowspan-td">25</td><td rowspan="1}" class="rowspan-td">Inverter</td><td rowspan="1}" class="rowspan-td">Battery Fault</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">60026</td><td rowspan="1}" class="rowspan-td">26</td><td rowspan="1}" class="rowspan-td">Inverter</td><td rowspan="1}" class="rowspan-td">PV Overvoltage Fault</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">60027</td><td rowspan="1}" class="rowspan-td">27</td><td rowspan="1}" class="rowspan-td">Inverter</td><td rowspan="1}" class="rowspan-td">MPPT reverse connection</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">60028</td><td rowspan="1}" class="rowspan-td">28</td><td rowspan="1}" class="rowspan-td">Inverter</td><td rowspan="1}" class="rowspan-td">Boost Capacitor Overvoltage Alarm</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">60029</td><td rowspan="1}" class="rowspan-td">29</td><td rowspan="1}" class="rowspan-td">Inverter</td><td rowspan="1}" class="rowspan-td">Boost Capacitor Overvoltage Fault</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">60030</td><td rowspan="1}" class="rowspan-td">30</td><td rowspan="1}" class="rowspan-td">Inverter</td><td rowspan="1}" class="rowspan-td">String Current Backfeed</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">60032</td><td rowspan="1}" class="rowspan-td">32</td><td rowspan="1}" class="rowspan-td">Inverter</td><td rowspan="1}" class="rowspan-td">RSD Abnormal Alarm</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">60035</td><td rowspan="1}" class="rowspan-td">35</td><td rowspan="1}" class="rowspan-td">Inverter</td><td rowspan="1}" class="rowspan-td">PV Grounding Fault</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">60063</td><td rowspan="1}" class="rowspan-td">63</td><td rowspan="1}" class="rowspan-td">Inverter</td><td rowspan="1}" class="rowspan-td">System Alarm</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">60064</td><td rowspan="1}" class="rowspan-td">64</td><td rowspan="1}" class="rowspan-td">Inverter</td><td rowspan="1}" class="rowspan-td">System Fault</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13801</td><td rowspan="1}" class="rowspan-td">1</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">Grid Overvoltage</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13802</td><td rowspan="1}" class="rowspan-td">2</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">Grid Undervoltage</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13803</td><td rowspan="1}" class="rowspan-td">3</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">Grid Overfrequency</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13804</td><td rowspan="1}" class="rowspan-td">4</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">Grid Underfrequency</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13805</td><td rowspan="1}" class="rowspan-td">5</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">Grid Power Outage</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13806</td><td rowspan="1}" class="rowspan-td">6</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">Excessive Leakage Current</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13807</td><td rowspan="1}" class="rowspan-td">7</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">Grid Abnormal</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13808</td><td rowspan="1}" class="rowspan-td">8</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">Grid Voltage Imbalance</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13809</td><td rowspan="1}" class="rowspan-td">9</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">PV Reverse Connection Fault</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13810</td><td rowspan="1}" class="rowspan-td">10</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">PV Reverse Connection Alarm</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13811</td><td rowspan="1}" class="rowspan-td">11</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">PV Abnormal Alarm</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13812</td><td rowspan="1}" class="rowspan-td">12</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">Excessively High Ambient Temperature</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13813</td><td rowspan="1}" class="rowspan-td">13</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">Excessively Low Ambient Temperature</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13814</td><td rowspan="1}" class="rowspan-td">14</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">Low System Insulation Resistance</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13815</td><td rowspan="1}" class="rowspan-td">15</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">Grounding Cable Fault</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13816</td><td rowspan="1}" class="rowspan-td">16</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">AFCI Fault</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13817</td><td rowspan="1}" class="rowspan-td">17</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">Backup Load Overpower Fault</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13818</td><td rowspan="1}" class="rowspan-td">18</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">Meter Reserve Connection</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13819</td><td rowspan="1}" class="rowspan-td">19</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">Meter Communication Abnormal Alarm</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13820</td><td rowspan="1}" class="rowspan-td">20</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">Grid Conflict</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13821</td><td rowspan="1}" class="rowspan-td">21</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">Parallel Communication Alarm</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13822</td><td rowspan="1}" class="rowspan-td">22</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">BMS Communication Fault</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13823</td><td rowspan="1}" class="rowspan-td">23</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">Abnormal Battery Connection</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13824</td><td rowspan="1}" class="rowspan-td">24</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">Battery Alarm</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13825</td><td rowspan="1}" class="rowspan-td">25</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">Battery Fault</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13826</td><td rowspan="1}" class="rowspan-td">26</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">PV Overvoltage Fault</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13827</td><td rowspan="1}" class="rowspan-td">27</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">MPPT reverse connection</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13828</td><td rowspan="1}" class="rowspan-td">28</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">Boost Capacitor Overvoltage Alarm</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13829</td><td rowspan="1}" class="rowspan-td">29</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">Boost Capacitor Overvoltage Fault</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13830</td><td rowspan="1}" class="rowspan-td">30</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">String Current Backfeed</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13832</td><td rowspan="1}" class="rowspan-td">32</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">RSD Abnormal Alarm</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13835</td><td rowspan="1}" class="rowspan-td">35</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">PV Grounding Fault</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13863</td><td rowspan="1}" class="rowspan-td">63</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">System Alarm</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13864</td><td rowspan="1}" class="rowspan-td">64</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">System Fault</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13893</td><td rowspan="1}" class="rowspan-td">517</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">Bypass Switch Over Voltage</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13894</td><td rowspan="1}" class="rowspan-td">518</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">Bypass Switch Low Voltage</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13895</td><td rowspan="1}" class="rowspan-td">516</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">Bypass Switch Over Current</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13896</td><td rowspan="1}" class="rowspan-td">114</td><td rowspan="1}" class="rowspan-td">Hybrid Inverter</td><td rowspan="1}" class="rowspan-td">Bypass Switch Over Current</td></tr>
+</tbody></table>
+</div><div data-v-b595fd65=""><div data-v-fdad8a6e="" data-v-b595fd65=""><div data-v-fdad8a6e="" class="right-nav-container"><!----><div data-v-fdad8a6e="" class="sg-scrollbar sg-scrollbar-type-embed"><div class="sg-scrollbar-container" style="height: calc(-558px + 100vh); min-height: 240px; overflow-y: auto;"><div data-v-fdad8a6e="" class="content-view"><div data-v-fdad8a6e="" id="h1_0_0" class="right-nav-container-list top-level anchor-active">Appendix 9: Error Code Enumeration</div></div></div><!--v-if--><!--v-if--></div></div><!----></div></div></div>

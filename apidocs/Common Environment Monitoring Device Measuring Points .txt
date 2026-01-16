@@ -1,0 +1,118 @@
+<div data-v-b595fd65="" data-v-e0def71f="" class="markdown-render" style=""><div data-v-b595fd65="" class="markdown-body"><h1 id="h1_0">Common environment monitoring device measuring points</h1>
+<table>
+<thead>
+<tr>
+<th rowspan="1}" class="rowspan-td"><strong>Measuring Point ID</strong></th><th rowspan="1}" class="rowspan-td"><strong>Measuring Point Name</strong></th><th rowspan="1}" class="rowspan-td"><strong>Unit</strong></th></tr>
+</thead>
+<tbody><tr>
+<td rowspan="1}" class="rowspan-td">2003</td><td rowspan="1}" class="rowspan-td">Transient Horizontal Irradiation</td><td rowspan="1}" class="rowspan-td">W/m^2^</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2001</td><td rowspan="1}" class="rowspan-td">Daily Horizontal Irradiation</td><td rowspan="1}" class="rowspan-td">Wh/m^2^</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2002</td><td rowspan="1}" class="rowspan-td">Total Horizontal Irradiation</td><td rowspan="1}" class="rowspan-td">Wh/m^2^</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2007</td><td rowspan="1}" class="rowspan-td">Slope Transient Irradiation</td><td rowspan="1}" class="rowspan-td">W/m^2^</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2005</td><td rowspan="1}" class="rowspan-td">Slope Daily Irradiation</td><td rowspan="1}" class="rowspan-td">Wh/m^2^</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2006</td><td rowspan="1}" class="rowspan-td">Total Slope Irradiation</td><td rowspan="1}" class="rowspan-td">Wh/m^2^</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2009</td><td rowspan="1}" class="rowspan-td">Ambient Temperature</td><td rowspan="1}" class="rowspan-td">°C</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2010</td><td rowspan="1}" class="rowspan-td">Temp. (PV module)</td><td rowspan="1}" class="rowspan-td">°C</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2016</td><td rowspan="1}" class="rowspan-td">Wind Speed</td><td rowspan="1}" class="rowspan-td">m/s</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2011</td><td rowspan="1}" class="rowspan-td">Wind Speed Scale</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2012</td><td rowspan="1}" class="rowspan-td">Wind Angle</td><td rowspan="1}" class="rowspan-td">°</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2014</td><td rowspan="1}" class="rowspan-td">Atmospheric Pressure</td><td rowspan="1}" class="rowspan-td">hPa</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2015</td><td rowspan="1}" class="rowspan-td">Ambient Humidity</td><td rowspan="1}" class="rowspan-td">%RH</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2022</td><td rowspan="1}" class="rowspan-td">Rainfall</td><td rowspan="1}" class="rowspan-td">mm</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2026</td><td rowspan="1}" class="rowspan-td">Precipitation</td><td rowspan="1}" class="rowspan-td">mm</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2100</td><td rowspan="1}" class="rowspan-td">Temperature 1 (Backplane Temperature)</td><td rowspan="1}" class="rowspan-td">°C</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2101</td><td rowspan="1}" class="rowspan-td">Temperature 2</td><td rowspan="1}" class="rowspan-td">°C</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2102</td><td rowspan="1}" class="rowspan-td">Temperature 3</td><td rowspan="1}" class="rowspan-td">°C</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2103</td><td rowspan="1}" class="rowspan-td">Temperature 4</td><td rowspan="1}" class="rowspan-td">°C</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2104</td><td rowspan="1}" class="rowspan-td">Temperature 5</td><td rowspan="1}" class="rowspan-td">°C</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2105</td><td rowspan="1}" class="rowspan-td">Dew Point</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2106</td><td rowspan="1}" class="rowspan-td">Soil Moisture 1</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2107</td><td rowspan="1}" class="rowspan-td">Soil Moisture 2</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2108</td><td rowspan="1}" class="rowspan-td">Soil Moisture 3</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2109</td><td rowspan="1}" class="rowspan-td">CO₂</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2110</td><td rowspan="1}" class="rowspan-td">Evaporation</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2111</td><td rowspan="1}" class="rowspan-td">Instantaneous Value of Total Radiation 1</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2112</td><td rowspan="1}" class="rowspan-td">Instantaneous Value of Scattering Radiation</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2113</td><td rowspan="1}" class="rowspan-td">Instantaneous Value of Direct Radiation</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2114</td><td rowspan="1}" class="rowspan-td">Instantaneous Value of Total Radiation 2</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2115</td><td rowspan="1}" class="rowspan-td">Instantaneous Value of Net Radiation</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2116</td><td rowspan="1}" class="rowspan-td">Instantaneous Value of Photosynthetic Radiation</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2117</td><td rowspan="1}" class="rowspan-td">Instantaneous Value of Ultraviolet Radiation</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2118</td><td rowspan="1}" class="rowspan-td">Instantaneous Value of Wind Direction</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2119</td><td rowspan="1}" class="rowspan-td">Instantaneous Value of Wind Speed</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2120</td><td rowspan="1}" class="rowspan-td">2-Minute Wind Speed</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2121</td><td rowspan="1}" class="rowspan-td">10-Minute Wind Speed</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2122</td><td rowspan="1}" class="rowspan-td">Cumulative Value of Rainfall Time Interval</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2123</td><td rowspan="1}" class="rowspan-td">Cumulative Value of Sunshine Time Interval</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2124</td><td rowspan="1}" class="rowspan-td">Cumulative Value of Total Radiation 1 Time Interval</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2125</td><td rowspan="1}" class="rowspan-td">Cumulative Value of Scattering Radiation Time Interval</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2126</td><td rowspan="1}" class="rowspan-td">Cumulative Value of Direct Radiation Time Interval</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2127</td><td rowspan="1}" class="rowspan-td">Cumulative Value of Total Radiation 2 Time Interval</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2128</td><td rowspan="1}" class="rowspan-td">Cumulative Value of Net Radiation Time Interval</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2129</td><td rowspan="1}" class="rowspan-td">Cumulative Value of Photosynthetic Radiation Time Interval</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2130</td><td rowspan="1}" class="rowspan-td">Cumulative Value of Ultraviolet Radiation Time Interval</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2131</td><td rowspan="1}" class="rowspan-td">Daliy Accumulation of Rainfall</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2132</td><td rowspan="1}" class="rowspan-td">Daliy Accumulation of Sunshine</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2133</td><td rowspan="1}" class="rowspan-td">Daily Cumulative Value of Total Radiation 1</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2134</td><td rowspan="1}" class="rowspan-td">Daily Cumulative Value of Scattering Radiation</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2135</td><td rowspan="1}" class="rowspan-td">Daily Cumulative Value of Direct Radiation</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2136</td><td rowspan="1}" class="rowspan-td">Daily Cumulative Value of Total Radiation 1</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2137</td><td rowspan="1}" class="rowspan-td">Daily Cumulative Value of Net Radiation</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2138</td><td rowspan="1}" class="rowspan-td">Daily Cumulative Value of Photosynthetic Radiation</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2139</td><td rowspan="1}" class="rowspan-td">Daily Cumulative Value of Ultraviolet Radiation</td></tr>
+</tbody></table>
+</div><div data-v-b595fd65=""><div data-v-fdad8a6e="" data-v-b595fd65=""><div data-v-fdad8a6e="" class="right-nav-container"><!----><div data-v-fdad8a6e="" class="sg-scrollbar sg-scrollbar-type-embed"><div class="sg-scrollbar-container" style="height: calc(-558px + 100vh); min-height: 240px; overflow-y: auto;"><div data-v-fdad8a6e="" class="content-view"><div data-v-fdad8a6e="" id="h1_0_0" class="right-nav-container-list top-level anchor-active">Common environment monitoring device measuring points</div></div></div><!--v-if--><!--v-if--></div></div><!----></div></div></div>

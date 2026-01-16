@@ -1,0 +1,70 @@
+<div data-v-b595fd65="" data-v-e0def71f="" class="markdown-render" style=""><div data-v-b595fd65="" class="markdown-body"><h1 id="h1_0">Appendix 2: API Error Code Definitions</h1>
+<table>
+<thead>
+<tr>
+<th rowspan="1}" class="rowspan-td"><strong>Error Code Name</strong></th><th rowspan="1}" class="rowspan-td"><strong>Type</strong></th><th rowspan="1}" class="rowspan-td"><strong>Error Code</strong></th></tr>
+</thead>
+<tbody><tr>
+<td rowspan="1}" class="rowspan-td">success</td><td rowspan="1}" class="rowspan-td">Call successful</td><td rowspan="1}" class="rowspan-td">1</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">error</td><td rowspan="1}" class="rowspan-td">Internal service exception</td><td rowspan="1}" class="rowspan-td">-1</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">er_unknown_exception</td><td rowspan="1}" class="rowspan-td">Unknown exception</td><td rowspan="1}" class="rowspan-td">000</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">er_missing_parameter:appkey</td><td rowspan="1}" class="rowspan-td">appkey cannot be empty</td><td rowspan="1}" class="rowspan-td">001</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">er_missing_parameter:token</td><td rowspan="1}" class="rowspan-td">token cannot be empty</td><td rowspan="1}" class="rowspan-td">002</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">er_missing_parameter:sys_code</td><td rowspan="1}" class="rowspan-td">sys_code cannot be empty</td><td rowspan="1}" class="rowspan-td">003</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">er_invalid_appkey</td><td rowspan="1}" class="rowspan-td">Invalid appkey</td><td rowspan="1}" class="rowspan-td">E00000</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">er_api_service_has_expired</td><td rowspan="1}" class="rowspan-td">API service expired</td><td rowspan="1}" class="rowspan-td">E00001</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">er_parameter_decrypt_error</td><td rowspan="1}" class="rowspan-td">Parameter decryption exception</td><td rowspan="1}" class="rowspan-td">E00002</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">er_token_login_invalid</td><td rowspan="1}" class="rowspan-td">The token is invalid or has expired</td><td rowspan="1}" class="rowspan-td">E00003</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">er_month_call_api_times_upper_limit</td><td rowspan="1}" class="rowspan-td">Max API calls reached</td><td rowspan="1}" class="rowspan-td">E998</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">er_hour_call_api_times_upper_limit</td><td rowspan="1}" class="rowspan-td">Max API calls reached</td><td rowspan="1}" class="rowspan-td">E999</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">er_missing_parameter</td><td rowspan="1}" class="rowspan-td">Required parameter missing</td><td rowspan="1}" class="rowspan-td">009</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">er_parameter_value_invalid</td><td rowspan="1}" class="rowspan-td">Parameter value invalid</td><td rowspan="1}" class="rowspan-td">010</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">er_sql_exception</td><td rowspan="1}" class="rowspan-td">SQL exception</td><td rowspan="1}" class="rowspan-td">011</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">Unauthorized access</td><td rowspan="1}" class="rowspan-td">Access has not been authorized</td><td rowspan="1}" class="rowspan-td">E900</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">Call too frequently</td><td rowspan="1}" class="rowspan-td">The call frequency is too high</td><td rowspan="1}" class="rowspan-td">E901</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">Abnormal network environment</td><td rowspan="1}" class="rowspan-td">IP address change frequency is too high</td><td rowspan="1}" class="rowspan-td">E903</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">Request is not encrypted</td><td rowspan="1}" class="rowspan-td">The request has not been encrypted</td><td rowspan="1}" class="rowspan-td">E902</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">Missing parameter in request header: x-random-secret-key</td><td rowspan="1}" class="rowspan-td">The x-random-secret-key is missing from the request header</td><td rowspan="1}" class="rowspan-td">E904</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">AES decryption exception</td><td rowspan="1}" class="rowspan-td">There was an issue with AES decryption</td><td rowspan="1}" class="rowspan-td">E905</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">RSA decryption exception</td><td rowspan="1}" class="rowspan-td">There was an issue with RSA decryption</td><td rowspan="1}" class="rowspan-td">E906</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">AES random secret key length must be 16</td><td rowspan="1}" class="rowspan-td">The length of the AES random secret key must be 16</td><td rowspan="1}" class="rowspan-td">E907</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">Missing key parameter: api_key_param</td><td rowspan="1}" class="rowspan-td">The api_key_param is missing</td><td rowspan="1}" class="rowspan-td">E908</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">Invalid parameter format: nonce [32-bit string of numbers and letters]</td><td rowspan="1}" class="rowspan-td">The parameter format is invalid: nonce [32-bit string of numbers and letters]</td><td rowspan="1}" class="rowspan-td">E909</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">Repeated request</td><td rowspan="1}" class="rowspan-td">The request nonce must be regenerated for repeated requests</td><td rowspan="1}" class="rowspan-td">E910</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">Missing parameter in request header: x-access-key</td><td rowspan="1}" class="rowspan-td">The x-access-key is missing from the request header</td><td rowspan="1}" class="rowspan-td">E911</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">Illegal x-access-key</td><td rowspan="1}" class="rowspan-td">The x-access-key is invalid</td><td rowspan="1}" class="rowspan-td">E912</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">Expired request</td><td rowspan="1}" class="rowspan-td">The request has expired, the time difference between the timestamp (UTC+0 UNIX) in the request and the server time is too high</td><td rowspan="1}" class="rowspan-td">E913</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">Mismatched appkey and x-access-key</td><td rowspan="1}" class="rowspan-td">The appkey and access-key do not match</td><td rowspan="1}" class="rowspan-td">E914</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">Login too frequently</td><td rowspan="1}" class="rowspan-td">Too many repeated login attempts</td><td rowspan="1}" class="rowspan-td">E916</td></tr>
+</tbody></table>
+</div><div data-v-b595fd65=""><div data-v-fdad8a6e="" data-v-b595fd65=""><div data-v-fdad8a6e="" class="right-nav-container"><!----><div data-v-fdad8a6e="" class="sg-scrollbar sg-scrollbar-type-embed"><div class="sg-scrollbar-container" style="height: calc(-558px + 100vh); min-height: 240px; overflow-y: auto;"><div data-v-fdad8a6e="" class="content-view"><div data-v-fdad8a6e="" id="h1_0_0" class="right-nav-container-list top-level anchor-active">Appendix 2: API Error Code Definitions</div></div></div><!--v-if--><!--v-if--></div></div><!----></div></div></div>

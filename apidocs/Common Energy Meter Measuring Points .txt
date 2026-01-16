@@ -1,0 +1,90 @@
+<div data-v-b595fd65="" data-v-e0def71f="" class="markdown-render" style=""><div data-v-b595fd65="" class="markdown-body"><h1 id="h1_0">Common energy meter measuring points</h1>
+<table>
+<thead>
+<tr>
+<th rowspan="1}" class="rowspan-td"><strong>Measuring Point ID</strong></th><th rowspan="1}" class="rowspan-td"><strong>Measuring Point Name</strong></th><th rowspan="1}" class="rowspan-td"><strong>Unit</strong></th></tr>
+</thead>
+<tbody><tr>
+<td rowspan="1}" class="rowspan-td">8030</td><td rowspan="1}" class="rowspan-td">Forward Active Energy</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">8031</td><td rowspan="1}" class="rowspan-td">Reverse Active Energy</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">8062</td><td rowspan="1}" class="rowspan-td">Daily Forward Active Energy</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">8063</td><td rowspan="1}" class="rowspan-td">Daily Reverse Active Energy</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">8032</td><td rowspan="1}" class="rowspan-td">Forward Reactive Energy</td><td rowspan="1}" class="rowspan-td">varh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">8033</td><td rowspan="1}" class="rowspan-td">Reverse Reactive Energy</td><td rowspan="1}" class="rowspan-td">varh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">8034</td><td rowspan="1}" class="rowspan-td">Peak Forward Active Energy</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">8035</td><td rowspan="1}" class="rowspan-td">Peak Reverse Active Energy</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">8038</td><td rowspan="1}" class="rowspan-td">Valley Forward Active Energy</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">8039</td><td rowspan="1}" class="rowspan-td">Valley Reverse Active Energy</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">8042</td><td rowspan="1}" class="rowspan-td">Flat Forward Active Energy</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">8043</td><td rowspan="1}" class="rowspan-td">Flat Reverse Active Energy</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">8058</td><td rowspan="1}" class="rowspan-td">Wave Forward Active Energy</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">8059</td><td rowspan="1}" class="rowspan-td">Wave Reverse Active Energy</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">8036</td><td rowspan="1}" class="rowspan-td">Peak Forward Reactive Energy</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">8037</td><td rowspan="1}" class="rowspan-td">Peak Reverse Reactive Energy</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">8040</td><td rowspan="1}" class="rowspan-td">Valley Forward Reactive Energy</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">8041</td><td rowspan="1}" class="rowspan-td">Valley Reverse Reactive Energy</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">8044</td><td rowspan="1}" class="rowspan-td">Flat Forward Reactive Energy</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">8045</td><td rowspan="1}" class="rowspan-td">Flat Reverse Reactive Energy</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">8060</td><td rowspan="1}" class="rowspan-td">Wave Forward Reactive Energy</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">8061</td><td rowspan="1}" class="rowspan-td">Wave Reverse Reactive Energy</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">8000</td><td rowspan="1}" class="rowspan-td">Phase A Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">8001</td><td rowspan="1}" class="rowspan-td">Phase B Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">8002</td><td rowspan="1}" class="rowspan-td">Phase C Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">8003</td><td rowspan="1}" class="rowspan-td">A-B Line Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">8004</td><td rowspan="1}" class="rowspan-td">B-C Line Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">8005</td><td rowspan="1}" class="rowspan-td">C-A Line Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">8006</td><td rowspan="1}" class="rowspan-td">Phase A Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">8007</td><td rowspan="1}" class="rowspan-td">Phase B Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">8008</td><td rowspan="1}" class="rowspan-td">Phase C Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">8064</td><td rowspan="1}" class="rowspan-td">Frequency</td><td rowspan="1}" class="rowspan-td">Hz</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">8018</td><td rowspan="1}" class="rowspan-td">Meter Active Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">8022</td><td rowspan="1}" class="rowspan-td">Reactive Power</td><td rowspan="1}" class="rowspan-td">var</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">8014</td><td rowspan="1}" class="rowspan-td">PF</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">8026</td><td rowspan="1}" class="rowspan-td">Apparent Power</td><td rowspan="1}" class="rowspan-td">VA</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">8076</td><td rowspan="1}" class="rowspan-td">Meter Phase A Active Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">8077</td><td rowspan="1}" class="rowspan-td">Meter Phase B Active Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">8078</td><td rowspan="1}" class="rowspan-td">Meter Phase C Active Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">8084</td><td rowspan="1}" class="rowspan-td">Daily Direct Power Consumption</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">8085</td><td rowspan="1}" class="rowspan-td">Total Direct Power Consumption</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+</tbody></table>
+</div><div data-v-b595fd65=""><div data-v-fdad8a6e="" data-v-b595fd65=""><div data-v-fdad8a6e="" class="right-nav-container"><!----><div data-v-fdad8a6e="" class="sg-scrollbar sg-scrollbar-type-embed"><div class="sg-scrollbar-container" style="height: calc(-558px + 100vh); min-height: 240px; overflow-y: auto;"><div data-v-fdad8a6e="" class="content-view"><div data-v-fdad8a6e="" id="h1_0_0" class="right-nav-container-list top-level anchor-active">Common energy meter measuring points</div></div></div><!--v-if--><!--v-if--></div></div><!----></div></div></div>

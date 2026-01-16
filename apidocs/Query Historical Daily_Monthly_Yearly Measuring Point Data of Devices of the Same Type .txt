@@ -1,0 +1,1115 @@
+<div data-v-b2cc784b="" class="api-top"><div data-v-b2cc784b="" class="info"><div data-v-b2cc784b="" class="api-info"><div data-v-b2cc784b="" class="api-title"><h1 data-v-b2cc784b="" id="h1_0">Query Historical Daily/Monthly/Yearly Measuring Point Data of Devices of the Same Type</h1></div><div data-v-b2cc784b="" class="operate-area" style=""><div data-v-2665a7fa="" data-v-b2cc784b="" class="type"><span data-v-2665a7fa="">Post</span></div><div data-v-b2cc784b="" class="url">/openapi/platform/getDevicePointDayMonthYearDataList</div><div data-v-d6b9c9b7="" class="displayInlineBlock"><p data-v-d6b9c9b7="" class="icon-content"><i data-v-d6b9c9b7="" class="icon-G2_copy_16 iconfont" style="font-size: 16px; width: 16px; height: 16px;"></i></p></div><button data-v-b2cc784b="" class="sg-btn sg-btn-secondary sg-btn-shape-square sg-btn-size-medium sg-btn-status-normal debug-button" type="button"><!--v-if-->Try it</button></div></div></div></div><div data-v-b2cc784b="" class="api-desc">Query the daily/monthly/yearly data of device measuring points based on the start time, end time, and ps_key of devices of the same type. Supports queries of multiple measuring points and up to 50 devices.
+
+Note: This endpoint always returns the smallest unit of data. For example, Wh for yield and W for power. Supports up to 100 days for daily data queries, 24 months for monthly data queries, and 5 years for yearly data queries. Historical data endpoints do not return data for the current day.
+</div><div data-v-b2cc784b="" class="content"><h1 data-v-b2cc784b="" class="h2_title" id="h1_1">1.&nbsp;Request parameters</h1><div data-v-32fd7950="" data-v-b2cc784b="" class="table-block"><div data-v-d335c049="" data-v-32fd7950="" class="table-container" stripe="false"><div data-v-d335c049="" class="table-content"><div data-v-d335c049="" class="sg-table sg-table-size-large sg-table-layout-fixed" tooltip="true"><!----><!----><!----><!----><!----><div class="sg-spin"><!----><div class="sg-table-container sg-table-scroll-y"><div class="sg-scrollbar sg-scrollbar-type-embed" style="height: 100%;"><div class="sg-scrollbar-container sg-table-content"><div class="sg-scrollbar sg-scrollbar-type-embed"><div class="sg-scrollbar-container sg-table-header"><table class="sg-table-element" cellpadding="0" cellspacing="0"><colgroup><col style="width: 136px; min-width: 136px; max-width: 136px;"><col style="width: 100px; min-width: 100px; max-width: 100px;"><col style="width: 100px; min-width: 100px; max-width: 100px;"><col style="width: 160px; min-width: 160px; max-width: 160px;"><col style="width: 160px; min-width: 160px; max-width: 160px;"></colgroup><thead><tr class="sg-table-tr"><th class="sg-table-th"><span class="sg-table-cell sg-table-cell-align-left"><span class="sg-table-th-title">Request parameters</span><!----><!----></span><!----><!----></th><th class="sg-table-th"><span class="sg-table-cell sg-table-cell-align-left"><span class="sg-table-th-title">Parameter type</span><!----><!----></span><!----><!----></th><th class="sg-table-th"><span class="sg-table-cell sg-table-cell-align-left"><span class="sg-table-th-title">Required</span><!----><!----></span><!----><!----></th><th class="sg-table-th"><span class="sg-table-cell sg-table-cell-align-left"><span class="sg-table-th-title">Parameter example</span><!----><!----></span><!----><!----></th><th class="sg-table-th"><span class="sg-table-cell sg-table-cell-align-left"><span class="sg-table-th-title">Parameter description</span><!----><!----></span><!----><!----></th></tr></thead></table></div><!--v-if--><!--v-if--></div><div class="sg-scrollbar sg-scrollbar-type-embed" style="display: flex; min-height: 0px;"><div class="sg-scrollbar-container sg-table-body" style="max-height: 100%;"><table class="sg-table-element" cellpadding="0" cellspacing="0"><colgroup><col style="width: 136px; min-width: 136px; max-width: 136px;"><col style="width: 100px; min-width: 100px; max-width: 100px;"><col style="width: 100px; min-width: 100px; max-width: 100px;"><col style="width: 160px; min-width: 160px; max-width: 160px;"><col style="width: 160px; min-width: 160px; max-width: 160px;"></colgroup><tbody><tr class="sg-table-tr"><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-2a92089a="" data-v-d335c049=""><div data-v-2a92089a="" style="-webkit-line-clamp: 1; display: -webkit-box;" class="common-ellipsis"> query_type</div></div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">String</div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">Yes</div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-2a92089a="" data-v-d335c049=""><div data-v-2a92089a="" style="-webkit-line-clamp: 1; display: -webkit-box;" class="common-ellipsis"> day</div></div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">Query Type: (Query Daily Data: day; Query Monthly Data: month; Query Yearly Data: year)</div></span></span></td></tr><!----><tr class="sg-table-tr"><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-2a92089a="" data-v-d335c049=""><div data-v-2a92089a="" style="-webkit-line-clamp: 1; display: -webkit-box;" class="common-ellipsis"> data_type</div></div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">String</div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">Yes</div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-2a92089a="" data-v-d335c049=""><div data-v-2a92089a="" style="-webkit-line-clamp: 1; display: -webkit-box;" class="common-ellipsis"> 2</div></div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">1: Mean; 2: Peak; 3: Trough; 4: Total (only monthly and yearly data has a "total" value). Separate multiple values with commas. If data can be aggregated, then: data_type is 2 when querying daily data, and 4 when querying monthly or yearly data</div></span></span></td></tr><!----><tr class="sg-table-tr"><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-2a92089a="" data-v-d335c049=""><div data-v-2a92089a="" style="-webkit-line-clamp: 1; display: -webkit-box;" class="common-ellipsis"> ps_key_list</div></div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">List</div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">Yes</div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-2a92089a="" data-v-d335c049=""><div data-v-2a92089a="" style="-webkit-line-clamp: 1; display: -webkit-box;" class="common-ellipsis"> ["700009960_14_1_1","700009960_14_3_1"]</div></div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">Device ps_key Collection (devices of the same type)</div></span></span></td></tr><!----><tr class="sg-table-tr"><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-2a92089a="" data-v-d335c049=""><div data-v-2a92089a="" style="-webkit-line-clamp: 1; display: -webkit-box;" class="common-ellipsis"> data_point</div></div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">String</div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">Yes</div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-2a92089a="" data-v-d335c049=""><div data-v-2a92089a="" style="-webkit-line-clamp: 1; display: -webkit-box;" class="common-ellipsis"> p13134,p13112,p13176,p13175</div></div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">The format is p+measuring point, separating multiple measuring points with commas. Example: If the ps_key of the queried device is an inverter, then p1 represents the inverter yield (in Wh), p2 represents the inverter cumulative yield (in Wh), and p24 represents the inverter total active power (in W). See Appendix 10 for specific open measuring point definitions.</div></span></span></td></tr><!----><tr class="sg-table-tr"><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-2a92089a="" data-v-d335c049=""><div data-v-2a92089a="" style="-webkit-line-clamp: 1; display: -webkit-box;" class="common-ellipsis"> start_time</div></div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">String</div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">Yes</div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-2a92089a="" data-v-d335c049=""><div data-v-2a92089a="" style="-webkit-line-clamp: 1; display: -webkit-box;" class="common-ellipsis"> 20240823</div></div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">Note for Start Time: When query_type is "day," the date format is yyyyMMdd. When query_type is "month," the date format is yyyyMM. When query_type is "year," the date format is yyyy.</div></span></span></td></tr><!----><tr class="sg-table-tr"><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-2a92089a="" data-v-d335c049=""><div data-v-2a92089a="" style="-webkit-line-clamp: 1; display: -webkit-box;" class="common-ellipsis"> end_time</div></div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">String</div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">Yes</div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-2a92089a="" data-v-d335c049=""><div data-v-2a92089a="" style="-webkit-line-clamp: 1; display: -webkit-box;" class="common-ellipsis"> 20240825</div></div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">Note for End Time: When query_type is "day," the date format is yyyyMMdd. When query_type is "month," the date format is yyyyMM. When query_type is "year," the date format is yyyy.</div></span></span></td></tr><!----><tr class="sg-table-tr"><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-2a92089a="" data-v-d335c049=""><div data-v-2a92089a="" style="-webkit-line-clamp: 1; display: -webkit-box;" class="common-ellipsis"> order</div></div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">Integer</div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">Yes</div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-2a92089a="" data-v-d335c049=""><div data-v-2a92089a="" style="-webkit-line-clamp: 1; display: -webkit-box;" class="common-ellipsis"> 0</div></div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">Sort By: (0: forward/chronological; 1: reverse)</div></span></span></td></tr><!----><tr class="sg-table-tr"><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-2a92089a="" data-v-d335c049=""><div data-v-2a92089a="" style="-webkit-line-clamp: 1; display: -webkit-box;" class="common-ellipsis"> is_get_point_dict</div></div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">String</div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">No</div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-2a92089a="" data-v-d335c049=""><div data-v-2a92089a="" style="-webkit-line-clamp: 1; display: -webkit-box;" class="common-ellipsis"> 1</div></div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">Return Measuring Point Dictionary? (0: No; 1: Yes; defaults to no)</div></span></span></td></tr><!----></tbody></table></div><!--v-if--><!--v-if--></div><!----></div><!--v-if--><!--v-if--></div></div><!----><!----><!----></div></div></div><!----></div></div><div data-v-237ba289="" data-v-b2cc784b="" class="code-mirror"><div data-v-237ba289="" class="vue-codemirror" style="height: auto;" indent-with-tab="true"><div class="cm-editor ͼ1 ͼ3 ͼ4 ͼ47 ͼo"><div class="cm-announced" aria-live="polite"></div><div tabindex="-1" class="cm-scroller"><div class="cm-gutters" aria-hidden="true" style="min-height: 196px; position: sticky;"><div class="cm-gutter cm-lineNumbers"><div class="cm-gutterElement" style="height: 0px; visibility: hidden; pointer-events: none;">99</div><div class="cm-gutterElement cm-activeLineGutter" style="height: 14.2249px;">1</div><div class="cm-gutterElement" style="height: 19.1727px;">2</div><div class="cm-gutterElement" style="height: 20.2972px;">3</div><div class="cm-gutterElement" style="height: 18.7229px;">4</div><div class="cm-gutterElement" style="height: 24.7952px;">5</div><div class="cm-gutterElement" style="height: 20.5221px;">6</div><div class="cm-gutterElement" style="height: 20.0723px;">7</div><div class="cm-gutterElement" style="height: 17.3735px;">8</div><div class="cm-gutterElement" style="height: 27.0442px;">9</div><div class="cm-gutterElement" style="height: 14.2249px;">10</div></div><div class="cm-gutter cm-foldGutter"><div class="cm-gutterElement" style="height: 0px; visibility: hidden; pointer-events: none;"><span title="Unfold line">›</span></div><div class="cm-gutterElement cm-activeLineGutter" style="height: 14.2249px;"><span title="Fold line">⌄</span></div></div></div><div style="tab-size: 2;" spellcheck="false" autocorrect="off" autocapitalize="none" translate="no" contenteditable="false" class="cm-content cm-lineWrapping" role="textbox" aria-multiline="true" data-language="json"><div class="cm-activeLine cm-line">{</div><div class="cm-line">    <span class="ͼq">"query_type"</span>:<span class="ͼ13">"day"</span>,</div><div class="cm-line">    <span class="ͼq">"is_get_point_dict"</span>:<span class="ͼ13">"1"</span>,</div><div class="cm-line">    <span class="ͼq">"data_type"</span>: <span class="ͼ13">"2"</span>,</div><div class="cm-line">    <span class="ͼq">"data_point"</span>: <span class="ͼ13">"p13134,p13112,p13176,p13175"</span>,</div><div class="cm-line">    <span class="ͼq">"start_time"</span>: <span class="ͼ13">"20240823"</span>,</div><div class="cm-line">    <span class="ͼq">"end_time"</span>: <span class="ͼ13">"20240825"</span>,</div><div class="cm-line">    <span class="ͼq">"order"</span>: <span class="ͼu">0</span>,</div><div class="cm-line">    <span class="ͼq">"ps_key_list"</span>: [<span class="ͼ13">"700009960_14_1_1"</span>,<span class="ͼ13">"700009960_14_3_1"</span>]</div><div class="cm-line">}</div></div><div class="cm-layer cm-layer-above cm-cursorLayer" aria-hidden="true" style="z-index: 150; animation-duration: 1200ms;"><div class="cm-cursor cm-cursor-primary" style="left: 46px; top: 45.8001px; height: 16px;"></div></div><div class="cm-layer cm-selectionLayer" aria-hidden="true" style="z-index: -2;"></div></div></div></div><div data-v-237ba289="" id="copyContainer" class="copy-icon"><svg data-v-fe371a7e="" data-v-237ba289="" class="svg-icon svg-icon-square" style="color: rgb(153, 153, 153); height: 20px; width: 20px;" aria-hidden="true"><use data-v-fe371a7e="" xlink:href="#icon-square"></use></svg></div></div><h1 data-v-b2cc784b="" class="h2_title" id="h1_2">2.&nbsp;Return parameters</h1><div data-v-32fd7950="" data-v-b2cc784b="" class="table-block"><div data-v-d335c049="" data-v-32fd7950="" class="table-container" stripe="false"><div data-v-d335c049="" class="table-content"><div data-v-d335c049="" class="sg-table sg-table-size-large sg-table-layout-fixed" tooltip="true"><!----><!----><!----><!----><div class="sg-spin"><!----><div class="sg-table-container sg-table-scroll-y"><div class="sg-scrollbar sg-scrollbar-type-embed" style="height: 100%;"><div class="sg-scrollbar-container sg-table-content"><div class="sg-scrollbar sg-scrollbar-type-embed"><div class="sg-scrollbar-container sg-table-header"><table class="sg-table-element" cellpadding="0" cellspacing="0"><colgroup><col style="width: 160px; min-width: 160px; max-width: 160px;"><col style="width: 160px; min-width: 160px; max-width: 160px;"><col style="width: 160px; min-width: 160px; max-width: 160px;"><col style="width: 160px; min-width: 160px; max-width: 160px;"></colgroup><thead><tr class="sg-table-tr"><th class="sg-table-th"><span class="sg-table-cell sg-table-cell-align-left"><span class="sg-table-th-title">Return parameters</span><!----><!----></span><!----><!----></th><th class="sg-table-th"><span class="sg-table-cell sg-table-cell-align-left"><span class="sg-table-th-title">Data type</span><!----><!----></span><!----><!----></th><th class="sg-table-th"><span class="sg-table-cell sg-table-cell-align-left"><span class="sg-table-th-title">Example value</span><!----><!----></span><!----><!----></th><th class="sg-table-th"><span class="sg-table-cell sg-table-cell-align-left"><span class="sg-table-th-title">Description</span><!----><!----></span><!----><!----></th></tr></thead></table></div><!--v-if--><!--v-if--></div><div class="sg-scrollbar sg-scrollbar-type-embed" style="display: flex; min-height: 0px;"><div class="sg-scrollbar-container sg-table-body" style="max-height: 100%;"><table class="sg-table-element" cellpadding="0" cellspacing="0"><colgroup><col style="width: 160px; min-width: 160px; max-width: 160px;"><col style="width: 160px; min-width: 160px; max-width: 160px;"><col style="width: 160px; min-width: 160px; max-width: 160px;"><col style="width: 160px; min-width: 160px; max-width: 160px;"></colgroup><tbody><tr class="sg-table-tr"><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-2a92089a="" data-v-d335c049=""><div data-v-2a92089a="" style="-webkit-line-clamp: 1; display: -webkit-box;" class="common-ellipsis"> req_serial_num</div></div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">String</div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-2a92089a="" data-v-d335c049=""><div data-v-2a92089a="" style="-webkit-line-clamp: 1; display: -webkit-box;" class="common-ellipsis"> 20240827a1a74aecbdc4fe12f65055a6</div></div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">Request Sequence Number</div></span></span></td></tr><!----><tr class="sg-table-tr"><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-2a92089a="" data-v-d335c049=""><div data-v-2a92089a="" style="-webkit-line-clamp: 1; display: -webkit-box;" class="common-ellipsis"> result_code</div></div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">String</div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-2a92089a="" data-v-d335c049=""><div data-v-2a92089a="" style="-webkit-line-clamp: 1; display: -webkit-box;" class="common-ellipsis"> 1</div></div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">Error Code</div></span></span></td></tr><!----><tr class="sg-table-tr"><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-2a92089a="" data-v-d335c049=""><div data-v-2a92089a="" style="-webkit-line-clamp: 1; display: -webkit-box;" class="common-ellipsis"> result_msg</div></div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">String</div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-2a92089a="" data-v-d335c049=""><div data-v-2a92089a="" style="-webkit-line-clamp: 1; display: -webkit-box;" class="common-ellipsis"> success</div></div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">Prompt Message</div></span></span></td></tr><!----><tr class="sg-table-tr"><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-2a92089a="" data-v-d335c049=""><div data-v-2a92089a="" style="-webkit-line-clamp: 1; display: -webkit-box;" class="common-ellipsis"> result_data</div></div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">Map</div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-2a92089a="" data-v-d335c049=""><div data-v-2a92089a="" style="-webkit-line-clamp: 1; display: -webkit-box;" class="common-ellipsis"> --</div></div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">Returned Data</div></span></span></td></tr><!----><tr class="sg-table-tr"><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-2a92089a="" data-v-d335c049=""><div data-v-2a92089a="" style="-webkit-line-clamp: 1; display: -webkit-box;" class="common-ellipsis"> result_data.{ps_key}</div></div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">Map</div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-2a92089a="" data-v-d335c049=""><div data-v-2a92089a="" style="-webkit-line-clamp: 1; display: -webkit-box;" class="common-ellipsis"> 700009960_14_1_1</div></div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">Device ps_key</div></span></span></td></tr><!----><tr class="sg-table-tr"><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-2a92089a="" data-v-d335c049=""><div data-v-2a92089a="" style="-webkit-line-clamp: 1; display: -webkit-box;" class="common-ellipsis"> result_data.{ps_key}.{p+point_id}</div></div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">List</div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-2a92089a="" data-v-d335c049=""><div data-v-2a92089a="" style="-webkit-line-clamp: 1; display: -webkit-box;" class="common-ellipsis"> [{"2": "371600.0000","time_stamp": "20240823"}</div></div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">Measuring Point Dataset</div></span></span></td></tr><!----><tr class="sg-table-tr"><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-2a92089a="" data-v-d335c049=""><div data-v-2a92089a="" style="-webkit-line-clamp: 1; display: -webkit-box;" class="common-ellipsis"> result_data.{ps_key}.{p+point_id}.{data_type}</div></div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">String</div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-2a92089a="" data-v-d335c049=""><div data-v-2a92089a="" style="-webkit-line-clamp: 1; display: -webkit-box;" class="common-ellipsis"> 371600.0000</div></div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">The query data_type (such as: 1). Refers to the data_type input parameter</div></span></span></td></tr><!----><tr class="sg-table-tr"><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-2a92089a="" data-v-d335c049=""><div data-v-2a92089a="" style="-webkit-line-clamp: 1; display: -webkit-box;" class="common-ellipsis"> result_data.{ps_key}.{p+point_id}.time_stamp</div></div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">String</div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-2a92089a="" data-v-d335c049=""><div data-v-2a92089a="" style="-webkit-line-clamp: 1; display: -webkit-box;" class="common-ellipsis"> 20240823</div></div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">Corresponding Date</div></span></span></td></tr><!----><tr class="sg-table-tr"><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-2a92089a="" data-v-d335c049=""><div data-v-2a92089a="" style="-webkit-line-clamp: 1; display: -webkit-box;" class="common-ellipsis"> result_data.point_dict</div></div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">List</div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-2a92089a="" data-v-d335c049=""><div data-v-2a92089a="" style="-webkit-line-clamp: 1; display: -webkit-box;" class="common-ellipsis"> [{"point_id": 13112,"point_unit": "Wh","point_name": "日PV发电量"}</div></div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">Measuring Point Definition Dictionary (returned only when is_get_point_dict is 1)</div></span></span></td></tr><!----><tr class="sg-table-tr"><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-2a92089a="" data-v-d335c049=""><div data-v-2a92089a="" style="-webkit-line-clamp: 1; display: -webkit-box;" class="common-ellipsis"> result_data.point_dict.point_id</div></div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">Integer</div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-2a92089a="" data-v-d335c049=""><div data-v-2a92089a="" style="-webkit-line-clamp: 1; display: -webkit-box;" class="common-ellipsis"> 13176</div></div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">Measuring Point ID</div></span></span></td></tr><!----><tr class="sg-table-tr"><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-2a92089a="" data-v-d335c049=""><div data-v-2a92089a="" style="-webkit-line-clamp: 1; display: -webkit-box;" class="common-ellipsis"> result_data.point_dict.point_name</div></div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">String</div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-2a92089a="" data-v-d335c049=""><div data-v-2a92089a="" style="-webkit-line-clamp: 1; display: -webkit-box;" class="common-ellipsis"> Battery Charging Energy Today</div></div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">Measuring Point Name</div></span></span></td></tr><!----><tr class="sg-table-tr"><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-2a92089a="" data-v-d335c049=""><div data-v-2a92089a="" style="-webkit-line-clamp: 1; display: -webkit-box;" class="common-ellipsis"> result_data.point_dict.point_unit</div></div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">String</div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-2a92089a="" data-v-d335c049=""><div data-v-2a92089a="" style="-webkit-line-clamp: 1; display: -webkit-box;" class="common-ellipsis"> Wh</div></div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">Measuring Point Unit</div></span></span></td></tr><!----><tr class="sg-table-tr"><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-2a92089a="" data-v-d335c049=""><div data-v-2a92089a="" style="-webkit-line-clamp: 1; display: -webkit-box;" class="common-ellipsis"> result_data.illegal_ps_key_list</div></div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">List</div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-2a92089a="" data-v-d335c049=""><div data-v-2a92089a="" style="-webkit-line-clamp: 1; display: -webkit-box;" class="common-ellipsis"> --</div></div></span></span></td><td class="sg-table-td"><span class="sg-table-cell sg-table-cell-align-left"><!----><!----><span class="sg-table-td-content"><div data-v-b2cc784b="">Collection of Illegal ps_key</div></span></span></td></tr><!----></tbody></table></div><!--v-if--><!--v-if--></div><!----></div><!--v-if--><!--v-if--></div></div><!----><!----><!----></div></div></div><!----></div></div><h2 data-v-b2cc784b="" id="h2_3">2.1&nbsp;Success examples</h2><div data-v-237ba289="" data-v-b2cc784b="" class="code-mirror"><div data-v-237ba289="" class="vue-codemirror" style="height: auto;" indent-with-tab="true"><div class="cm-editor ͼ1 ͼ3 ͼ4 ͼ48 ͼo"><div class="cm-announced" aria-live="polite"></div><div tabindex="-1" class="cm-scroller"><div class="cm-gutters" aria-hidden="true" style="min-height: 2912px; position: sticky;"><div class="cm-gutter cm-lineNumbers"><div class="cm-gutterElement" style="height: 0px; visibility: hidden; pointer-events: none;">999</div><div class="cm-gutterElement cm-activeLineGutter" style="height: 14.2256px; margin-top: 4px;">1</div><div class="cm-gutterElement" style="height: 26.8578px;">2</div><div class="cm-gutterElement" style="height: 19.1882px;">3</div><div class="cm-gutterElement" style="height: 20.3161px;">4</div><div class="cm-gutterElement" style="height: 18.5115px;">5</div><div class="cm-gutterElement" style="height: 20.5417px;">6</div><div class="cm-gutterElement" style="height: 19.1882px;">7</div><div class="cm-gutterElement" style="height: 17.8348px;">8</div><div class="cm-gutterElement" style="height: 22.7974px;">9</div><div class="cm-gutterElement" style="height: 23.9253px;">10</div><div class="cm-gutterElement" style="height: 18.0604px;">11</div><div class="cm-gutterElement" style="height: 17.8348px;">12</div><div class="cm-gutterElement" style="height: 22.7974px;">13</div><div class="cm-gutterElement" style="height: 23.9253px;">14</div><div class="cm-gutterElement" style="height: 18.0604px;">15</div><div class="cm-gutterElement" style="height: 17.8348px;">16</div><div class="cm-gutterElement" style="height: 22.7974px;">17</div><div class="cm-gutterElement" style="height: 23.9253px;">18</div><div class="cm-gutterElement" style="height: 17.8348px;">19</div><div class="cm-gutterElement" style="height: 17.1581px;">20</div><div class="cm-gutterElement" style="height: 19.1882px;">21</div><div class="cm-gutterElement" style="height: 17.8348px;">22</div><div class="cm-gutterElement" style="height: 23.023px;">23</div><div class="cm-gutterElement" style="height: 23.9253px;">24</div><div class="cm-gutterElement" style="height: 18.0604px;">25</div></div><div class="cm-gutter cm-foldGutter"><div class="cm-gutterElement" style="height: 0px; visibility: hidden; pointer-events: none;"><span title="Unfold line">›</span></div><div class="cm-gutterElement cm-activeLineGutter" style="height: 14.2256px; margin-top: 4px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement" style="height: 18.5115px; margin-top: 66.3622px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement" style="height: 20.5417px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement" style="height: 19.1882px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement" style="height: 17.8348px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement" style="height: 17.8348px; margin-top: 64.7831px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement" style="height: 17.8348px; margin-top: 64.7831px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement" style="height: 19.1882px; margin-top: 81.7156px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement" style="height: 17.8348px;"><span title="Fold line">⌄</span></div></div></div><div style="tab-size: 2;" spellcheck="false" autocorrect="off" autocapitalize="none" translate="no" contenteditable="false" class="cm-content cm-lineWrapping" role="textbox" aria-multiline="true" data-language="json"><div class="cm-activeLine cm-line">{</div><div class="cm-line">    <span class="ͼq">"req_serial_num"</span>: <span class="ͼ13">"20240827a1a74aecbdc4fe12f65055a6"</span>,</div><div class="cm-line">    <span class="ͼq">"result_code"</span>: <span class="ͼ13">"1"</span>,</div><div class="cm-line">    <span class="ͼq">"result_msg"</span>: <span class="ͼ13">"success"</span>,</div><div class="cm-line">    <span class="ͼq">"result_data"</span>: {</div><div class="cm-line">        <span class="ͼq">"700009960_14_1_1"</span>: {</div><div class="cm-line">            <span class="ͼq">"p13175"</span>: [</div><div class="cm-line">                {</div><div class="cm-line">                    <span class="ͼq">"2"</span>: <span class="ͼ13">"371600.0000"</span>,</div><div class="cm-line">                    <span class="ͼq">"time_stamp"</span>: <span class="ͼ13">"20240823"</span></div><div class="cm-line">                },</div><div class="cm-line">                {</div><div class="cm-line">                    <span class="ͼq">"2"</span>: <span class="ͼ13">"371600.0000"</span>,</div><div class="cm-line">                    <span class="ͼq">"time_stamp"</span>: <span class="ͼ13">"20240824"</span></div><div class="cm-line">                },</div><div class="cm-line">                {</div><div class="cm-line">                    <span class="ͼq">"2"</span>: <span class="ͼ13">"371600.0000"</span>,</div><div class="cm-line">                    <span class="ͼq">"time_stamp"</span>: <span class="ͼ13">"20240825"</span></div><div class="cm-line">                }</div><div class="cm-line">            ],</div><div class="cm-line">            <span class="ͼq">"p13176"</span>: [</div><div class="cm-line">                {</div><div class="cm-line">                    <span class="ͼq">"2"</span>: <span class="ͼ13">"1370784.8400"</span>,</div><div class="cm-line">                    <span class="ͼq">"time_stamp"</span>: <span class="ͼ13">"20240823"</span></div><div class="cm-line">                },</div><div class="cm-gap" style="height: 2406.35px;"></div></div><div class="cm-layer cm-layer-above cm-cursorLayer" aria-hidden="true" style="z-index: 150; animation-duration: 1200ms;"><div class="cm-cursor cm-cursor-primary" style="left: 46px; top: 45.8001px; height: 16px;"></div></div><div class="cm-layer cm-selectionLayer" aria-hidden="true" style="z-index: -2;"></div></div></div></div><div data-v-237ba289="" id="copyContainer" class="copy-icon"><svg data-v-fe371a7e="" data-v-237ba289="" class="svg-icon svg-icon-square" style="color: rgb(153, 153, 153); height: 20px; width: 20px;" aria-hidden="true"><use data-v-fe371a7e="" xlink:href="#icon-square"></use></svg></div></div><h2 data-v-b2cc784b="" id="h2_4">2.2&nbsp;Failure example</h2><div data-v-237ba289="" data-v-b2cc784b="" class="code-mirror"><div data-v-237ba289="" class="vue-codemirror" style="height: auto;" indent-with-tab="true"><div class="cm-editor ͼ1 ͼ3 ͼ4 ͼ49 ͼo"><div class="cm-announced" aria-live="polite"></div><div tabindex="-1" class="cm-scroller"><div class="cm-gutters" aria-hidden="true" style="min-height: 112px; position: sticky;"><div class="cm-gutter cm-lineNumbers"><div class="cm-gutterElement" style="height: 0px; visibility: hidden; pointer-events: none;">9</div><div class="cm-gutterElement cm-activeLineGutter" style="height: 14.3158px;">1</div><div class="cm-gutterElement" style="height: 23.1579px;">2</div><div class="cm-gutterElement" style="height: 29.1579px;">3</div><div class="cm-gutterElement" style="height: 31.6842px;">4</div><div class="cm-gutterElement" style="height: 14.3158px;">5</div></div><div class="cm-gutter cm-foldGutter"><div class="cm-gutterElement" style="height: 0px; visibility: hidden; pointer-events: none;"><span title="Unfold line">›</span></div><div class="cm-gutterElement cm-activeLineGutter" style="height: 14.3158px;"><span title="Fold line">⌄</span></div></div></div><div style="tab-size: 2;" spellcheck="false" autocorrect="off" autocapitalize="none" translate="no" contenteditable="false" class="cm-content cm-lineWrapping" role="textbox" aria-multiline="true" data-language="json"><div class="cm-activeLine cm-line">{</div><div class="cm-line">    <span class="ͼq">"error"</span>: <span class="ͼ13">"invalid_token"</span>,</div><div class="cm-line">    <span class="ͼq">"error_description"</span>: <span class="ͼ13">"Invalid access token"</span>,</div><div class="cm-line">    <span class="ͼq">"req_serial_num"</span>: <span class="ͼ13">"20240827cc1849e2bfd2f4d166006d74"</span></div><div class="cm-line">}</div></div><div class="cm-layer cm-layer-above cm-cursorLayer" aria-hidden="true" style="z-index: 150; animation-duration: 1200ms;"><div class="cm-cursor cm-cursor-primary" style="left: 46px; top: 45.7998px; height: 16px;"></div></div><div class="cm-layer cm-selectionLayer" aria-hidden="true" style="z-index: -2;"></div></div></div></div><div data-v-237ba289="" id="copyContainer" class="copy-icon"><svg data-v-fe371a7e="" data-v-237ba289="" class="svg-icon svg-icon-square" style="color: rgb(153, 153, 153); height: 20px; width: 20px;" aria-hidden="true"><use data-v-fe371a7e="" xlink:href="#icon-square"></use></svg></div></div><!----></div><h1 data-v-b2cc784b="" class="h2_title" id="h1_5"> 3.&nbsp;More information</h1><div data-v-b595fd65="" data-v-b2cc784b="" class="markdown-render"><div data-v-b595fd65="" class="markdown-body"><h2 id="h2_6">3.1 Device Measuring Points</h2>
+<table>
+<thead>
+<tr>
+<th rowspan="1}" class="rowspan-td"><strong><font style="color:rgb(34, 34, 34);"> Device Type</font></strong></th><th rowspan="1}" class="rowspan-td"><strong><font style="color:rgb(34, 34, 34);">Measuring Point ID</font></strong></th><th rowspan="1}" class="rowspan-td"><strong><font style="color:rgb(34, 34, 34);">Measuring Point Name</font></strong></th><th rowspan="1}" class="rowspan-td"><strong><font style="color:rgb(34, 34, 34);">Unit</font></strong></th></tr>
+</thead>
+<tbody><tr>
+<td rowspan="158}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Inverter   </font><font style="color:#000000;"></font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">1</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Yield Today</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">87</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Yield This Month</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">88</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Yield This Year</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total Yield</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">67</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Daily Yield (Theoretical)</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">24</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total Active Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">W</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">25</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total Reactive Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">var</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">14</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total DC Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">W</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">43</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total Apparent Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">VA</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">26</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total Power Factor</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">18</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Phase A Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">19</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Phase B Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">20</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Phase C Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">21</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Phase A Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">22</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Phase B Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">23</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Phase C Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">94</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Array Insulation Resistahce</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">kΩ</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">27</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Grid Frequency</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Hz</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7356</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total Operation Time</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">h</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">3</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total On-grid Running Time</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">h</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">15</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">A-B Line Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">16</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">B-C Line Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">17</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">C-A Line Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">95</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Bus Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">90</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Negative Voltage to Ground</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">120</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Number of AFCI Faults</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">4</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Internal Air Temperature</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">℃</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">33</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Module 1 Temperature</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">℃</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">34</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Module 2 Temperature</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">℃</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">35</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Module 3 Temperature</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">℃</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">36</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Module 4 Temperature</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">℃</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">37</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Module 5 Temperature</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">℃</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">38</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Module 6 Temperature</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">℃</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">39</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Positive Impedance to Ground</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Ω</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">40</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Negative Impedance to Ground</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Ω</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">41</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">P-limit-actual</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">W</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">42</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Reactive Power Regulation Actual Value</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">va</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">5</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT1 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT2 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">9</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT3 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">45</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT4 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">47</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT5 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">49</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT6 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">51</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT7 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">53</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT8 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">55</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT9 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">57</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT10 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7401</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT11 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7402</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT12 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7723</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT13 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7725</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT14 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7727</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT15 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7729</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT16 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7731</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT17 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7733</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT18 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7735</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT19 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7737</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT20 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">6</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT1 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">8</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT2 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">10</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT3 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">46</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT4 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">48</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT5 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">50</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT6 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">52</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT7 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">54</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT8 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">56</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT9 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">58</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT10 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7451</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT11 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7452</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT12 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7724</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT13 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7726</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT14 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7728</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT15 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7730</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT16 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7732</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT17 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7734</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT18 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7736</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT19 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7738</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT20 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">96</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 1 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">97</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 2 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">98</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 3 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">99</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 4 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">100</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 5 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">101</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 6 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">102</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 7 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">103</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 8 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">104</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 9 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">105</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 10 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">106</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 11 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">107</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 12 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">108</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 13 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">109</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 14 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">110</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 15 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">111</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 16 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">112</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 17 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">113</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 18 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7166</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 19 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7167</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 20 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7168</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 21 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7169</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 22 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7170</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 23 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7171</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 24 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7172</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 25 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7173</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 26 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7174</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 27 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7175</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 28 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7176</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 29 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7177</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 30 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7178</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 31 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7179</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 32 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7707</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 33 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7709</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 34 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7711</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 35 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7713</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 36 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7715</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 37 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7717</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 38 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7719</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 39 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7721</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 40 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">70</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 1 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">71</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 2 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">72</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 3 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">73</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 4 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">74</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 5 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">75</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 6 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">76</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 7 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">77</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 8 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">78</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 9 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">79</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 10 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">80</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 11 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">81</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 12 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">82</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 13 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">83</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 14 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">84</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 15 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">85</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 16 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">92</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 17 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">93</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 18 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">313</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 19 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">314</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 20 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">315</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 21 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">316</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 22 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">317</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 23 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">318</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 24 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">319</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 25 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">320</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 26 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">321</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 27 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">322</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 28 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">323</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 29 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">324</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 30 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">325</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 31 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">326</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 32 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7708</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 33 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7710</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 34 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7712</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 35 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7714</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 36 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7716</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 37 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7718</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 38 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7720</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 39 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">7722</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">String 40 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">29</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Operating status,0-Grid-connected operation,1024-Operation in maintenance mode,2048-Forced mode operation,4096-Off-grid operation,8192-Open loop,16384-Operation in energy dispatch mode,16385-Operation in energy dispatch mode,4369-Uninitialized,32768-Shut down,4864-Awaiting startup,5376-Emergency stop,5120-Standby,4608-Initial standby,5632-Starting up,37120-Running with alarm,33024-Derated running,33280-Dispatched running,21760-Shut down due to faults,5888-AFCI self-test,1-Shut down,2-Awaiting startup,4-Emergency stop,8-Standby,16-Initial standby,32-Starting up,64-The inverter is successfully connected to the grid and operating normally.,128-Derated running,256-Operation fault,512-Update failed,9472-LCD and DSP communication fault,9473-Restarting,16435-Low insulation resistance,16439-Insulation board anomaly,20992-Shutting down,33792-Running under anti-PID condition,6400-Security mode,65-Off-grid charging,6144-Smart plant building status,20-Microgrid operation</font></td><td></td></tr>
+<tr>
+<td rowspan="28}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Combiner Box   </font><font style="color:#000000;"></font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">1002</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Interior Temperature</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">℃</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">1001</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">DC Bus Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">1006</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total DC Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">W</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">1005</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total DC Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">1009</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Ipv-1</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">1010</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Ipv-2</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">1011</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Ipv-3</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">1012</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Ipv-4</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">1013</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Ipv-5</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">1014</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Ipv-6</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">1015</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Ipv-7</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">1016</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Ipv-8</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">1017</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Ipv-9</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">1018</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Ipv-10</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">1019</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Ipv-11</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">1020</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Ipv-12</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">1021</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Ipv-13</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">1022</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Ipv-14</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">1023</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Ipv-15</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">1024</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Ipv-16</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">1025</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Ipv-17</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">1026</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Ipv-18</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">1027</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Ipv-19</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">1028</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Ipv-20</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">1029</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Ipv-21</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">1030</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Ipv-22</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">1031</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Ipv-23</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">1032</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Ipv-24</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="55}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Meteo Station   </font><font style="color:#000000;"></font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2003</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Transient Horizontal Irradiation</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">W/㎡</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2001</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Daily Horizontal Irradiation</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh/㎡</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2002</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total Horizontal Irradiation</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh/㎡</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2007</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Slope Transient Irradiation</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">W/㎡</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2005</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Slope Daily Irradiation</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh/㎡</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2006</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total Slope Irradiation</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh/㎡</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2009</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Ambient Temperature</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">℃</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2010</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Temp. (PV module)</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">℃</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2016</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Wind Speed</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">m/s</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2011</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Wind Speed Scale</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2012</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Wind Angle</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">°</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2014</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Atmospheric Pressure</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">hPa</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2015</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Ambient Humidity</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">%RH</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2022</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Rainfall</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">mm</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2026</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Precipitation</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">mm</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2100</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Temperature 1 (Backplane Temperature)</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">℃</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2101</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Temperature 2</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">℃</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2102</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Temperature 3</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">℃</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2103</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Temperature 4</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">℃</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2104</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Temperature 5</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">℃</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2105</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Dew Point</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2106</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Soil Moisture 1</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2107</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Soil Moisture 2</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2108</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Soil Moisture 3</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2109</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">CO₂</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2110</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Evaporation</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2111</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Instantaneous Value of Total Radiation 1</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2114</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Instantaneous Value of Total Radiation 2</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2112</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Instantaneous Value of Scattering Radiation</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2113</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Instantaneous Value of Direct Radiation</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2115</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Instantaneous Value of Net Radiation</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2116</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Instantaneous Value of Photosynthetic Radiation</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2117</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Instantaneous Value of Ultraviolet Radiation</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2118</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Instantaneous Value of Wind Direction</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2119</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Instantaneous Value of Wind Speed</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2120</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">2-Minute Wind Speed</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2121</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">10-Minute Wind Speed</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2122</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Cumulative Value of Rainfall Time Interval</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2123</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Cumulative Value of Sunshine Time Interval</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2124</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Cumulative Value of Total Radiation 1 Time Interval</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2127</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Cumulative Value of Total Radiation 2 Time Interval</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2125</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Cumulative Value of Scattering Radiation Time Interval</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2126</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Cumulative Value of Direct Radiation Time Interval</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2128</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Cumulative Value of Net Radiation Time Interval</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2129</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Cumulative Value of Photosynthetic Radiation Time Interval</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2130</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Cumulative Value of Ultraviolet Radiation Time Interval</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2131</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Daliy Accumulation of Rainfall</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2132</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Daliy Accumulation of Sunshine</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2133</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Daily Cumulative Value of Total Radiation 1</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2136</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Daily Cumulative Value of Total Radiation 1</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2134</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Daily Cumulative Value of Scattering Radiation</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2135</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Daily Cumulative Value of Direct Radiation</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2137</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Daily Cumulative Value of Net Radiation</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2138</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Daily Cumulative Value of Photosynthetic Radiation</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">2139</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Daily Cumulative Value of Ultraviolet Radiation</font></td><td></td></tr>
+<tr>
+<td rowspan="41}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Meter   </font><font style="color:#000000;"></font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">8030</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Forward Active Energy</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">8031</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Reverse Active Energy</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">8062</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Daily Forward Active Energy</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">8063</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Daily Reverse Active Energy</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">8032</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Forward Reactive Energy</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">varh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">8033</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Reverse Reactive Energy</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">varh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">8034</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Peak Forward Active Energy</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">8035</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Peak Reverse Active Energy</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">8038</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Valley Forward Active Energy</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">8039</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Valley Reverse Active Energy</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">8042</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Flat Forward Active Energy</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">8043</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Flat Reverse Active Energy</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">8058</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Wave Forward Active Energy</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">8059</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Wave Reverse Active Energy</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">8036</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Peak Forward Reactive Energy</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">8037</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Peak Reverse Reactive Energy</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">8040</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Valley Forward Reactive Energy</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">8041</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Valley Reverse Reactive Energy</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">8044</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Flat Forward Reactive Energy</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">8045</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Flat Reverse Reactive Energy</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">8060</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Wave Forward Reactive Energy</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">8061</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Wave Reverse Reactive Energy</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">8000</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Phase A Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">8001</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Phase B Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">8002</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Phase C Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">8003</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">A-B Line Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">8004</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">B-C Line Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">8005</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">C-A Line Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">8006</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Phase A Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">8007</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Phase B Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">8008</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Phase C Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">8064</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Frequency</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Hz</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">8018</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Meter Active Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">W</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">8022</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Reactive Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">var</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">8014</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">PF</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">8026</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Apparent Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">VA</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">8076</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Meter Phase A Active Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">W</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">8077</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Meter Phase B Active Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">W</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">8078</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Meter Phase C Active Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">W</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">8084</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Daily Direct Power Consumption</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">8085</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total Direct Power Consumption</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="20}" class="rowspan-td"><font style="color:#000000;">Communication   </font><font style="color:#000000;"></font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">10555</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">AI Voltage Signal 1</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">10557</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">AI Voltage Signal 2</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">10559</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">AI Voltage Signal 3</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">10561</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">AI Voltage Signal 4</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">10575</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">AI Current Signal 1</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">mA</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">10576</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">AI Current Signal 2</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">mA</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">10577</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">AI Current Signal 3</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">mA</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">10578</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">AI Current Signal 3</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">mA</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">10563</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">PT signal 1</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">℃</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">10565</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">PT signal 2</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">℃</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">10567</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">DO signal 1</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">10569</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">DO signal 2</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">10571</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">DO signal 3</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">10573</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">DO signal 4</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">10026</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">W</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">10046</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total Reactive Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">var</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">10587</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total Active Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">W</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">10510</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Mobile Network Signal Strength</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">10511</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">WLAN Signal Strength</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">10028</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total Yield</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="109}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Energy Storage System   </font><font style="color:#000000;"></font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13011</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Active Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">W</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13012</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total Reactive Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">var</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13003</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total DC Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">W</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13013</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total Power Factor</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13157</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Phase A Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13158</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Phase B Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13159</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Phase C Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13008</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Phase A Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13009</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Phase B Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13010</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Phase C Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13160</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Array Insulation Resistance</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">kΩ</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13007</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Grid Frequency</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Hz</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">18065</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Phase A Backup Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">W</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">18066</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Phase B Backup Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">W</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">18067</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Phase C Backup Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">W</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">18068</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total Backup Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">W</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">18062</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Phase A Backup Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">18063</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Phase B Backup Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">18064</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Phase C Backup Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13020</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total Operation Time</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">H</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13112</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Daily PV Yield</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13134</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total PV Yield</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13187</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">AC Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13188</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">AC Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13004</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">A-B Line Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13005</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">B-C Line Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13006</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">C-A Line Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13019</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Internal Air Temperature</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">℃</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13161</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Bus Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13001</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT1 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13105</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT2 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13107</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT3 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13109</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT4 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13002</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT1 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13106</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT2 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13108</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT3 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13110</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MPPT4 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13122</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Feed-in Energy Today</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13125</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total Feed-in Energy</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13147</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Energy Purchased Today</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13148</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total Purchased Energy</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13149</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Purchased Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">W</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13121</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Feed-in Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">W</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13173</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Feed-in Energy Today (PV)</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13175</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total Feed-in Energy (PV)</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13141</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Battery Level (SOC)</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13029</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Battery Discharging Energy Today</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13028</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Battery Charging Energy Today</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13138</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Battery Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13139</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Battery Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13035</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total Battery Discharging Energy</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13034</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total Battery Charging Energy</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13142</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Battery Health (SOH)</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13143</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Battery Temperature</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">℃</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13162</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Max. Charging Current (BMS)</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13163</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Max. Discharging Current (BMS)</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13174</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Daily Battery Charging Energy from PV</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13176</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total Battery Charging Energy from PV</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13126</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Battery Charging Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">W</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13150</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Battery Discharging Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">W</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13199</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Daily Load Consumption</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13137</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total Load Energy Consumption from PV</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13119</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Load Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">W</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13130</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total Load Consumption</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13116</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Daily Direct Energy Consumption</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13144</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Daily Self-consumption Rate</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13016</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total Charging Time</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">H</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13017</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total Discharging Time</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">H</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13018</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total Apparent Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">VA</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13023</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Daily Charging Time</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">H</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13024</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Daily Discharging Time</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">H</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13118</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Annual Direct Energy Consumption</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13165</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">MDSP Off-Grid Start Up Status</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13166</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">SDSP Working Mode</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13167</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">SDSP Off-grid Start Status</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13168</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">DI Status</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13169</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Battery Voltage (BMS)</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13170</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Battery SOC (BMS)</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13171</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">EMS Status</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13172</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Daily Self-Sufficiency Rate</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13140</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Battery Capacity (kWh)</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">18075</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Channel 2 Total Apparent Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">VA</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">18076</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Channel 2 Phase A Apparent Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">VA</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">18077</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Channel 2 Phase B Apparent Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">VA</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">18078</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Channel 2 Phase C Apparent Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">VA</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">18079</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Channel 2 Total Active Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">W</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">18080</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Channel 2 Phase A Active Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">W</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">18081</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Channel 2 Phase B Active Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">W</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">18082</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Channel 2 Phase C Active Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">W</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">18083</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Channel 2 Total Reactive Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">var</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">18084</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Channel 2 Phase A Reactive Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">var</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">18085</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Channel 2 Phase B Reactive Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">var</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">18086</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Channel 2 Phase C Reactive Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">var</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">18087</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Channel 2 Power Factor</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">18088</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Channel 2 Total Purchased Energy</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">18089</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Channel 2 Phase A Purchased Energy</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">18090</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Channel 2 Phase B Purchased Energy</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">18091</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Channel 2 Phase C Purchased Energy</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">18092</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Channel 2 Total Feed-in Energy</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">18093</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Channel 2 Phase A Feed-in Energy</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">18094</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Channel 2 Phase B Feed-in Energy</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">18095</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Channel 2 Phase C Feed-in Energy</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">18103</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Phase A Backup Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">18104</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Phase B Backup Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">18105</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Phase C Backup Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">18108</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Meter Phase-A Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">18109</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Meter Phase-B Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">18110</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Meter Phase-C Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">13146</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Operating status,0-Grid-connected operation,1024-Operation in maintenance mode,2048-Forced mode operation,4096-Off-grid,8192-Open loop,16384-Operation in energy dispatch mode,16385-Operation in emergency charging mode,4369-Uninitialized,32768-Shut down,4864-Awaiting startup,5376-Emergency stop,5120-Standby,4608-Initial standby,5632-Starting up,37120-Running with alarm,33024-Derated running,33280-Dispatched running,21760-Shut down due to faults,5888-AFCI self-test,1-Shut down,2-Awaiting startup,4-Emergency stop,8-Standby,16-Initial standby,32-Starting up,64-The inverter is successfully connected to the grid and operating normally,128-Derated running,256-Operation fault,512-Update failed,9472-LCD and DSP communication fault,9473-Restarting,16435-Low insulation resistance,16439-Insulation board anomaly,20992-Shutting down,33792-Running under anti-PID condition,6400-Security mode,65-Off-grid DC charging,20-Microgrid operation</font></td><td></td></tr>
+<tr>
+<td rowspan="3}" class="rowspan-td"><font style="color:#000000;"> Communication Module   </font><font style="color:#000000;"></font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">23001</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Wireless Signal Strength</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">23014</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">WLAN Signal Strength</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">23008</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Card ID</font></td><td></td></tr>
+<tr>
+<td rowspan="35}" class="rowspan-td"><font style="color:#000000;">Battery   </font><font style="color:#000000;"></font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">58601</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Battery Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">58602</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Battery Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">58603</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Battery Temperature</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">℃</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">58604</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Battery Level</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">58605</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Battery Health (SOH)</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">58606</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total Battery Charging Energy</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">58607</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total Battery Discharging Energy</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">58608</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Battery Operation Status(0: Unplugged, 1: Standby, 2: Run, 3: Fault, 4: Shutdown, 5: Upgrade, 6: Correction, 7: Test)</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">58609</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Standard Health Status</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">58610</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Max.Voltage of Cell</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">mV</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">58611</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Position of Max-Voltage Cell</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">58612</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Min.Voltage of Cell</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">mV</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">58613</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Position of Min-Voltage Cell</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">58614</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Max.Temperature of Module</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">℃</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">58615</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Max.Temperature Position of Module</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">58616</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Min.Temperature of Module</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">℃</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">58617</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Min.Temperature Position of Module</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">58618</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Max. Cell Voltage of Module 1</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">mV</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">58619</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Max. Cell Voltage of Module 2</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">mV</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">58620</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Max. Cell Voltage of Module 3</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">mV</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">58621</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Max. Cell Voltage of Module 4</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">mV</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">58622</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Max. Cell Voltage of Module 5</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">mV</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">58623</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Max. Cell Voltage of Module 6</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">mV</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">58624</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Max. Cell Voltage of Module 7</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">mV</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">58625</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Max. Cell Voltage of Module 8</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">mV</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">58626</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Min. Cell Voltage of Module 1</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">mV</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">58627</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Min. Cell Voltage of Module 2</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">mV</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">58628</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Min. Cell Voltage of Module 3</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">mV</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">58629</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Min. Cell Voltage of Module 4</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">mV</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">58630</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Min. Cell Voltage of Module 5</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">mV</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">58631</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Min. Cell Voltage of Module 6</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">mV</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">58632</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Min. Cell Voltage of Module 7</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">mV</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">58633</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Min. Cell Voltage of Module 8</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">mV</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">58635</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">DC Contactor Status</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">58636</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Fault Module ID</font></td><td></td></tr>
+<tr>
+<td rowspan="12}" class="rowspan-td"><font style="color:#000000;">EMS   </font><font style="color:#000000;"></font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">24620</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">ESS Daily Charge</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">24622</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">ESS Total Charge</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">24621</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">ESS Daily Discharge</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">24623</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">ESS Total Discharge</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">24624</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">PV Active Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">W</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">24625</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Energy Storage Active Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">W</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">24626</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Grid Active Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">W</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">24627</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Daily PV Yield</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">24628</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total PV Yield</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">24629</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Energy Storage SOC</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">%</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">24630</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Energy Storage Remaining Charge</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">24631</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Active Load</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">W</font></td></tr>
+<tr>
+<td rowspan="10}" class="rowspan-td"><font style="color:#000000;">LC   </font><font style="color:#000000;"></font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">59502</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Software Version</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">59546</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Daily Charge</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">59535</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total Charge</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">59547</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Daily Discharge</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">59536</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total Discharge</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">59541</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total Active Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">W</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">59542</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total Reactive Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">var</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">59551</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Working Mode</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">59552</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Working Status (0: Initial Status, 1: Self-test, 2: Self-test Failure, 3: Starting Up, 4: Running, 5: Warn Run, 6: Standby, 7: Stopped, 8: Shutdown, 9: Emergency Stop, 10: Shut Down due to Faults)</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">59705</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Device S/N</font></td><td></td></tr>
+<tr>
+<td rowspan="10}" class="rowspan-td"><font style="color:#000000;">PCS   </font><font style="color:#000000;"></font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">44010</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Overall Total Active Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">W</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">44011</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Overall total reactive power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">var</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">44012</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Overall PF</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">44029</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Overall Grid Frequency</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Hz</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">44025</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Work Mode</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">44231</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Running Status (0: On-grid Operation, 4096: Backup Operation, 4608: Initial Standby, 5632: Starting Up, 37120: Warn Run, 33024: Derating Running, 5120: Hot Standby, 4864: Press to Shut Down, 21760: Shut Down due to Faults, 5376: Emergency Stop, 12288: Running with Zero Power, 4610: Running)</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">44244</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Internal Air Temperature</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">℃</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">44803</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Device S/N</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">44823</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">PCS-DSP Version Number</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">44824</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">PCS-CPLD Version Number</font></td><td></td></tr>
+<tr>
+<td rowspan="9}" class="rowspan-td"><font style="color:#000000;">CMU   </font><font style="color:#000000;"></font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">59002</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">total voltage</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">59003</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total Current</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">59004</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">SOC</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">59006</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">rack cap</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">59008</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Highest cell voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">mV</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">59010</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Lowest Cell Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">mV</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">59012</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Highest cell temperature</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">℃</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">59014</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Min Cell Temperature</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">℃</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">59403</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Software Version</font></td><td></td></tr>
+<tr>
+<td rowspan="8}" class="rowspan-td"><font style="color:#000000;">BSC   </font><font style="color:#000000;"></font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">59008</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Highest cell voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">mV</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">59010</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Lowest Cell Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">mV</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">59012</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Highest cell temperature</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">℃</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">59014</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Min Cell Temperature</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">℃</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">59064</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Max Cell Voltage Position (#BMU~#Cell)</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">59065</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Min Cell Voltage Position (#BMU~#Cell)</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">59066</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Max Cell Temperature Position (BMU~#Cell)</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">59067</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Min Cell Temperature Position (BMU~#Cell)</font></td><td></td></tr>
+<tr>
+<td rowspan="13}" class="rowspan-td"><font style="color:#000000;">Charger   </font><font style="color:#000000;"></font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">33708</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Charging Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">kW</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">33722</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Min. Charge Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">kW</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">33723</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Max. Charging Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">kW</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">33702</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Phase A Charging Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">33704</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Phase B Charging Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">33706</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Phase C Charging Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">33710</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">CP Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">33707</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Phase C Charging Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">33705</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Phase B Charging Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">33703</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Phase A Charging Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">33728</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Max. Charging Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">33729</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Min. Charge Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">33716</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Charging Status (1: Idle (not plugged in)--2: Standby (plugged in)--3: Charging--4: Charging paused (station)--5: Charging paused (vehicle)--6: Charging completed--7: Reserved--8: Disabled--9: Fault)</font></td><td></td></tr>
+<tr>
+<td rowspan="41}" class="rowspan-td"><font style="color:#000000;">Micro Inverter   </font><font style="color:#000000;"></font><br><font style="color:#000000;"></font><br><font style="color:#000000;"></font><br><font style="color:#000000;"></font><br><font style="color:#000000;"></font><br><font style="color:#000000;"></font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">51301</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Running Status (21760: Shut Down due to Faults, 0: On-grid Operation, 1024: Maintenance Mode Operation, 2048: forced mode operation, 4096: Backup Operation, 8192: Open loop, 4608: Initial Standby, 32768: sShutdown, 5120: Standby, 5632: Starting Up, 33024: Derating Running, 33280: Dispatch Running, 4369: Initial Status, 4864: Press to Shut Down, 37120: Warn Run)</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">51346</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Yield Today</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">51302</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total Yield</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">51303</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total Active Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">W</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">51304</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total Reactive Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">var</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">51305</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total DC Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">W</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">51306</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total Apparent Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">VA</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">51307</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Total Power Factor</font></td><td></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">51308</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">Grid Frequency</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Hz</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">51309</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">AC Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">51312</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">AC Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">51315</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">PV1 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">51317</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">PV2 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">51319</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">PV3 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">51321</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">PV4 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">51323</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">PV5 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">51325</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">PV6 Voltage</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">V</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">51316</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">PV1 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">51318</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">PV2 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">51320</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">PV3 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">51322</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">PV4 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">51324</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">PV5 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">51326</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">PV6 Current</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">A</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">51333</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">PV1 Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">W</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">51334</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">PV2 Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">W</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">51335</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">PV3 Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">W</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">51336</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">PV4 Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">W</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">51337</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">PV5 Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">W</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">51338</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">PV6 Power</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">W</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">51347</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">PV1 Yield Today</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">51348</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">PV2 Yield Today</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">51349</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">PV3 Yield Today</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">51350</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">PV4 Yield Today</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">51351</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">PV5 Yield Today</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">51352</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">PV6 Yield Today</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">51339</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">PV1 Total Yield</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">51340</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">PV2 Total Yield</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">51341</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">PV3 Total Yield</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">51342</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">PV4 Total Yield</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">51343</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">PV5 Total Yield</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td"><font style="color:#222222;">51344</font></td><td rowspan="1}" class="rowspan-td"><font style="color:rgb(34, 34, 34);">PV6 Total Yield</font></td><td rowspan="1}" class="rowspan-td"><font style="color:#222222;">Wh</font></td></tr>
+</tbody></table>
+</div><div data-v-b595fd65=""><div data-v-fdad8a6e="" data-v-b595fd65="" style="display: none;"><div data-v-fdad8a6e="" class="right-nav-container"><!----><div data-v-fdad8a6e="" class="sg-scrollbar sg-scrollbar-type-embed"><div class="sg-scrollbar-container" style="height: calc(-558px + 100vh); min-height: 240px; overflow-y: auto;"><div data-v-fdad8a6e="" class="content-view"><div data-v-fdad8a6e="" id="h1_0_0" class="right-nav-container-list top-level anchor-active">Query Historical Daily/Monthly/Yearly Measuring Point Data of Devices of the Same Type</div><div data-v-fdad8a6e="" id="h1_1_1" class="right-nav-container-list top-level">1.&nbsp;Request parameters</div><div data-v-fdad8a6e="" id="h1_2_2" class="right-nav-container-list top-level">2.&nbsp;Return parameters</div><div data-v-fdad8a6e="" id="h2_3_3" class="right-nav-container-list second-level">2.1&nbsp;Success examples</div><div data-v-fdad8a6e="" id="h2_4_4" class="right-nav-container-list second-level">2.2&nbsp;Failure example</div><div data-v-fdad8a6e="" id="h1_5_5" class="right-nav-container-list top-level">3.&nbsp;More information</div><div data-v-fdad8a6e="" id="h2_6_6" class="right-nav-container-list second-level">3.1 Device Measuring Points</div></div></div><!--v-if--><!--v-if--></div></div><!----></div></div></div>

@@ -1,0 +1,14 @@
+<div data-v-b595fd65="" data-v-e0def71f="" class="markdown-render" style=""><div data-v-b595fd65="" class="markdown-body"><h1 id="h1_0">Common communications module measuring points</h1>
+<table>
+<thead>
+<tr>
+<th rowspan="1}" class="rowspan-td"><strong>Measuring Point ID</strong></th><th rowspan="1}" class="rowspan-td"><strong>Measuring Point Name</strong></th><th rowspan="1}" class="rowspan-td"><strong>Unit</strong></th></tr>
+</thead>
+<tbody><tr>
+<td rowspan="1}" class="rowspan-td">23001</td><td rowspan="1}" class="rowspan-td">Wireless Signal Strength</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">23014</td><td rowspan="1}" class="rowspan-td">WLAN Signal Strength</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">23008</td><td rowspan="1}" class="rowspan-td">Card ID</td></tr>
+</tbody></table>
+</div><div data-v-b595fd65=""><div data-v-fdad8a6e="" data-v-b595fd65=""><div data-v-fdad8a6e="" class="right-nav-container"><!----><div data-v-fdad8a6e="" class="sg-scrollbar sg-scrollbar-type-embed"><div class="sg-scrollbar-container" style="height: calc(-558px + 100vh); min-height: 240px; overflow-y: auto;"><div data-v-fdad8a6e="" class="content-view"><div data-v-fdad8a6e="" id="h1_0_0" class="right-nav-container-list top-level anchor-active">Common communications module measuring points</div></div></div><!--v-if--><!--v-if--></div></div><!----></div></div></div>

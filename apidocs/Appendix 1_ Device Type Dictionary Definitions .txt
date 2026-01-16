@@ -1,0 +1,94 @@
+<div data-v-b595fd65="" data-v-e0def71f="" class="markdown-render" style=""><div data-v-b595fd65="" class="markdown-body"><h1 id="h1_0">Appendix 1: Device Type Dictionary Definitions</h1>
+<table>
+<thead>
+<tr>
+<th rowspan="1}" class="rowspan-td"><strong>device_type</strong></th><th rowspan="1}" class="rowspan-td"><strong>Device Type Name (CN)</strong></th><th rowspan="1}" class="rowspan-td"><strong>Device Type Name (EN)</strong></th></tr>
+</thead>
+<tbody><tr>
+<td rowspan="1}" class="rowspan-td">1</td><td rowspan="1}" class="rowspan-td">逆变器</td><td rowspan="1}" class="rowspan-td">Inverter</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">2</td><td rowspan="1}" class="rowspan-td">集装箱</td><td rowspan="1}" class="rowspan-td">Container</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">3</td><td rowspan="1}" class="rowspan-td">并网点</td><td rowspan="1}" class="rowspan-td">Grid-Connection Point</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">4</td><td rowspan="1}" class="rowspan-td">汇流箱</td><td rowspan="1}" class="rowspan-td">Combiner Box</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">5</td><td rowspan="1}" class="rowspan-td">环境监测仪</td><td rowspan="1}" class="rowspan-td">Meteo Station</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">6</td><td rowspan="1}" class="rowspan-td">变压器</td><td rowspan="1}" class="rowspan-td">Transformer</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">7</td><td rowspan="1}" class="rowspan-td">电表</td><td rowspan="1}" class="rowspan-td">Meter</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">8</td><td rowspan="1}" class="rowspan-td">UPS</td><td rowspan="1}" class="rowspan-td">UPS</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">9</td><td rowspan="1}" class="rowspan-td">数据采集器</td><td rowspan="1}" class="rowspan-td">Data Logger</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10</td><td rowspan="1}" class="rowspan-td">组串</td><td rowspan="1}" class="rowspan-td">String</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">11</td><td rowspan="1}" class="rowspan-td">电站</td><td rowspan="1}" class="rowspan-td">Plant</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">12</td><td rowspan="1}" class="rowspan-td">线路保护</td><td rowspan="1}" class="rowspan-td">Circuit Protection</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">13</td><td rowspan="1}" class="rowspan-td">解列装置</td><td rowspan="1}" class="rowspan-td">Splitting Device</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">14</td><td rowspan="1}" class="rowspan-td">储能逆变器</td><td rowspan="1}" class="rowspan-td">Energy Storage System</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">15</td><td rowspan="1}" class="rowspan-td">采集设备</td><td rowspan="1}" class="rowspan-td">Sampling Device</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">16</td><td rowspan="1}" class="rowspan-td">EMU</td><td rowspan="1}" class="rowspan-td">EMU</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">17</td><td rowspan="1}" class="rowspan-td">单元</td><td rowspan="1}" class="rowspan-td">Unit</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">18</td><td rowspan="1}" class="rowspan-td">温湿度传感器</td><td rowspan="1}" class="rowspan-td">Temperature and Humidity Sensor</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">19</td><td rowspan="1}" class="rowspan-td">智能配电柜</td><td rowspan="1}" class="rowspan-td">Intelligent Power Distribution Cabinet</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">20</td><td rowspan="1}" class="rowspan-td">显示设备</td><td rowspan="1}" class="rowspan-td">Display Device</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">21</td><td rowspan="1}" class="rowspan-td">交流配电柜</td><td rowspan="1}" class="rowspan-td">AC Power Distributed Cabinet</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">22</td><td rowspan="1}" class="rowspan-td">通信模块</td><td rowspan="1}" class="rowspan-td">Communication Module</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">23</td><td rowspan="1}" class="rowspan-td">系统BMS</td><td rowspan="1}" class="rowspan-td">System-BMS</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">24</td><td rowspan="1}" class="rowspan-td">阵列BMS</td><td rowspan="1}" class="rowspan-td">Array-BMS</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">25</td><td rowspan="1}" class="rowspan-td">直流-直流</td><td rowspan="1}" class="rowspan-td">DC-DC</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">26</td><td rowspan="1}" class="rowspan-td">能量管理系统</td><td rowspan="1}" class="rowspan-td">Energy Management System</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">27</td><td rowspan="1}" class="rowspan-td">跟踪系统</td><td rowspan="1}" class="rowspan-td">Tracking System</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">28</td><td rowspan="1}" class="rowspan-td">风能变流器</td><td rowspan="1}" class="rowspan-td">Wind Energy Converter</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">29</td><td rowspan="1}" class="rowspan-td">SVG</td><td rowspan="1}" class="rowspan-td">SVG</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">30</td><td rowspan="1}" class="rowspan-td">PT柜</td><td rowspan="1}" class="rowspan-td">PT Cabinet</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">31</td><td rowspan="1}" class="rowspan-td">母线保护</td><td rowspan="1}" class="rowspan-td">Bus Protection</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">32</td><td rowspan="1}" class="rowspan-td">清扫机器人</td><td rowspan="1}" class="rowspan-td">Cleaning Device</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">33</td><td rowspan="1}" class="rowspan-td">直流屏</td><td rowspan="1}" class="rowspan-td">Direct Current Cabinet</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">34</td><td rowspan="1}" class="rowspan-td">公用测控</td><td rowspan="1}" class="rowspan-td">Public Measurement and Control</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">37</td><td rowspan="1}" class="rowspan-td">储能变流器</td><td rowspan="1}" class="rowspan-td">PCS</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">41</td><td rowspan="1}" class="rowspan-td">优化器</td><td rowspan="1}" class="rowspan-td">Optimizer</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">43</td><td rowspan="1}" class="rowspan-td">电池</td><td rowspan="1}" class="rowspan-td">Battery</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">44</td><td rowspan="1}" class="rowspan-td">电池簇管理单元</td><td rowspan="1}" class="rowspan-td">Battery Cluster Management Unit</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">45</td><td rowspan="1}" class="rowspan-td">本地控制器</td><td rowspan="1}" class="rowspan-td">Local Controller</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">51</td><td rowspan="1}" class="rowspan-td">充电桩</td><td rowspan="1}" class="rowspan-td">Charger</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">52</td><td rowspan="1}" class="rowspan-td">电池系统控制器</td><td rowspan="1}" class="rowspan-td">Battery System Controller</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">55</td><td rowspan="1}" class="rowspan-td">微型逆变器</td><td rowspan="1}" class="rowspan-td">Microinverter</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">63</td><td rowspan="1}" class="rowspan-td">柴油发电机</td><td rowspan="1}" class="rowspan-td">Diesel Generator</td></tr>
+</tbody></table>
+</div><div data-v-b595fd65=""><div data-v-fdad8a6e="" data-v-b595fd65=""><div data-v-fdad8a6e="" class="right-nav-container"><!----><div data-v-fdad8a6e="" class="sg-scrollbar sg-scrollbar-type-embed"><div class="sg-scrollbar-container" style="height: calc(-558px + 100vh); min-height: 240px; overflow-y: auto;"><div data-v-fdad8a6e="" class="content-view"><div data-v-fdad8a6e="" id="h1_0_0" class="right-nav-container-list top-level anchor-active">Appendix 1: Device Type Dictionary Definitions</div></div></div><!--v-if--><!--v-if--></div></div><!----></div></div></div>

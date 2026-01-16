@@ -1,0 +1,59 @@
+<div data-v-b595fd65="" data-v-e0def71f="" class="markdown-render" style=""><div data-v-b595fd65="" class="markdown-body"><h1 id="h1_0">Appendix 5: AES Encryption Code Example</h1>
+
+      <div class="md-copy">
+      <pre><code><span class="hljs-comment">/**
+*AES encryption rule：
+*Encryption mode：ECB
+*Padding method：pkcs5padding
+*data block：128 bit
+*Offset：no offset
+*Output：hex
+*Character set：utf8 encoding
+**/</span>
+<span class="hljs-keyword">public</span> String <span class="hljs-title function_">encrypt</span><span class="hljs-params">(String content, String password)</span>  <span class="hljs-keyword">throws</span> Exception {
+    <span class="hljs-keyword">try</span> {
+        <span class="hljs-type">byte</span>[] result = <span class="hljs-literal">null</span>;
+        <span class="hljs-type">byte</span>[] passwordBytes = getSecretKey(password) ;
+        <span class="hljs-type">SecretKeySpec</span> <span class="hljs-variable">skeySpec</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">SecretKeySpec</span>(passwordBytes, <span class="hljs-string">"AES"</span>);
+        <span class="hljs-type">Cipher</span> <span class="hljs-variable">cipher</span> <span class="hljs-operator">=</span> Cipher.getInstance(<span class="hljs-string">"AES/ECB/PKCS5Padding"</span>);
+        cipher.init(Cipher.ENCRYPT_MODE, skeySpec);
+        result = cipher.doFinal(content.getBytes(<span class="hljs-string">"UTF-8"</span>));
+        <span class="hljs-keyword">return</span> parseByte2HexStr(result) ;
+    } <span class="hljs-keyword">catch</span> (Exception e) {
+        <span class="hljs-comment">//Deal Exception</span>
+    }
+}
+                                                                                                                                        
+<span class="hljs-keyword">public</span> <span class="hljs-type">byte</span>[] getSecretKey(String key) <span class="hljs-keyword">throws</span> Exception{
+    <span class="hljs-keyword">final</span> <span class="hljs-type">byte</span> <span class="hljs-variable">paddingChar</span> <span class="hljs-operator">=</span> <span class="hljs-string">'0'</span>;
+    <span class="hljs-type">byte</span>[] realKey = <span class="hljs-keyword">new</span> <span class="hljs-title class_">byte</span>[<span class="hljs-number">16</span>];
+    <span class="hljs-type">byte</span>[] byteKey = key.getBytes(<span class="hljs-string">"UTF-8"</span>);
+    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> <span class="hljs-variable">i</span> <span class="hljs-operator">=</span><span class="hljs-number">0</span>;i&lt;realKey.length;i++){
+        <span class="hljs-keyword">if</span> (i&lt;byteKey.length){
+            realKey[i] = byteKey[i];
+        }<span class="hljs-keyword">else</span>{
+            realKey[i] = paddingChar;
+        }
+    }
+    <span class="hljs-keyword">return</span> realKey;
+}
+
+<span class="hljs-keyword">public</span> String <span class="hljs-title function_">parseByte2HexStr</span><span class="hljs-params">(<span class="hljs-type">byte</span> buf[])</span> {
+    <span class="hljs-type">StringBuffer</span> <span class="hljs-variable">sb</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">StringBuffer</span>();
+    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> <span class="hljs-variable">i</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>; i &lt; buf.length; i++) {
+        <span class="hljs-type">String</span> <span class="hljs-variable">hex</span> <span class="hljs-operator">=</span> Integer.toHexString(buf[i] &amp; <span class="hljs-number">0xFF</span>);
+        <span class="hljs-keyword">if</span> (hex.length() == <span class="hljs-number">1</span>) {
+            hex = <span class="hljs-string">'0'</span> + hex;
+        }
+        sb.append(hex.toUpperCase());
+    }
+    <span class="hljs-keyword">return</span> sb.toString();
+}</code></pre>
+      <div class="md-copy-button">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="2.91846" y="2.91858" width="10.8333" height="10.8333" rx="2.08333" stroke="#999999" stroke-width="1.66667"></rect>
+          <path d="M13.75 6.25H15C16.1506 6.25 17.0833 7.18274 17.0833 8.33333V15C17.0833 16.1506 16.1506 17.0833 15 17.0833H8.33333C7.18274 17.0833 6.25 16.1506 6.25 15V13.75" stroke="#999999" stroke-width="1.66667"></path>
+        </svg>
+      </div>
+      </div>
+      </div><div data-v-b595fd65=""><div data-v-fdad8a6e="" data-v-b595fd65=""><div data-v-fdad8a6e="" class="right-nav-container"><!----><div data-v-fdad8a6e="" class="sg-scrollbar sg-scrollbar-type-embed"><div class="sg-scrollbar-container" style="height: calc(-558px + 100vh); min-height: 240px; overflow-y: auto;"><div data-v-fdad8a6e="" class="content-view"><div data-v-fdad8a6e="" id="h1_0_0" class="right-nav-container-list top-level anchor-active">Appendix 5: AES Encryption Code Example</div></div></div><!--v-if--><!--v-if--></div></div><!----></div></div></div>

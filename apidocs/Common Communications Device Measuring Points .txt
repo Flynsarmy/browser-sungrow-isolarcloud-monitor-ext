@@ -1,0 +1,48 @@
+<div data-v-b595fd65="" data-v-e0def71f="" class="markdown-render" style=""><div data-v-b595fd65="" class="markdown-body"><h1 id="h1_0">Common communications device measuring points</h1>
+<table>
+<thead>
+<tr>
+<th rowspan="1}" class="rowspan-td"><strong>Measuring Point ID</strong></th><th rowspan="1}" class="rowspan-td"><strong>Measuring Point Name</strong></th><th rowspan="1}" class="rowspan-td"><strong>Unit</strong></th></tr>
+</thead>
+<tbody><tr>
+<td rowspan="1}" class="rowspan-td">10555</td><td rowspan="1}" class="rowspan-td">AI Voltage Signal 1</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10575</td><td rowspan="1}" class="rowspan-td">AI Current Signal 1</td><td rowspan="1}" class="rowspan-td">mA</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10557</td><td rowspan="1}" class="rowspan-td">AI Voltage Signal 2</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10576</td><td rowspan="1}" class="rowspan-td">AI Current Signal 2</td><td rowspan="1}" class="rowspan-td">mA</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10559</td><td rowspan="1}" class="rowspan-td">AI Voltage Signal 3</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10577</td><td rowspan="1}" class="rowspan-td">AI Current Signal 3</td><td rowspan="1}" class="rowspan-td">mA</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10561</td><td rowspan="1}" class="rowspan-td">AI Voltage Signal 4</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10578</td><td rowspan="1}" class="rowspan-td">AI Current Signal 4</td><td rowspan="1}" class="rowspan-td">mA</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10563</td><td rowspan="1}" class="rowspan-td">PT signal 1</td><td rowspan="1}" class="rowspan-td">°C</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10565</td><td rowspan="1}" class="rowspan-td">PT signal 2</td><td rowspan="1}" class="rowspan-td">°C</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10567</td><td rowspan="1}" class="rowspan-td">DO signal 1</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10569</td><td rowspan="1}" class="rowspan-td">DO signal 2</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10571</td><td rowspan="1}" class="rowspan-td">DO signal 3</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10573</td><td rowspan="1}" class="rowspan-td">DO signal 4</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10026</td><td rowspan="1}" class="rowspan-td">Total Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10028</td><td rowspan="1}" class="rowspan-td">Total Yield</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10046</td><td rowspan="1}" class="rowspan-td">Total Reactive Power</td><td rowspan="1}" class="rowspan-td">var</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10510</td><td rowspan="1}" class="rowspan-td">Mobile Network Signal Strength</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10511</td><td rowspan="1}" class="rowspan-td">WLAN Signal Strength</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">10587</td><td rowspan="1}" class="rowspan-td">Total Active Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+</tbody></table>
+</div><div data-v-b595fd65=""><div data-v-fdad8a6e="" data-v-b595fd65=""><div data-v-fdad8a6e="" class="right-nav-container"><!----><div data-v-fdad8a6e="" class="sg-scrollbar sg-scrollbar-type-embed"><div class="sg-scrollbar-container" style="height: calc(-558px + 100vh); min-height: 240px; overflow-y: auto;"><div data-v-fdad8a6e="" class="content-view"><div data-v-fdad8a6e="" id="h1_0_0" class="right-nav-container-list top-level anchor-active">Common communications device measuring points</div></div></div><!--v-if--><!--v-if--></div></div><!----></div></div></div>

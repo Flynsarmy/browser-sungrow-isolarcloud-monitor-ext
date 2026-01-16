@@ -1,0 +1,91 @@
+<div data-v-b595fd65="" data-v-e0def71f="" class="markdown-render" style=""><div data-v-b595fd65="" class="markdown-body"><h1 id="h1_0">Common Measuring Points of Micro-inverters</h1>
+<table>
+<thead>
+<tr>
+<th rowspan="1}" class="rowspan-td"><strong>Measuring Point id</strong></th><th rowspan="1}" class="rowspan-td"><strong>Measuring Point</strong></th><th rowspan="1}" class="rowspan-td"><strong>Unit</strong></th></tr>
+</thead>
+<tbody><tr>
+<td rowspan="1}" class="rowspan-td">51301</td><td rowspan="1}" class="rowspan-td">Running Status (21760: Shut Down due to Faults, 0: On-grid Operation, 1024: Maintenance Mode Operation, 2048: forced mode operation, 4096: Backup Operation, 8192: Open loop, 4608: Initial Standby, 32768: sShutdown, 5120: Standby, 5632: Starting Up, 33024: Derating Running, 33280: Dispatch Running, 4369: Initial Status, 4864: Press to Shut Down, 37120: Warn Run)</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">51302</td><td rowspan="1}" class="rowspan-td">Total Yield</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">51303</td><td rowspan="1}" class="rowspan-td">Total Active Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">51304</td><td rowspan="1}" class="rowspan-td">Total Reactive Power</td><td rowspan="1}" class="rowspan-td">var</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">51305</td><td rowspan="1}" class="rowspan-td">Total DC Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">51306</td><td rowspan="1}" class="rowspan-td">Total Apparent Power</td><td rowspan="1}" class="rowspan-td">VA</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">51307</td><td rowspan="1}" class="rowspan-td">Total Power Factor</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">51308</td><td rowspan="1}" class="rowspan-td">Grid Frequency</td><td rowspan="1}" class="rowspan-td">Hz</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">51309</td><td rowspan="1}" class="rowspan-td">AC Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">51312</td><td rowspan="1}" class="rowspan-td">AC Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">51315</td><td rowspan="1}" class="rowspan-td">PV1 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">51316</td><td rowspan="1}" class="rowspan-td">PV1 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">51317</td><td rowspan="1}" class="rowspan-td">PV2 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">51318</td><td rowspan="1}" class="rowspan-td">PV2 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">51319</td><td rowspan="1}" class="rowspan-td">PV3 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">51320</td><td rowspan="1}" class="rowspan-td">PV3 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">51321</td><td rowspan="1}" class="rowspan-td">PV4 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">51322</td><td rowspan="1}" class="rowspan-td">PV4 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">51323</td><td rowspan="1}" class="rowspan-td">PV5 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">51324</td><td rowspan="1}" class="rowspan-td">PV5 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">51325</td><td rowspan="1}" class="rowspan-td">PV6 Voltage</td><td rowspan="1}" class="rowspan-td">V</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">51326</td><td rowspan="1}" class="rowspan-td">PV6 Current</td><td rowspan="1}" class="rowspan-td">A</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">51333</td><td rowspan="1}" class="rowspan-td">PV1 Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">51334</td><td rowspan="1}" class="rowspan-td">PV2 Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">51335</td><td rowspan="1}" class="rowspan-td">PV3 Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">51336</td><td rowspan="1}" class="rowspan-td">PV4 Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">51337</td><td rowspan="1}" class="rowspan-td">PV5 Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">51338</td><td rowspan="1}" class="rowspan-td">PV6 Power</td><td rowspan="1}" class="rowspan-td">W</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">51339</td><td rowspan="1}" class="rowspan-td">PV1 Total Yield</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">51340</td><td rowspan="1}" class="rowspan-td">PV2 Total Yield</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">51341</td><td rowspan="1}" class="rowspan-td">PV3 Total Yield</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">51342</td><td rowspan="1}" class="rowspan-td">PV4 Total Yield</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">51343</td><td rowspan="1}" class="rowspan-td">PV5 Total Yield</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">51344</td><td rowspan="1}" class="rowspan-td">PV6 Total Yield</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">51346</td><td rowspan="1}" class="rowspan-td">Yield Today</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">51347</td><td rowspan="1}" class="rowspan-td">PV1 Yield Today</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">51348</td><td rowspan="1}" class="rowspan-td">PV2 Yield Today</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">51349</td><td rowspan="1}" class="rowspan-td">PV3 Yield Today</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">51350</td><td rowspan="1}" class="rowspan-td">PV4 Yield Today</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">51351</td><td rowspan="1}" class="rowspan-td">PV5 Yield Today</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+<tr>
+<td rowspan="1}" class="rowspan-td">51352</td><td rowspan="1}" class="rowspan-td">PV6 Yield Today</td><td rowspan="1}" class="rowspan-td">Wh</td></tr>
+</tbody></table>
+<p>You can obtain more information about open measuring points through the getOpenPointInfo interface.</p>
+</div><div data-v-b595fd65=""><div data-v-fdad8a6e="" data-v-b595fd65=""><div data-v-fdad8a6e="" class="right-nav-container"><!----><div data-v-fdad8a6e="" class="sg-scrollbar sg-scrollbar-type-embed"><div class="sg-scrollbar-container" style="height: calc(-558px + 100vh); min-height: 240px; overflow-y: auto;"><div data-v-fdad8a6e="" class="content-view"><div data-v-fdad8a6e="" id="h1_0_0" class="right-nav-container-list top-level anchor-active">Common Measuring Points of Micro-inverters</div></div></div><!--v-if--><!--v-if--></div></div><!----></div></div></div>

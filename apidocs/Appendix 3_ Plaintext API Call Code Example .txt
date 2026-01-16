@@ -1,0 +1,78 @@
+<div data-v-b595fd65="" data-v-e0def71f="" class="markdown-render" style=""><div data-v-b595fd65="" class="markdown-body"><h1 id="h1_0">Appendix 3: Plaintext API Call Code Example</h1>
+
+      <div class="md-copy">
+      <pre><code><span class="hljs-keyword">import</span> org.apache.http.client.methods.CloseableHttpResponse;
+<span class="hljs-keyword">import</span> org.apache.http.client.methods.HttpPost;
+<span class="hljs-keyword">import</span> org.apache.http.entity.StringEntity;
+<span class="hljs-keyword">import</span> org.apache.http.impl.client.CloseableHttpClient;
+<span class="hljs-keyword">import</span> org.apache.http.impl.client.HttpClients;
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">UserTest</span>{
+    Public <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span>
+    {
+        CloseableHttpClienthttpclient = HttpClients.createDefault();
+        <span class="hljs-type">String</span> <span class="hljs-variable">url</span> <span class="hljs-operator">=</span> <span class="hljs-string">"https://API domain name which is provided by iSolarCloud/xxx/xxx"</span>;
+        HttpPosthttppost = <span class="hljs-keyword">new</span> <span class="hljs-title class_">HttpPost</span>(url);
+        <span class="hljs-keyword">try</span>
+        {
+            <span class="hljs-comment">// Header</span>
+            httppost.addHeader(<span class="hljs-string">"sys_code"</span>, <span class="hljs-string">"901"</span>);
+            HashMap&lt;String, Object&gt;req = <span class="hljs-keyword">new</span> <span class="hljs-title class_">HashMap</span>&lt;String, Object&gt;();
+            <span class="hljs-comment">// Public parameter</span>
+            req.put(<span class="hljs-string">"appkey"</span>, <span class="hljs-string">"authorized appkey"</span>); 
+req.put(<span class="hljs-string">"token"</span>, <span class="hljs-string">"token returned by login API"</span>);  
+            <span class="hljs-comment">// Service</span>
+            req.put(<span class="hljs-string">"service"</span>, <span class="hljs-string">"service name"</span>);
+            req.put(<span class="hljs-string">"parameter 1"</span>, <span class="hljs-string">"parameter value"</span>);
+            <span class="hljs-type">String</span> <span class="hljs-variable">jsonStr</span> <span class="hljs-operator">=</span> com.alibaba.fastjson.JSON.toJSONString(req);
+            System.out.println(<span class="hljs-string">"send json-&lt;"</span> + jsonStr.toString());
+            StringEntitystrEntity = <span class="hljs-keyword">new</span> <span class="hljs-title class_">StringEntity</span>(jsonStr);
+            strEntity.setContentType(<span class="hljs-string">"application/json"</span>);
+            httppost.setEntity(strEntity);
+            <span class="hljs-type">CloseableHttpResponse</span> <span class="hljs-variable">response</span> <span class="hljs-operator">=</span> httpclient.execute(httppost);
+            <span class="hljs-keyword">try</span>
+            {
+                <span class="hljs-type">HttpEntity</span> <span class="hljs-variable">entity</span> <span class="hljs-operator">=</span> response.getEntity();
+                InputStreaminputStream = entity.getContent();
+                InputStreamReaderinputStreamReader = <span class="hljs-keyword">new</span> <span class="hljs-title class_">InputStreamReader</span>(
+                        inputStream, <span class="hljs-string">"UTF-8"</span>);
+                <span class="hljs-type">BufferedReader</span> <span class="hljs-variable">reader</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">BufferedReader</span>(inputStreamReader); 
+                <span class="hljs-type">StringBuilder</span> <span class="hljs-variable">result</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">StringBuilder</span>();
+                String s;
+                <span class="hljs-keyword">while</span> (((s = reader.readLine()) != <span class="hljs-literal">null</span>))
+                {
+                    result.append(s);
+                }
+                reader.close();
+                System.out.println(<span class="hljs-string">"receive json-&lt;"</span> + result.toString());
+            }
+            <span class="hljs-keyword">finally</span>
+            {
+                response.close();
+            }
+        }
+        <span class="hljs-keyword">catch</span> (Exception e)
+        {
+            e.printStackTrace();
+        }
+        <span class="hljs-keyword">finally</span>
+        {
+            <span class="hljs-keyword">try</span>
+            {
+                httpclient.close();
+            }
+            <span class="hljs-keyword">catch</span> (IOException e)
+            {
+                e.printStackTrace();
+            }
+        }
+    }
+}                     
+</code></pre>
+      <div class="md-copy-button">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="2.91846" y="2.91858" width="10.8333" height="10.8333" rx="2.08333" stroke="#999999" stroke-width="1.66667"></rect>
+          <path d="M13.75 6.25H15C16.1506 6.25 17.0833 7.18274 17.0833 8.33333V15C17.0833 16.1506 16.1506 17.0833 15 17.0833H8.33333C7.18274 17.0833 6.25 16.1506 6.25 15V13.75" stroke="#999999" stroke-width="1.66667"></path>
+        </svg>
+      </div>
+      </div>
+      </div><div data-v-b595fd65=""><div data-v-fdad8a6e="" data-v-b595fd65=""><div data-v-fdad8a6e="" class="right-nav-container"><!----><div data-v-fdad8a6e="" class="sg-scrollbar sg-scrollbar-type-embed"><div class="sg-scrollbar-container" style="height: calc(-558px + 100vh); min-height: 240px; overflow-y: auto;"><div data-v-fdad8a6e="" class="content-view"><div data-v-fdad8a6e="" id="h1_0_0" class="right-nav-container-list top-level anchor-active">Appendix 3: Plaintext API Call Code Example</div></div></div><!--v-if--><!--v-if--></div></div><!----></div></div></div>
