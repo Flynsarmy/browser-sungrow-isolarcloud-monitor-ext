@@ -26,7 +26,7 @@ export function PlantDeviceBattery({ device }: PlantDeviceBatteryProps) {
                     const data = response.data[0] as PlantDevicePointData;
                     const socValue = data["p58604"];
                     if (socValue !== undefined && socValue !== null) {
-                        setSoc(parseFloat(socValue) * 100);
+                        setSoc(Math.round(parseFloat(socValue) * 1000) / 10);
                     }
                 }
             } catch (error) {
