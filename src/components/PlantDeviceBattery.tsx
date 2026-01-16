@@ -72,7 +72,7 @@ export function PlantDeviceBattery({ device }: PlantDeviceBatteryProps) {
                 <div className="flex items-center text-[11px] text-slate-500 mt-0.5">
                     <span className="truncate">{device.type_name}</span>
                     <span className="mx-1.5 text-slate-300">|</span>
-                    <span className="font-mono">{device.ps_id}</span>
+                    <span className="font-mono">{device.ps_key}</span>
                 </div>
             </div>
         </div>
