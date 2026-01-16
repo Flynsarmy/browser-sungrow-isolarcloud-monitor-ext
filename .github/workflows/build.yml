@@ -1,0 +1,38 @@
+name: Build and Package Extension
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Build extension
+        run: bun run build
+
+      - name: Package as XPI
+        run: |
+          cd dist
+          zip -r ../sungrow-isolarcloud-monitor.xpi .
+          cd ..
+
+      - name: Upload XPI artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: sungrow-isolarcloud-monitor-xpi
+          path: sungrow-isolarcloud-monitor.xpi
+          if-no-files-found: error
