@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Sungrow API Auth",
+  "name": "Sungrow iSolarCloud Monitor",
   "version": "1.0",
   "description": "Firefox addon for authorizing with Sungrow Developer API",
   "permissions": [
@@ -19,7 +19,7 @@
     "type": "module"
   },
   "action": {
-    "default_title": "Sungrow API Auth",
+    "default_title": "Sungrow iSolarCloud Monitor",
     "default_icon": {
       "16": "icons/icon-16.svg",
       "32": "icons/icon-32.svg",

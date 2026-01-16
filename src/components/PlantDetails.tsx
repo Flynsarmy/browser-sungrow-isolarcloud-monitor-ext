@@ -21,25 +21,28 @@ const FAULT_STATUS: Record<number, { text: string; class: string }> = {
 
 interface PlantDetailsProps {
     plant: Plant;
+    showDetails: boolean;
 }
 
-export function PlantDetails({ plant }: PlantDetailsProps) {
+export function PlantDetails({ plant, showDetails }: PlantDetailsProps) {
     return (
         <div className="space-y-4">
-            <div className="bg-white border rounded-md p-3 text-sm space-y-2">
-                <DetailRow label="ID" value={String(plant.ps_id)} />
-                <DetailRow label="Name" value={plant.ps_name} />
-                <DetailRow label="Location" value={plant.ps_location} truncate />
-                <DetailRow label="Type" value={PLANT_TYPES[plant.ps_type] || 'Unknown'} />
-                <div className="flex justify-between items-center py-1 border-b border-dashed border-gray-100 last:border-0">
-                    <span className="text-slate-500 font-medium">Status</span>
-                    <span className={`px-2 py-0.5 rounded text-xs font-medium border ${FAULT_STATUS[plant.ps_fault_status]?.class || 'bg-gray-100'}`}>
-                        {FAULT_STATUS[plant.ps_fault_status]?.text || 'Unknown'}
-                    </span>
+            {showDetails && (
+                <div className="bg-white border rounded-md p-3 text-sm space-y-2">
+                    <DetailRow label="ID" value={String(plant.ps_id)} />
+                    <DetailRow label="Name" value={plant.ps_name} />
+                    <DetailRow label="Location" value={plant.ps_location} truncate />
+                    <DetailRow label="Type" value={PLANT_TYPES[plant.ps_type] || 'Unknown'} />
+                    <div className="flex justify-between items-center py-1 border-b border-dashed border-gray-100 last:border-0">
+                        <span className="text-slate-500 font-medium">Status</span>
+                        <span className={`px-2 py-0.5 rounded text-xs font-medium border ${FAULT_STATUS[plant.ps_fault_status]?.class || 'bg-gray-100'}`}>
+                            {FAULT_STATUS[plant.ps_fault_status]?.text || 'Unknown'}
+                        </span>
+                    </div>
+                    <DetailRow label="Online" value={plant.online_status === 1 ? 'Online' : 'Offline'} />
+                    <DetailRow label="Installed" value={plant.install_date?.split(' ')[0] || '-'} />
                 </div>
-                <DetailRow label="Online" value={plant.online_status === 1 ? 'Online' : 'Offline'} />
-                <DetailRow label="Installed" value={plant.install_date?.split(' ')[0] || '-'} />
-            </div>
+            )}
 
             <PlantDeviceList ps_id={plant.ps_id} />
         </div>

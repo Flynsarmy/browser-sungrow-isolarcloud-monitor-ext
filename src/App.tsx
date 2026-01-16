@@ -87,7 +87,7 @@ function App() {
         <div className="w-[400px] min-h-[400px] bg-slate-50 relative">
             <header className="bg-gradient-to-r from-slate-800 to-sky-600 p-4 shadow-sm">
                 <h2 className="text-white font-semibold text-lg flex items-center justify-between">
-                    Sungrow API Auth
+                    Sungrow iSolarCloud Monitor
                     <div className={`w-3 h-3 rounded-full ${isAuthenticated ? 'bg-emerald-400' : 'bg-red-400 shadow-sm'}`} />
                 </h2>
             </header>

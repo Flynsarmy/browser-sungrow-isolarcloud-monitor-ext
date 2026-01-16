@@ -3,6 +3,8 @@ import { Select } from "@/components/ui/select"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Plant } from "@/types"
 import { PlantDetails } from "./PlantDetails"
+import { Button } from "@/components/ui/button"
+import { Info } from "lucide-react"
 
 declare const browser: any;
 
@@ -10,6 +12,7 @@ export function PlantSelection() {
     const [plants, setPlants] = useState<Plant[]>([]);
     const [selectedId, setSelectedId] = useState<string>("");
     const [isLoading, setIsLoading] = useState(false);
+    const [showDetails, setShowDetails] = useState(false);
 
     useEffect(() => {
         loadPlants();
@@ -52,18 +55,30 @@ export function PlantSelection() {
                 <CardTitle className="text-lg">Plant Status</CardTitle>
             </CardHeader>
             <CardContent className="px-0">
-                <div className="mb-4">
-                    <Select value={selectedId} onChange={handleSelect} disabled={isLoading}>
-                        <option value="">{isLoading ? "Loading Plants..." : "Select a plant..."}</option>
-                        {plants.map(plant => (
-                            <option key={plant.ps_id} value={String(plant.ps_id)}>
-                                {plant.ps_id} - {plant.ps_name}
-                            </option>
-                        ))}
-                    </Select>
+                <div className="mb-4 flex gap-2">
+                    <div className="flex-1">
+                        <Select value={selectedId} onChange={handleSelect} disabled={isLoading}>
+                            <option value="">{isLoading ? "Loading Plants..." : "Select a plant..."}</option>
+                            {plants.map(plant => (
+                                <option key={plant.ps_id} value={String(plant.ps_id)}>
+                                    {plant.ps_id} - {plant.ps_name}
+                                </option>
+                            ))}
+                        </Select>
+                    </div>
+                    {selectedId && (
+                        <Button
+                            variant={showDetails ? "default" : "outline"}
+                            size="icon"
+                            onClick={() => setShowDetails(!showDetails)}
+                            title={showDetails ? "Hide Plant Details" : "Show Plant Details"}
+                        >
+                            <Info size={18} />
+                        </Button>
+                    )}
                 </div>
 
-                {selectedPlant && <PlantDetails plant={selectedPlant} />}
+                {selectedPlant && <PlantDetails plant={selectedPlant} showDetails={showDetails} />}
             </CardContent>
         </Card>
     )
