@@ -2,6 +2,8 @@
 
 A Firefox/Chrome extension that monitors your Sungrow solar plants and devices in real-time.
 
+![](screenshots/1.jpg)
+
 ## Features
 
 - **Plant Selection**: Browse and select from all your registered iSolarCloud plants.
