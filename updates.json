@@ -1,7 +1,12 @@
 {
-    "addons": {
-        "sungrow-isolarcloud-monitor@flynsarmy.com": {
-            "updates": []
+  "addons": {
+    "sungrow-isolarcloud-monitor@flynsarmy.com": {
+      "updates": [
+        {
+          "version": "1.0.2",
+          "update_link": "https://github.com/Flynsarmy/browser-sungrow-isolarcloud-monitor-ext/releases/download/v1.0.2/sungrow-isolarcloud-monitor-signed.xpi"
         }
+      ]
     }
+  }
 }
