@@ -46,18 +46,40 @@ jobs:
       - name: Build extension
         run: bun run build
 
-      - name: Package as XPI
+      - name: Sign extension (if releasing)
+        if: steps.check_tag.outputs.should_release == 'true'
+        env:
+          AMO_JWT_ISSUER: ${{ secrets.AMO_JWT_ISSUER }}
+          AMO_JWT_SECRET: ${{ secrets.AMO_JWT_SECRET }}
+        run: |
+          npx web-ext sign \
+            --source-dir dist \
+            --api-key "$AMO_JWT_ISSUER" \
+            --api-secret "$AMO_JWT_SECRET" \
+            --channel unlisted \
+            --artifacts-dir ./signed-artifacts
+          mv ./signed-artifacts/*.xpi ./sungrow-isolarcloud-monitor-signed.xpi
+
+      - name: Package as XPI (if NOT releasing, for verification)
+        if: steps.check_tag.outputs.should_release != 'true'
         run: |
           cd dist
-          zip -r ../sungrow-isolarcloud-monitor.xpi .
+          zip -r ../sungrow-isolarcloud-monitor-unsigned.xpi .
           cd ..
 
-      - name: Upload XPI artifact
+      - name: Upload Signed XPI
+        if: steps.check_tag.outputs.should_release == 'true'
         uses: actions/upload-artifact@v4
         with:
-          name: sungrow-isolarcloud-monitor-xpi
-          path: sungrow-isolarcloud-monitor.xpi
-          if-no-files-found: error
+          name: sungrow-isolarcloud-monitor-signed
+          path: sungrow-isolarcloud-monitor-signed.xpi
+
+      - name: Upload Unsigned XPI
+        if: steps.check_tag.outputs.should_release != 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: sungrow-isolarcloud-monitor-unsigned
+          path: sungrow-isolarcloud-monitor-unsigned.xpi
 
   release:
     needs: build
@@ -66,17 +88,41 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Download XPI artifact
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download Signed XPI artifact
         uses: actions/download-artifact@v4
         with:
-          name: sungrow-isolarcloud-monitor-xpi
+          name: sungrow-isolarcloud-monitor-signed
 
       - name: Create Release
+        id: create_release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: v${{ needs.build.outputs.version }}
           name: Release v${{ needs.build.outputs.version }}
-          files: sungrow-isolarcloud-monitor.xpi
+          files: sungrow-isolarcloud-monitor-signed.xpi
           draft: false
           prerelease: false
           generate_release_notes: true
+
+      - name: Update updates.json
+        run: |
+          VERSION="${{ needs.build.outputs.version }}"
+          XPI_URL="https://github.com/${{ github.repository }}/releases/download/v${VERSION}/sungrow-isolarcloud-monitor-signed.xpi"
+
+          # Use jq to add the new update entry
+          jq --arg version "$VERSION" --arg url "$XPI_URL" \
+            '.addons["sungrow-isolarcloud-monitor@flynsarmy.com"].updates += [{
+              "version": $version,
+              "update_link": $url
+            }]' updates.json > updates.json.tmp && mv updates.json.tmp updates.json
+
+      - name: Commit and push updates.json
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add updates.json
+          git commit -m "Update updates.json for v${{ needs.build.outputs.version }}"
+          git push origin master
