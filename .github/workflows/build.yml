@@ -9,9 +9,31 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    outputs:
+      version: ${{ steps.get_version.outputs.version }}
+      should_release: ${{ steps.check_tag.outputs.should_release }}
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Get version from manifest.json
+        id: get_version
+        run: |
+          VERSION=$(jq -r .version manifest.json)
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+
+      - name: Check if tag exists
+        id: check_tag
+        run: |
+          VERSION=${{ steps.get_version.outputs.version }}
+          if git ls-remote --tags origin "refs/tags/v$VERSION" | grep -q "refs/tags/v$VERSION"; then
+            echo "Tag v$VERSION already exists. Skipping release."
+            echo "should_release=false" >> $GITHUB_OUTPUT
+          else
+            echo "Tag v$VERSION does not exist. Proceeding with release."
+            echo "should_release=true" >> $GITHUB_OUTPUT
+          fi
 
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
@@ -36,3 +58,25 @@ jobs:
           name: sungrow-isolarcloud-monitor-xpi
           path: sungrow-isolarcloud-monitor.xpi
           if-no-files-found: error
+
+  release:
+    needs: build
+    if: needs.build.outputs.should_release == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Download XPI artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: sungrow-isolarcloud-monitor-xpi
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ needs.build.outputs.version }}
+          name: Release v${{ needs.build.outputs.version }}
+          files: sungrow-isolarcloud-monitor.xpi
+          draft: false
+          prerelease: false
+          generate_release_notes: true
