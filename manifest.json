@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Sungrow iSolarCloud Monitor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Firefox addon for authorizing with Sungrow Developer API",
   "permissions": [
     "storage",
@@ -33,5 +33,10 @@
     "32": "icons/icon-32.svg",
     "48": "icons/icon-48.svg",
     "128": "icons/icon-128.svg"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "sungrow-isolarcloud-monitor@flynsarmy.com"
+    }
   }
 }
