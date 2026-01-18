@@ -1,6 +1,7 @@
 {
   "name": "sungrow-addon",
   "version": "1.0.0",
+  "type": "module",
   "description": "Sungrow Developer AI Addon",
   "scripts": {
     "dev": "vite",

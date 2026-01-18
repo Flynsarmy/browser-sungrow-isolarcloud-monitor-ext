@@ -176,9 +176,20 @@ export interface BrowserAlarms {
     };
 }
 
+export interface BrowserAction {
+    setBadgeText(details: { text: string | null; tabId?: number }): Promise<void>;
+    setBadgeBackgroundColor(details: { color: string | number[] | null; tabId?: number }): Promise<void>;
+}
+
 export interface Browser {
-    storage: { local: BrowserStorageLocal };
+    storage: {
+        local: BrowserStorageLocal;
+        onChanged: {
+            addListener(callback: (changes: { [key: string]: { oldValue?: any; newValue?: any } }, areaName: string) => void): void;
+        };
+    };
     identity: BrowserIdentity;
     runtime: BrowserRuntime;
     alarms: BrowserAlarms;
+    action: BrowserAction;
 }

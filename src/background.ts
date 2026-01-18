@@ -177,8 +177,25 @@ async function authenticateWithSungrow(credentials: Credentials) {
 browser.alarms.onAlarm.addListener((alarm: { name: string }) => {
   if (alarm.name === 'tokenRefresh') {
     refreshToken();
+  } else if (alarm.name === 'batteryUpdate') {
+    updateBatteryBadge();
   }
 });
+
+// Listen for storage changes to update badge when plant selection changes
+browser.storage.onChanged.addListener((changes: any, areaName: string) => {
+  if (areaName === 'local' && changes.selectedPlantId) {
+    updateBatteryBadge();
+  }
+});
+
+// Start periodic battery updates
+browser.alarms.create('batteryUpdate', {
+  periodInMinutes: 5
+});
+
+// Initial update
+updateBatteryBadge();
 
 async function refreshToken() {
   try {
@@ -382,5 +399,53 @@ async function fetchDevicePointData(deviceType: number, psKey: string, pointIds:
   } catch (error) {
     console.error('Fetch device point data failed:', error);
     throw error;
+  }
+}
+
+async function updateBatteryBadge() {
+  try {
+    const stored = await browser.storage.local.get(['selectedPlantId', 'accessToken']) as {
+      selectedPlantId?: string;
+      accessToken?: string;
+    };
+
+    if (!stored.selectedPlantId || !stored.accessToken) {
+      await browser.action.setBadgeText({ text: '' });
+      return;
+    }
+
+    const psId = parseInt(stored.selectedPlantId);
+    if (isNaN(psId)) return;
+
+    // 1. Get devices for the selected plant
+    const devices = await fetchDeviceList(psId);
+
+    // 2. Find battery device (type 43)
+    const battery = devices.find(d => d.device_type === 43);
+
+    if (!battery) {
+      await browser.action.setBadgeText({ text: '' });
+      return;
+    }
+
+    // 3. Get SOC point data
+    const pointData = await fetchDevicePointData(battery.device_type, battery.ps_key, [58604]);
+
+    if (pointData && pointData.length > 0) {
+      const data = pointData[0];
+      const socValue = data["p58604"];
+
+      if (socValue !== undefined && socValue !== null) {
+        const soc = Math.round(parseFloat(socValue) * 1000) / 10;
+        await browser.action.setBadgeText({ text: `${Math.round(soc)}%` });
+        await browser.action.setBadgeBackgroundColor({ color: '#10b981' }); // emerald-500
+      } else {
+        await browser.action.setBadgeText({ text: '' });
+      }
+    } else {
+      await browser.action.setBadgeText({ text: '' });
+    }
+  } catch (error) {
+    console.error('Failed to update battery badge:', error);
   }
 }
