@@ -27,7 +27,8 @@ export function PlantDeviceList({ ps_id }: PlantDeviceListProps) {
         try {
             const response = await browser.runtime.sendMessage({
                 action: 'getDeviceList',
-                ps_id
+                ps_id,
+                useCache: true
             });
 
             if (response.success && response.data) {

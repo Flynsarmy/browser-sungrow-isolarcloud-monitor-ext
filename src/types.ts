@@ -141,7 +141,7 @@ export type MessageAction =
     | { action: 'storeCredentials'; credentials: Credentials }
     | { action: 'refreshToken' }
     | { action: 'getPlantList' }
-    | { action: 'getDeviceList'; ps_id: number }
+    | { action: 'getDeviceList'; ps_id: number; useCache?: boolean }
     | { action: 'getDevicePointData'; device_type: number, ps_key: string, point_ids: number[] };
 
 export interface MessageResponse<T = any> {
@@ -179,6 +179,7 @@ export interface BrowserAlarms {
 export interface BrowserAction {
     setBadgeText(details: { text: string | null; tabId?: number }): Promise<void>;
     setBadgeBackgroundColor(details: { color: string | number[] | null; tabId?: number }): Promise<void>;
+    setBadgeTextColor(details: { color: string | number[] | null; tabId?: number }): Promise<void>;
 }
 
 export interface Browser {

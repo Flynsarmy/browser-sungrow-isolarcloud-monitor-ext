@@ -49,7 +49,7 @@ browser.runtime.onMessage.addListener((request: MessageAction, _sender: any, sen
   }
 
   if (request.action === 'getDeviceList') {
-    fetchDeviceList(request.ps_id)
+    fetchDeviceList(request.ps_id, request.useCache)
       .then(result => sendResponse({ success: true, data: result }))
       .catch(error => sendResponse({ success: false, error: error.message }));
     return true;
@@ -305,8 +305,17 @@ async function fetchPlantList(): Promise<Plant[]> {
   }
 }
 
-async function fetchDeviceList(psId: number): Promise<PlantDevice[]> {
+async function fetchDeviceList(psId: number, useCache: boolean = false): Promise<PlantDevice[]> {
   try {
+    const cacheKey = `deviceList_${psId}`;
+    if (useCache) {
+      const cached = await browser.storage.local.get(cacheKey);
+      if (cached[cacheKey]) {
+        console.log(`Using cached device list for plant ${psId}`);
+        return cached[cacheKey];
+      }
+    }
+
     const stored = await browser.storage.local.get(['appKey', 'secretKey', 'gatewayUrl', 'accessToken']) as {
       appKey: string;
       secretKey: string;
@@ -343,7 +352,9 @@ async function fetchDeviceList(psId: number): Promise<PlantDevice[]> {
       if (data.result_code !== "1") {
         throw new Error(data.result_msg || 'Failed to fetch device list');
       }
-      return data.result_data.pageList;
+      const devices = data.result_data.pageList;
+      await browser.storage.local.set({ [cacheKey]: devices });
+      return devices;
     } else {
       throw new Error('Network response was not ok');
     }
@@ -417,8 +428,8 @@ async function updateBatteryBadge() {
     const psId = parseInt(stored.selectedPlantId);
     if (isNaN(psId)) return;
 
-    // 1. Get devices for the selected plant
-    const devices = await fetchDeviceList(psId);
+    // 1. Get devices for the selected plant (use cache for badge updates)
+    const devices = await fetchDeviceList(psId, true);
 
     // 2. Find battery device (type 43)
     const battery = devices.find(d => d.device_type === 43);
@@ -437,8 +448,22 @@ async function updateBatteryBadge() {
 
       if (socValue !== undefined && socValue !== null) {
         const soc = Math.round(parseFloat(socValue) * 1000) / 10;
-        await browser.action.setBadgeText({ text: `${Math.round(soc)}%` });
-        await browser.action.setBadgeBackgroundColor({ color: '#10b981' }); // emerald-500
+        const roundedSoc = Math.round(soc);
+        await browser.action.setBadgeText({ text: `${roundedSoc}%` });
+
+        let bgColor = '#10b981'; // Green (emerald-500)
+        let textColor = '#ffffff';
+
+        if (roundedSoc <= 19) {
+          bgColor = '#ef4444'; // Red (red-500)
+          textColor = '#ffffff';
+        } else if (roundedSoc <= 50) {
+          bgColor = '#facc15'; // Yellow (yellow-400)
+          textColor = '#000000'; // Black text for better contrast on yellow
+        }
+
+        await browser.action.setBadgeBackgroundColor({ color: bgColor });
+        await browser.action.setBadgeTextColor({ color: textColor });
       } else {
         await browser.action.setBadgeText({ text: '' });
       }
